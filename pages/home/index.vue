@@ -1,7 +1,20 @@
 <template>
 	<def-page ref="defpage">
 		<view class="content" slot="content">
+			<!-- banner -->
 			<yg-swiper swiperId="garce-swiper-1" :items="swiperItems"></yg-swiper>
+			
+			<!-- nav按钮 -->
+			<view class="grace-wrap">
+				<view class="grace-boxes" v-for="(v,i) in navItems" :key="i">
+					<view class="grace-boxes-img">
+					<image class="grace-boxes-image" :src="v.imgUrl" mode="widthFix"></image>
+					</view>
+					<view class="grace-boxes-text">{{v.title}}</view>
+				</view>
+			</view>
+			
+			<!--  -->
 		</view>
 	</def-page>
 </template>
@@ -16,8 +29,15 @@
 		data() {
 			return {
 				swiperItems : [
-					{ imgUrl: '../../static/logo.png', path : "./badge", title : "标题1"},
-					{ imgUrl: '../../static/logo.png', path : "./badge", title : "标题2"}
+					{ imgUrl: '../../static/v2_pitxu2.png', path : "./badge", title : "标题1"},
+					{ imgUrl: '../../static/v2_pitxu2.png', path : "./badge", title : "标题2"}
+				],
+				navItems : [
+					{ imgUrl: '../../static/images/icon/nav_1.png',path: '',title:'订单管理' },
+					{ imgUrl: '../../static/images/icon/nav_2.png',path: '',title:'业务查询' },
+					{ imgUrl: '../../static/images/icon/nav_3.png',path: '',title:'清单管理' },
+					{ imgUrl: '../../static/images/icon/nav_4.png',path: '',title:'货运物流' },
+					{ imgUrl: '../../static/images/icon/nav_5.png',path: '',title:'施工团队' },
 				]
 			}
 		},
@@ -56,6 +76,15 @@
 	}
 </script>
 
-<style>
-	
+<style scoped>
+	.grace-wrap{
+		margin-top: 10px;
+	}
+	.grace-boxes{
+		width: 18%;
+	}
+	.grace-boxes-image{
+		width: 30px;
+		height: 30px !important;
+	}
 </style>
