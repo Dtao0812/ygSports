@@ -1,0 +1,5 @@
+<import src="/components/page/index.vue.wxml" />
+<import src="/components/swiper/swiper.vue.wxml" />
+<template name="60d40076">
+  <template ref="defpage" data="{{...$root['0'], ...$root[$kk+'IDi-1'],$root, $slotdefault:'data-v-30a554f9-default-IDi-1',$slotcontent:'data-v-30a554f9-content-IDi-1'}}" is="03abb5e3"></template>
+</template>
