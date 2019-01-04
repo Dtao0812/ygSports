@@ -1,68 +1,72 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/home/index",
-			"style": {
-				"navigationBarTitleText": "优冠商网"
-			}
-		},
-		{
-			"path": "pages/product/index",
-			"style": {
-				"navigationBarTitleText": "优冠商网"
-			}
-		},
-		{
-			"path": "pages/message/index",
-			"style": {
-				"navigationBarTitleText": "优冠商网"
-			}
-		},
-		{
-			"path": "pages/my/index",
-			"style": {
-				"navigationBarTitleText": "优冠商网"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "优冠商网",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"tabBar":{
-		"color":"#a0a0a0",
-		"selectedColor":"#6aa328",
-		"backgroundColor":"#fff",
-		"list":[
-			{
-				"pagePath":"pages/home/index",
-				"iconPath":"static/images/tabBar/home.png",
-				"selectedIconPath":"static/images/tabBar/home_h.png",
-				"text":"首页"
-			},
-			{
-				"pagePath":"pages/product/index",
-				"iconPath":"static/images/tabBar/dial.png",
-				"selectedIconPath":"static/images/tabBar/dial_u.png",
-				"text":"产品"
-			},
-			{
-				// 留白，订单创建
-			},
-			{
-				"pagePath":"pages/message/index",
-				"iconPath":"static/images/tabBar/comments.png",
-				"selectedIconPath":"static/images/tabBar/comments_u.png",
-				"text":"消息"
-			},
-			{
-				"pagePath":"pages/my/index",
-				"iconPath":"static/images/tabBar/my.png",
-				"selectedIconPath":"static/images/tabBar/my_u.png",
-				"text":"我的"
-			}
-		]
-	}
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/home/index",
+            "style" : {
+                "navigationBarTitleText" : "优冠商网"
+            }
+        },
+        {
+            "path" : "pages/product/index",
+            "style" : {
+                "navigationBarTitleText" : "优冠商网"
+            }
+        },
+        {
+            "path" : "pages/message/index",
+            "style" : {
+                "navigationBarTitleText" : "优冠商网"
+            }
+        },
+        {
+            "path" : "pages/my/index",
+            "style" : {
+                "navigationBarTitleText" : "优冠商网"
+            }
+        },
+        {
+            "path" : "pages/login/login/login",
+            "style" : {}
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "优冠商网",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#F8F8F8"
+    },
+    "tabBar" : {
+        "color" : "#a0a0a0",
+        "selectedColor" : "#6aa328",
+        "backgroundColor" : "#fff",
+        "list" : [
+            {
+                "pagePath" : "pages/home/index",
+                "iconPath" : "static/images/tabBar/home.png",
+                "selectedIconPath" : "static/images/tabBar/home_h.png",
+                "text" : "首页"
+            },
+            {
+                "pagePath" : "pages/product/index",
+                "iconPath" : "static/images/tabBar/dial.png",
+                "selectedIconPath" : "static/images/tabBar/dial_u.png",
+                "text" : "产品"
+            },
+            {},
+            // 留白，订单创建
+            {
+                "pagePath" : "pages/message/index",
+                "iconPath" : "static/images/tabBar/comments.png",
+                "selectedIconPath" : "static/images/tabBar/comments_u.png",
+                "text" : "消息"
+            },
+            {
+                "pagePath" : "pages/my/index",
+                "iconPath" : "static/images/tabBar/my.png",
+                "selectedIconPath" : "static/images/tabBar/my_u.png",
+                "text" : "我的"
+            }
+        ]
+    }
 }
