@@ -1,19 +1,20 @@
 <template>
 	<view class="content">
-		<view class="yg-title grace-center" id="grace-tab-title">
-			<view class="grace-items">
-				<view>施工团队报名</view>
+		<view id="grace-tab-title">
+			<view class="yg-title grace-center yg-enroll-team">
+				<text class="yg-enroll-team-laber" @tap="toEnroll">施工团队报名</text>
 			</view>
-		</view>
-		<view class="yg-title grace-center" id="grace-tab-title2">
-			<view class="grace-items">
-				<view class="grace-label grace-blod picker-label">施工团队推荐</view>
-				<view @click="cityPicker" class="picker-item">
-					{{cityText}}
-					<text class="grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+			<view class="yg-title grace-center">
+				<view class="grace-items">
+					<view class="grace-label grace-blod picker-label">施工团队推荐</view>
+					<view @click="cityPicker" class="picker-item">
+						{{cityText}}
+						<text class="grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+					</view>
 				</view>
 			</view>
 		</view>
+		
 		<scroll-view scroll-y="true"  @scrolltolower="scrollend" :style="{height:tabHeight+'px'}">
 			<view class="grace-imgitems">
 				<view class="grace-items" v-for="(item, index) in list" :key="index">
@@ -78,9 +79,15 @@
 			}).exec();
 		},
 		methods:{
+			// 团队报名
+			toEnroll(){
+				this.$openWin("enrollTeam");
+			},
+			// 点击城市选择
 			cityPicker : function(){
 				this.$refs.mpvueCityPicker.show();
 			},
+			// 城市确定按钮
 			onConfirm(e) {
 				var cityText  = e.label;
 				var cityValue = e.value;
@@ -120,6 +127,19 @@
 	.content{
 		background-color: #EEEEEE;
 		padding: 0;
+	}
+	.yg-enroll-team{
+		text-align: left;
+	}
+	.yg-enroll-team-laber{
+		background-color: #6aa328;
+		border-radius: 5px;
+		width: 100px;
+		height: 25px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 5px 10px;
+		margin-left: 10px;
 	}
 	.grace-items{
 		width: 100%;

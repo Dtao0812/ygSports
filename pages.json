@@ -13,6 +13,17 @@
 			}
 		},
 		{
+			"path": "pages/product/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus" : {
+				    "titleNView" : {
+				        "type" : "transparent"
+				    }
+				}
+			}
+		},
+		{
 			"path": "pages/message/index",
 			"style": {
 				"navigationBarTitleText": "消息",
@@ -68,6 +79,12 @@
 			"path": "pages/team/index",
 			"style": {
 				"navigationBarTitleText": "施工团队"
+			}
+		},
+		{
+			"path": "pages/team/enroll",
+			"style": {
+				"navigationBarTitleText": "施工团队报名"
 			}
 		}
 	],

@@ -1,5 +1,11 @@
 @import "../../common/vendor.wxss";
 
+page {
+  width: 750rpx;
+  min-height: 100%;
+  background: url('http://47.105.198.16/appresources/logobg.png') no-repeat top center;
+  background-size: 100%;
+}
 .content.data-v-843efc2a {
   padding: 0;
   position: relative;
@@ -69,4 +75,11 @@
   display: inline;
   font-size: 12px;
   border: 0 !important;
+}
+.login-box-getauthcode.data-v-843efc2a {
+  width: 32%;
+  right: 120rpx;
+  margin-top: -70rpx;
+  float: right;
+  margin-right: 48rpx;
 }

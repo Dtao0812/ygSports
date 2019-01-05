@@ -1,5 +1,5 @@
 <import src="/components/page/index.vue.wxml" />
 <import src="/components/swiper/swiper.vue.wxml" />
 <template name="0bf61c7e">
-  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'m9E-1'],$root, $slotdefault:'data-v-3707f49a-default-m9E-1',$slotcontent:'data-v-3707f49a-content-m9E-1'}}" is="1bf0a167"></template>
+  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'3Oe-1'],$root, $slotdefault:'data-v-3707f49a-default-3Oe-1',$slotcontent:'data-v-3707f49a-content-3Oe-1'}}" is="1bf0a167"></template>
 </template>

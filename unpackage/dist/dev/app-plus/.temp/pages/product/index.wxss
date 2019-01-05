@@ -50,11 +50,14 @@
   padding: 0;
 }
 .grace-news-list-items.data-v-3a31a231 {
-  border-bottom: 1px dashed;
+  border-bottom: 1px dashed #DDD;
   padding: 12px;
 }
 .grace-news-list-img.data-v-3a31a231 {
   height: 80px !important;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #d8d8d8;
+  border-radius: 10rpx;
 }
 .grace-news-list-title-desc.data-v-3a31a231 {
   padding: 5px 0;

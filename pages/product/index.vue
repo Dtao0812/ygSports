@@ -22,16 +22,21 @@
 				<swiper-item v-for="(news, newsIndex) in newsAll" :key="newsIndex">
 					<scroll-view scroll-y="true" :data-scindex="newsIndex" @scrolltolower="scrollend">
 						<view class="grace-news-list" style="">
-							<navigator v-for="(item, index) in news" :key="index">
+							<view v-for="(item, index) in news" :key="index" @tap="toDetail(item)">
 								<view class="grace-news-list-items">
 									<image src="../../static/images/bg/mu_1.png" class="grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
 									<view class="grace-news-list-title">
 										<view class="grace-news-list-title-main">单组份防水地胶</view>
 										<text class="grace-news-list-title-desc grace-text-overflow">透气 净味</text>
-										<view class="grace-news-list-text"><text class="grace-news-list-price">￥32.00</text><text class="grace-news-list-icon uni-icon uni-icon-star"></text></view>
+										<view class="grace-news-list-text">
+											<text class="grace-news-list-price">￥32.00</text>
+											<text class="grace-news-list-icon">
+												<yg-icon type="xin" color="#08C7B5"></yg-icon>
+											</text>
+										</view>
 									</view>
 								</view>
-							</navigator>
+							</view>
 						</view>
 						<graceLoading :loadingType="tabs[newsIndex].loadingType"></graceLoading>
 					</scroll-view>
@@ -134,6 +139,10 @@
 					_self.tabs[index].loadingType = 0;//恢复加载状态
 					//
 				}, 1000);
+			},
+			//打开详情
+			toDetail(item){
+				this.$openWin("proDetail");
 			}
 		},
 	}

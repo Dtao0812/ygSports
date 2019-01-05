@@ -9,7 +9,10 @@ import Tool from '../common/tool.js'
 // 所有的页面
 const _routers = [
 	{ title: '首页',name: 'home',path: '/pages/home/index' },
+	
 	{ title: '产品',name: 'product',path: '/pages/product/index' },
+	{ title: '产品详情',name: 'proDetail',path: '/pages/product/detail' },
+	
 	{ title: '消息',name: 'message',path: '/pages/message/index' },
 	{ title: '我的',name: 'my',path: '/pages/my/index' },
 	
@@ -23,6 +26,7 @@ const _routers = [
 	{ title: '货运物流',name: 'logistics',path: '/pages/logistics/index' },
 	
 	{ title: '施工团队',name: 'team',path: '/pages/team/index' },
+	{ title: '报名团队',name: 'enrollTeam',path: '/pages/team/enroll' },
 	
 ];
 

@@ -274,3 +274,529 @@
     </view>
   </view>
 </template>
+<template name="data-v-3707f49a-default-6Wm-1"></template>
+<template name="data-v-3707f49a-content-6Wm-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'aDG-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'Hlp-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3a31a231-default-3a3-4"></template>
+<template name="data-v-3a31a231-default-ba2-1">
+  <view class="_view data-v-3a31a231 input-view">
+    <template className="product-search" type="search" size="22" color="#666666" data="{{...$root['0'], ...$root[$kk+'nE2-0'],$root}}" is="09d4a078"></template>
+    <input confirm-type="search" bindconfirm="handleProxy" class="_input data-v-3a31a231 input" type="text" placeholder="单组份跑道面胶" data-eventid="{{'xAg-0'}}" data-comkey="{{$k}}" />
+  </view>
+</template>
+<template name="data-v-3a31a231-left-ba2-1">
+  <view class="_view data-v-3a31a231 manage">
+    <view class="_view data-v-3a31a231 grace-iconfont icon-shaixuan" style="font-size: 26px;color: #e6e6e6;"></view>
+  </view>
+</template>
+<template name="data-v-3a31a231-right-ba2-1">
+  <view class="_view data-v-3a31a231 grace-iconfont icon-time" style="font-size: 26px;color: #e6e6e6;"></view>
+</template>
+<template name="data-v-3a31a231-content-3a3-4">
+  <template color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" bindclick-left="handleProxy" bindclick-right="handleProxy" data-eventid="{{'pc9-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'ba2-1'],$root, $slotdefault:'data-v-3a31a231-default-ba2-1',$slotleft:'data-v-3a31a231-left-ba2-1',$slotright:'data-v-3a31a231-right-ba2-1'}}"
+    is="48f5106e"></template>
+  <scroll-view class="_scroll-view data-v-3a31a231 grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
+    <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'uWc-2-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-3a31a231 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
+  </scroll-view>
+  <swiper class="_swiper data-v-3a31a231 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'qVT-4'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
+    <swiper-item wx:key="newsIndex" key="{{newsIndex}}" wx:for="{{newsAll}}" wx:for-index="newsIndex" wx:for-item="news" class="_swiper-item data-v-3a31a231">
+      <scroll-view scroll-y="true" data-scindex="{{newsIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'Enk-3-'+newsIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-3a31a231">
+        <view class="_view data-v-3a31a231 grace-news-list" style>
+          <navigator wx:key="index" key="{{index}}" wx:for="{{news}}" wx:for-index="index" wx:for-item="item" class="_navigator data-v-3a31a231">
+            <view class="_view data-v-3a31a231 grace-news-list-items">
+              <image src="../../static/images/bg/mu_1.png" class="_image data-v-3a31a231 grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
+              <view class="_view data-v-3a31a231 grace-news-list-title">
+                <view class="_view data-v-3a31a231 grace-news-list-title-main">单组份防水地胶</view>
+                <text class="_text data-v-3a31a231 grace-news-list-title-desc grace-text-overflow">透气 净味</text>
+                <view class="_view data-v-3a31a231 grace-news-list-text">
+                  <text class="_text data-v-3a31a231 grace-news-list-price">￥32.00</text>
+                  <text class="_text data-v-3a31a231 grace-news-list-icon uni-icon uni-icon-star"></text>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+        <template data="{{...$root['0'], ...$root[$kk+'dRK-2-'+newsIndex],$root}}" is="c4c046ac"></template>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</template>
+<template name="data-v-3707f49a-default-ZVO-1"></template>
+<template name="data-v-3707f49a-content-ZVO-1">
+  <view class="_view data-v-3707f49a">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'7vA-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'5ec-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3707f49a-default-rHi-1"></template>
+<template name="data-v-3707f49a-content-rHi-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'Gav-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'PYe-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3707f49a-default-l5G-1"></template>
+<template name="data-v-3707f49a-content-l5G-1">
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a">
+      <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'Ydu-0'],$root}}" is="fe072eac"></template>
+      <view class="_view data-v-3707f49a grace-wrap">
+        <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'mIY-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+          <view class="_view data-v-3707f49a grace-boxes-img">
+            <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+          </view>
+          <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a interval"></view>
+    <view class="_view data-v-3707f49a">
+      <view class="_view data-v-3707f49a grace-imgitems home-product">
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+            <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+            <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+          </view>
+        </view>
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+            <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+            <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+          </view>
+        </view>
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+            <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+            <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+          </view>
+        </view>
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+            <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+            <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+        <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+      </view>
+      <view class="_view data-v-3707f49a grace-imgitems">
+        <view class="_view data-v-3707f49a grace-items dynamic-item">
+          <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+          <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3707f49a-default-WJ6-1"></template>
+<template name="data-v-3707f49a-content-WJ6-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'Lmh-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'0Gm-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3707f49a-default-2X5-1"></template>
+<template name="data-v-3707f49a-content-2X5-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'jJg-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'FaR-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3707f49a-default-gB6-1"></template>
+<template name="data-v-3707f49a-content-gB6-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'YBb-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'Jdq-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="data-v-3707f49a-default-3Oe-1"></template>
+<template name="data-v-3707f49a-content-3Oe-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'sFD-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'tm3-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="_view data-v-3707f49a interval"></view>
+  <view class="_view data-v-3707f49a content">
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+      </view>
+    </view>
+  </view>
+</template>

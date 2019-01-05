@@ -129,14 +129,12 @@
 		}
 	}
 </script>
-<style>
-	.content{background-color: #fff;}
+<style scoped>
+	.content{background-color: #fff;height: auto;}
 	.grace-swiper {border-radius: 5px!important; overflow: hidden;}
 	.grace-swiper swiper-item navigator image{border-radius: 5px;}
 	.grace-boxes-text{font-size: 26upx;}
 	.home-product-items-content view{line-height: 1.5;}
-</style>
-<style scoped>
 	/*间隔*/
 	.interval{
 		width: 100%;
@@ -197,8 +195,8 @@
 	.dynamic-item{
 		width: 100%;
 		height: 100px;
-		box-shadow: 0 0 10px #d8d8d8; border-radius: 10upx;
-		border-radius: 5px;
+		box-shadow: 0 0 10px #d8d8d8; 
+		border-radius: 10upx;
 		padding: 10px;
 	}
 	.dynamic-item-title{
