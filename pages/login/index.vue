@@ -1,6 +1,5 @@
 <template>
 	<view class="content">
-		<image class="login-bg" src="../../static/images/bg/login.png" mode=""></image>
 		<view class="login-box">
 			<view class="login-box-title">优冠体育</view>
 			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入手机号" /></view>
@@ -34,6 +33,8 @@
 	.content{
 		padding: 0;
 		position: relative;
+		background: url(http://114.215.202.155/images/appBg/login.png);
+		background-size: 100%;
 	}
 	.login-bg{
 		height: 100vh;
