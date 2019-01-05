@@ -2,6 +2,7 @@
 
 .content.data-v-78850c80 {
   padding: 0;
+  background-color: #EEEEEE;
 }
 .my-header.data-v-78850c80 {
   width: 100%;

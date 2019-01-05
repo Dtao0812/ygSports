@@ -1,0 +1,5 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-13ee2fa8 {
+  background-color: #FFFFFF;
+}

@@ -5,13 +5,13 @@
 			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入手机号" /></view>
 			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入密码" /></view>
 			<view class="login-box-button">
-				<button class="login-box-btn" type="primary">登录</button>
+				<button class="yg-button-default" type="primary">登录</button>
 			</view>
 			<view class="login-link">
-				<navigator class="login-link-nav" url="../register/registerOne" hover-class="navigator-hover">
+				<navigator class="login-link-nav" url="../setting/setPassword?pageName=login" hover-class="navigator-hover">
 					<view class="login-link-register">忘记密码？</view>
 				</navigator>
-				<navigator class="login-link-nav" url="../setting/setPassword?pageName=login" hover-class="navigator-hover">
+				<navigator class="login-link-nav" url="../register/registerOne" hover-class="navigator-hover">
 					<view class="login-link-register">新用户注册</view>
 				</navigator>
 			</view>
@@ -68,11 +68,6 @@
 	}
 	.login-box-button{
 		margin-top: 20px;
-	}
-	.login-box-btn{
-		height: 30px;
-		line-height: 30px;
-		background-color: #6aa328;
 	}
 	.login-link{
 		color: #FFFFFF;

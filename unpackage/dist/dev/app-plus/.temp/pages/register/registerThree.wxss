@@ -1,0 +1,12 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-53ac0860 {
+  background-color: #FFFFFF;
+}
+.grace-items-wbg.data-v-53ac0860 {
+  border-radius: 0;
+}
+.grace-form .grace-items .input.data-v-53ac0860 {
+  width: 100%;
+  margin-left: 0;
+}

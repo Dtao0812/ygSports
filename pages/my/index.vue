@@ -65,6 +65,7 @@
 <style scoped>
 	.content{
 		padding: 0;
+		background-color: #EEEEEE;
 	}
 	.my-header{
 		width: 100%;

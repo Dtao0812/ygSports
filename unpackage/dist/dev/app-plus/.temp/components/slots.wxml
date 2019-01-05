@@ -1,79 +1,21 @@
 <import src="/components/page/index.vue.wxml" />
+<import src="/components/page/index.vue.wxml" />
 <import src="/components/swiper/swiper.vue.wxml" />
-<import src="/components/page/index.vue.wxml" />
-<import src="/components/page/index.vue.wxml" />
-<import src="/components/uni/uni-icon.vue.wxml" />
 <import src="/components/page/index.vue.wxml" />
 <import src="/components/uni/uni-nav-bar.vue.wxml" />
 <import src="/components/uni/uni-icon.vue.wxml" />
 <import src="/components/grace/graceLoading.vue.wxml" />
+<import src="/components/page/index.vue.wxml" />
+<import src="/components/uni/uni-icon.vue.wxml" />
 <import src="/components/uni/uni-status-bar.vue.wxml" />
 <import src="/components/uni/uni-icon.vue.wxml" />
 <import src="/components/slots" />
-<template name="data-v-3707f49a-default-bpK-1"></template>
-<template name="data-v-3707f49a-content-bpK-1">
-  <view class="_view data-v-3707f49a content">
-    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'Dwd-0'],$root}}" is="fe072eac"></template>
-    <view class="_view data-v-3707f49a grace-wrap">
-      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
-        <view class="_view data-v-3707f49a grace-boxes-img">
-          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
-        </view>
-        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
-      </view>
-    </view>
-    <view class="_view data-v-3707f49a grace-imgitems home-product">
-      <view class="_view data-v-3707f49a grace-items">
-        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
-        <view class="_view data-v-3707f49a home-product-items-content">
-          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
-          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
-          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
-        </view>
-      </view>
-      <view class="_view data-v-3707f49a grace-items">
-        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
-        <view class="_view data-v-3707f49a home-product-items-content">
-          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
-          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
-          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
-        </view>
-      </view>
-      <view class="_view data-v-3707f49a grace-items">
-        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
-        <view class="_view data-v-3707f49a home-product-items-content">
-          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
-          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
-          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
-        </view>
-      </view>
-      <view class="_view data-v-3707f49a grace-items">
-        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
-        <view class="_view data-v-3707f49a home-product-items-content">
-          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
-          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
-          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
-        </view>
-      </view>
-    </view>
-    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
-      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
-      <text class="_text data-v-3707f49a grace-iconfont dynamic-icon">+</text>
-    </view>
-    <view class="_view data-v-3707f49a grace-imgitems">
-      <view class="_view data-v-3707f49a grace-items dynamic-item">
-        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
-        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
-      </view>
-    </view>
-  </view>
-</template>
-<template name="data-v-3a5bd749-default-b4X-0"></template>
-<template name="data-v-3a5bd749-content-b4X-0">
+<template name="data-v-3a5bd749-default-lCy-0"></template>
+<template name="data-v-3a5bd749-content-lCy-0">
   <view class="_view data-v-3a5bd749 content">
     <view class="_view data-v-3a5bd749 grace-scroll-do">
       <scroll-view class="_scroll-view data-v-3a5bd749 grace-scroll-x" scroll-x scroll-left="{{scrollIndex == index ? 180 : 0}}" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-id="{{index}}" scroll-with-animation="true" wx:key="index" key="{{index}}"
-        data-eventid="{{'6bs-2-'+index}}" data-comkey="{{$k}}" wx:for="{{msg}}" wx:for-index="index" wx:for-item="item">
+        data-eventid="{{'ewn-2-'+index}}" data-comkey="{{$k}}" wx:for="{{msg}}" wx:for-index="index" wx:for-item="item">
         <view class="_view data-v-3a5bd749 grace-items">
           <image src="{{item.img}}" mode="widthFix" class="_image data-v-3a5bd749"></image>
           <view class="_view data-v-3a5bd749 contents">
@@ -83,8 +25,8 @@
             <view class="_view data-v-3a5bd749 grace-text-small ellipsis-1">{{item.desc}}</view>
           </view>
         </view>
-        <view class="_view data-v-3a5bd749 grace-items btn btn-first" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'JMB-0-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? '0px' : btn1Width + 'px') +  ';' +  'background:' +  (item.status == '已读' ? '#CCCCCC' : '#5959D3') +  ';' +  'color:' +  (item.status == '已读' ? '#999' : '#FFF') +  ';')}}">{{item.status}}</view>
-        <view class="_view data-v-3a5bd749 grace-items btn" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'szn-1-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}">删除</view>
+        <view class="_view data-v-3a5bd749 grace-items btn btn-first" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'DEf-0-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? '0px' : btn1Width + 'px') +  ';' +  'background:' +  (item.status == '已读' ? '#CCCCCC' : '#5959D3') +  ';' +  'color:' +  (item.status == '已读' ? '#999' : '#FFF') +  ';')}}">{{item.status}}</view>
+        <view class="_view data-v-3a5bd749 grace-items btn" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'8Se-1-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}">删除</view>
       </scroll-view>
     </view>
     <view class="_view data-v-3a5bd749 msg-list">
@@ -142,58 +84,88 @@
     </view>
   </view>
 </template>
-<template name="data-v-78850c80-default-vuD-1"></template>
-<template name="data-v-78850c80-content-vuD-1">
-  <view class="_view data-v-78850c80 content">
-    <view class="_view data-v-78850c80 my-header" bindtap="handleProxy" data-eventid="{{'FFV-0'}}" data-comkey="{{$k}}">
-      <image class="_image data-v-78850c80 my-header-image" src="../../static/images/bg/my_head.png" mode></image>
-      <view class="_view data-v-78850c80 my-header-top">
-        <template type="gear" size="24" color="#ffffff" data="{{...$root['0'], ...$root[$kk+'4RQ-0'],$root}}" is="09d4a078"></template>
+<template name="data-v-3707f49a-default-PXD-1"></template>
+<template name="data-v-3707f49a-content-PXD-1">
+  <view class="_view data-v-3707f49a content">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'s6C-0'],$root}}" is="fe072eac"></template>
+    <view class="_view data-v-3707f49a grace-wrap">
+      <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes-img">
+          <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
       </view>
-      <view class="_view data-v-78850c80 uni-card my-card">
-        <view class="_view data-v-78850c80 uni-card-header uni-card-media">
-          <image class="_image data-v-78850c80 uni-card-media-logo" src="../../static/logo.png" mode></image>
-          <view class="_view data-v-78850c80 uni-card-media-body">
-            <text class="_text data-v-78850c80 uni-card-media-text-top grace-h5 grace-blod">优冠客服</text>
-            <text class="_text data-v-78850c80 uni-card-media-text-bottom grace-text-small">做一个信赖和值得尊敬的人</text>
-          </view>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems home-product">
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+          <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+          <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-items">
+        <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+        <view class="_view data-v-3707f49a home-product-items-content">
+          <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+          <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+          <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
         </view>
       </view>
     </view>
-    <view class="_view data-v-78850c80 uni-card my-grid">
-      <view class="_view data-v-78850c80 uni-grid-9 uni-common-mt">
-        <view class="_view data-v-78850c80 uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" wx:for="{{grids}}" wx:for-index="index" wx:for-item="item">
-          <image class="_image data-v-78850c80 uni-grid-9-image" src="{{item.imgUrl}}"></image>
-          <text class="_text data-v-78850c80 uni-grid-9-text">{{item.title}}</text>
-        </view>
+    <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+      <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+      <text class="_text data-v-3707f49a grace-iconfont dynamic-icon">+</text>
+    </view>
+    <view class="_view data-v-3707f49a grace-imgitems">
+      <view class="_view data-v-3707f49a grace-items dynamic-item">
+        <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+        <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
       </view>
     </view>
   </view>
 </template>
-<template name="data-v-3a31a231-default-Dmg-4"></template>
-<template name="data-v-3a31a231-default-CgQ-1">
+<template name="data-v-3a31a231-default-rr5-4"></template>
+<template name="data-v-3a31a231-default-YPv-1">
   <view class="_view data-v-3a31a231 input-view">
-    <template className="product-search" type="search" size="22" color="#666666" data="{{...$root['0'], ...$root[$kk+'PUC-0'],$root}}" is="09d4a078"></template>
-    <input confirm-type="search" bindconfirm="handleProxy" class="_input data-v-3a31a231 input" type="text" placeholder="单组份跑道面胶" data-eventid="{{'cQh-0'}}" data-comkey="{{$k}}" />
+    <template className="product-search" type="search" size="22" color="#666666" data="{{...$root['0'], ...$root[$kk+'gZQ-0'],$root}}" is="09d4a078"></template>
+    <input confirm-type="search" bindconfirm="handleProxy" class="_input data-v-3a31a231 input" type="text" placeholder="单组份跑道面胶" data-eventid="{{'o88-0'}}" data-comkey="{{$k}}" />
   </view>
 </template>
-<template name="data-v-3a31a231-left-CgQ-1">
+<template name="data-v-3a31a231-left-YPv-1">
   <view class="_view data-v-3a31a231 manage">
     <view class="_view data-v-3a31a231 grace-iconfont icon-shaixuan" style="font-size: 26px;color: #e6e6e6;"></view>
   </view>
 </template>
-<template name="data-v-3a31a231-right-CgQ-1">
+<template name="data-v-3a31a231-right-YPv-1">
   <view class="_view data-v-3a31a231 grace-iconfont icon-time" style="font-size: 26px;color: #e6e6e6;"></view>
 </template>
-<template name="data-v-3a31a231-content-Dmg-4">
-  <template color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" bindclick-left="handleProxy" bindclick-right="handleProxy" data-eventid="{{'DmT-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'CgQ-1'],$root, $slotdefault:'data-v-3a31a231-default-CgQ-1',$slotleft:'data-v-3a31a231-left-CgQ-1',$slotright:'data-v-3a31a231-right-CgQ-1'}}"
+<template name="data-v-3a31a231-content-rr5-4">
+  <template color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" bindclick-left="handleProxy" bindclick-right="handleProxy" data-eventid="{{'8cW-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'YPv-1'],$root, $slotdefault:'data-v-3a31a231-default-YPv-1',$slotleft:'data-v-3a31a231-left-YPv-1',$slotright:'data-v-3a31a231-right-YPv-1'}}"
     is="48f5106e"></template>
   <scroll-view class="_scroll-view data-v-3a31a231 grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
-    <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'2Xq-2-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-3a31a231 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
+    <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'w5r-2-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-3a31a231 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
   </scroll-view>
-  <swiper class="_swiper data-v-3a31a231 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'twh-4'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
+  <swiper class="_swiper data-v-3a31a231 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'ynV-4'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
     <swiper-item wx:key="newsIndex" key="{{newsIndex}}" wx:for="{{newsAll}}" wx:for-index="newsIndex" wx:for-item="news" class="_swiper-item data-v-3a31a231">
-      <scroll-view scroll-y="true" data-scindex="{{newsIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'Npt-3-'+newsIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-3a31a231">
+      <scroll-view scroll-y="true" data-scindex="{{newsIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'lS7-3-'+newsIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-3a31a231">
         <view class="_view data-v-3a31a231 grace-news-list" style>
           <navigator wx:key="index" key="{{index}}" wx:for="{{news}}" wx:for-index="index" wx:for-item="item" class="_navigator data-v-3a31a231">
             <view class="_view data-v-3a31a231 grace-news-list-items">
@@ -209,46 +181,18 @@
             </view>
           </navigator>
         </view>
-        <template data="{{...$root['0'], ...$root[$kk+'XLR-2-'+newsIndex],$root}}" is="c4c046ac"></template>
+        <template data="{{...$root['0'], ...$root[$kk+'UAT-2-'+newsIndex],$root}}" is="c4c046ac"></template>
       </scroll-view>
     </swiper-item>
   </swiper>
 </template>
-<template name="data-v-78850c80-default-w3j-1"></template>
-<template name="data-v-78850c80-content-w3j-1">
+<template name="data-v-78850c80-default-6Pu-1"></template>
+<template name="data-v-78850c80-content-6Pu-1">
   <view class="_view data-v-78850c80 content">
-    <view class="_view data-v-78850c80 my-header" bindtap="handleProxy" data-eventid="{{'SV4-0'}}" data-comkey="{{$k}}">
-      <image class="_image data-v-78850c80 my-header-image" src="../../../static/images/bg/my_head.png" mode></image>
-      <view class="_view data-v-78850c80 my-header-top">
-        <template type="gear" size="24" color="#ffffff" data="{{...$root['0'], ...$root[$kk+'r6Q-0'],$root}}" is="09d4a078"></template>
-      </view>
-      <view class="_view data-v-78850c80 uni-card my-card">
-        <view class="_view data-v-78850c80 uni-card-header uni-card-media">
-          <image class="_image data-v-78850c80 uni-card-media-logo" src="../../static/logo.png" mode></image>
-          <view class="_view data-v-78850c80 uni-card-media-body">
-            <text class="_text data-v-78850c80 uni-card-media-text-top grace-h5 grace-blod">优冠客服</text>
-            <text class="_text data-v-78850c80 uni-card-media-text-bottom grace-text-small">做一个信赖和值得尊敬的人</text>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class="_view data-v-78850c80 uni-card my-grid">
-      <view class="_view data-v-78850c80 uni-grid-9 uni-common-mt">
-        <view class="_view data-v-78850c80 uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" wx:for="{{grids}}" wx:for-index="index" wx:for-item="item">
-          <image class="_image data-v-78850c80 uni-grid-9-image" src="{{item.imgUrl}}"></image>
-          <text class="_text data-v-78850c80 uni-grid-9-text">{{item.title}}</text>
-        </view>
-      </view>
-    </view>
-  </view>
-</template>
-<template name="data-v-78850c80-default-4vD-1"></template>
-<template name="data-v-78850c80-content-4vD-1">
-  <view class="_view data-v-78850c80 content">
-    <view class="_view data-v-78850c80 my-header" bindtap="handleProxy" data-eventid="{{'WMK-0'}}" data-comkey="{{$k}}">
+    <view class="_view data-v-78850c80 my-header" bindtap="handleProxy" data-eventid="{{'BaF-0'}}" data-comkey="{{$k}}">
       <image class="_image data-v-78850c80 my-header-image" src="../../static/images/bg/my_head.png" mode></image>
       <view class="_view data-v-78850c80 my-header-top">
-        <template type="gear" size="24" color="#ffffff" data="{{...$root['0'], ...$root[$kk+'2Vn-0'],$root}}" is="09d4a078"></template>
+        <template type="gear" size="24" color="#ffffff" data="{{...$root['0'], ...$root[$kk+'sST-0'],$root}}" is="09d4a078"></template>
       </view>
       <view class="_view data-v-78850c80 uni-card my-card">
         <view class="_view data-v-78850c80 uni-card-header uni-card-media">

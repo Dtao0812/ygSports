@@ -1,0 +1,18 @@
+<template name="70199894">
+  <view class="_view data-v-13ee2fa8 content">
+    <view class="_view data-v-13ee2fa8 grace-h4 grace-blod" style="color:#000000;">请输入手机号</view>
+    <view class="_view data-v-13ee2fa8 grace-form" style="margin-top:50rpx;">
+      <form bindsubmit="handleProxy" data-eventid="{{'FmN-1'}}" data-comkey="{{$k}}" class="_form data-v-13ee2fa8">
+        <view class="_view data-v-13ee2fa8 grace-items grace-items-wbg">
+          <view class="_view data-v-13ee2fa8 grace-label">
+            <picker value="{{pnpre}}" bindchange="handleProxy" range="{{pnpres}}" name="pn_pre" data-eventid="{{'VmN-0'}}" data-comkey="{{$k}}" class="_picker data-v-13ee2fa8">
+              <text class="_text data-v-13ee2fa8">+{{pnpre}}</text>
+            </picker>
+          </view>
+          <input type="number" name="mobile" class="_input data-v-13ee2fa8 input" placeholder="请输入手机号" />
+        </view>
+        <button form-type="submit" type="primary" class="_button data-v-13ee2fa8 yg-button-default" style="margin-top:20px;"> 下一步 </button>
+      </form>
+    </view>
+  </view>
+</template>

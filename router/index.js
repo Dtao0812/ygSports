@@ -14,6 +14,10 @@ const _routers = [
 	{ title: '我的',name: 'my',path: '/pages/my/index' },
 	
 	{ title: '登录',name: 'login',path: '/pages/login/index' },
+	{ title: '注册-手机',name: 'registerOne',path: '/pages/register/registerOne' },
+	{ title: '注册-验证',name: 'registerTwo',path: '/pages/register/registerTwo' },
+	{ title: '注册-设置',name: 'registerThree',path: '/pages/register/registerThree' },
+	
 ];
 
 //游客可以页面

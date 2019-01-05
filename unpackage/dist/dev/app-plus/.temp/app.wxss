@@ -3737,7 +3737,7 @@ uni-page-refresh {
 }
 .content {
   padding: 10px;
-  background-color: #EEEEEE;
+  background-color: #FFFFFF;
   height: 100%;
 }
 .ellipsis-1 {
@@ -3763,4 +3763,15 @@ uni-page-refresh {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.yg-text-color-green {
+  color: #6aa328;
+}
+.yg-button-default {
+  background-color: #6aa328 !important;
+  height: 30px;
+  line-height: 30px;
+}
+.yg-bottom-link-blue {
+  border-bottom: 1rpx solid #7ecef4 !important;
 }

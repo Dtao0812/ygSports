@@ -1,5 +1,5 @@
 <import src="/components/page/index.vue.wxml" />
 <import src="/components/uni/uni-icon.vue.wxml" />
 <template name="63acb964">
-  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'4vD-1'],$root, $slotdefault:'data-v-78850c80-default-4vD-1',$slotcontent:'data-v-78850c80-content-4vD-1'}}" is="1bf0a167"></template>
+  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'CMA-1'],$root, $slotdefault:'data-v-78850c80-default-CMA-1',$slotcontent:'data-v-78850c80-content-CMA-1'}}" is="1bf0a167"></template>
 </template>

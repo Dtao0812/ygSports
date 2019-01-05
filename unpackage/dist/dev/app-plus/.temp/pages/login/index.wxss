@@ -3,6 +3,8 @@
 .content.data-v-843efc2a {
   padding: 0;
   position: relative;
+  background: url(http://114.215.202.155/images/appBg/login.png);
+  background-size: 100%;
 }
 .login-bg.data-v-843efc2a {
   height: 100vh;
@@ -36,11 +38,6 @@
 }
 .login-box-button.data-v-843efc2a {
   margin-top: 20px;
-}
-.login-box-btn.data-v-843efc2a {
-  height: 30px;
-  line-height: 30px;
-  background-color: #6aa328;
 }
 .login-link.data-v-843efc2a {
   color: #FFFFFF;

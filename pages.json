@@ -33,6 +33,24 @@
 				"navigationBarTitleText": "登录",
 				"titleNView":false
 			}
+		},
+		{
+			"path": "pages/register/registerOne",
+			"style": {
+				"navigationBarTitleText": "新用户注册"
+			}
+		},
+		{
+			"path": "pages/register/registerTwo",
+			"style": {
+				"navigationBarTitleText": "新用户注册"
+			}
+		},
+		{
+			"path": "pages/register/registerThree",
+			"style": {
+				"navigationBarTitleText": "新用户注册"
+			}
 		}
 	],
 	"globalStyle": {

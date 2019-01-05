@@ -1,0 +1,19 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-2c55e08e {
+  background-color: #FFFFFF;
+}
+.verification-input.data-v-2c55e08e {
+  padding: 0 5px;
+}
+.verification-input view.data-v-2c55e08e {
+  border-bottom: 1px solid #000000;
+}
+.grace-form .grace-items .input.data-v-2c55e08e {
+  width: auto;
+  text-align: center !important;
+  margin-left: 0;
+}
+.again-btn.data-v-2c55e08e {
+  margin-top: 10px;
+}
