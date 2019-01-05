@@ -48,7 +48,6 @@ export default {
 				id: true,
 				size: true,
 			}, function (res){
-				console.log(res)
 				_self.swiperHeight =  res.height;
 			}).exec();
 		}

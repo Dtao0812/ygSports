@@ -491,10 +491,10 @@ let deviceFun = {
 	getSystemInfo:function(){
 		uni.getSystemInfo({
 			success: (res) => {
-				Store.commit("setSate",{id:'platform',value:res.platform});
-				Store.commit("setSate",{id:'version',value:res.version});
-				Store.commit("setSate",{id:'windowHeight',value:res.windowHeight});
-				Store.commit("setSate",{id:'windowWidth',value:res.windowWidth});
+				Store.commit("setState",{id:'platform',value:res.platform});
+				Store.commit("setState",{id:'version',value:res.version});
+				Store.commit("setState",{id:'windowHeight',value:res.windowHeight});
+				Store.commit("setState",{id:'windowWidth',value:res.windowWidth});
 			},
 			fail: () => {
 				tipsFun.toast.error('读取剪贴板失败')

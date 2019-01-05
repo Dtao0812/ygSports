@@ -1,5 +1,65 @@
-<import src="/components/page/index.vue.wxml" />
 <import src="/components/swiper/swiper.vue.wxml" />
+<import src="/components/uni/uni-popup.vue.wxml" />
+<import src="/components/default/popupBottom.vue.wxml" />
 <template name="0bf61c7e">
-  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'3Oe-1'],$root, $slotdefault:'data-v-3707f49a-default-3Oe-1',$slotcontent:'data-v-3707f49a-content-3Oe-1'}}" is="1bf0a167"></template>
+  <view class="_view data-v-3707f49a">
+    <view class="_view data-v-3707f49a content">
+      <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'P0G-0'],$root}}" is="fe072eac"></template>
+      <view class="_view data-v-3707f49a grace-wrap">
+        <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'468-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+          <view class="_view data-v-3707f49a grace-boxes-img">
+            <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
+          </view>
+          <view class="_view data-v-3707f49a grace-boxes-text">{{v.title}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3707f49a interval"></view>
+    <view class="_view data-v-3707f49a content">
+      <view class="_view data-v-3707f49a grace-imgitems home-product">
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_1.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">塑胶跑道</view>
+            <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+            <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+          </view>
+        </view>
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_2.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">塑胶球场</view>
+            <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+            <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+          </view>
+        </view>
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_3.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">人造草坪</view>
+            <view class="_view data-v-3707f49a home-product-items-text">项目预算</view>
+            <view class="_view data-v-3707f49a home-product-items-text">材料清单</view>
+          </view>
+        </view>
+        <view class="_view data-v-3707f49a grace-items">
+          <image class="_image data-v-3707f49a home-product-image" src="../../static/images/bg/mu_4.png" mode></image>
+          <view class="_view data-v-3707f49a home-product-items-content">
+            <view class="_view data-v-3707f49a home-product-items-title">更多产品</view>
+            <view class="_view data-v-3707f49a home-product-items-text">多种选择</view>
+            <view class="_view data-v-3707f49a home-product-items-text">品质如一</view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-3707f49a grace-title grace-nowrap grace-space-between" style="margin-top:60rpx;">
+        <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
+      </view>
+      <view class="_view data-v-3707f49a grace-imgitems">
+        <view class="_view data-v-3707f49a grace-items dynamic-item">
+          <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
+          <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+        </view>
+      </view>
+    </view>
+    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'rOZ-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'JvE-2'],$root, $slotdefault:'data-v-3707f49a-default-JvE-2'}}" is="cf32231e"></template>
+  </view>
 </template>

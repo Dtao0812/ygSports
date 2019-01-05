@@ -1,49 +1,51 @@
 <template>
-	<yg-page ref="ygPage">
-		<block slot="content" style="height: 100%;background-color: red;">
-			<uni-nav-bar color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" @click-left="showCity"  @click-right="scan">
-				<block slot="left">
-					<view class="manage">
-						<view class="grace-iconfont icon-shaixuan" style="font-size: 26px;color: #e6e6e6;"></view>
-					</view>
-				</block>
-				<view class="input-view">
-					<uni-icon className="product-search" type="search" size="22" color="#666666"></uni-icon>
-					<input confirm-type="search" @confirm="confirm" class="input" type="text" placeholder="单组份跑道面胶" />
+	<view class="content">
+		<uni-nav-bar color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" @click-left="showCity"  @click-right="scan">
+			<block slot="left">
+				<view class="manage">
+					<view class="grace-iconfont icon-shaixuan" style="font-size: 26px;color: #e6e6e6;"></view>
 				</view>
-				<block slot="right">
-					<view class="grace-iconfont icon-time" style="font-size: 26px;color: #e6e6e6;"></view>
-				</block>
-			</uni-nav-bar>
-			<scroll-view class="grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
-				<view v-for="(tab, index) in tabs" :key="index" :class="[tabCurrentIndex == index ? 'grace-tab-current' : '']" :id="'tabTag-'+index" @tap="tabChange">{{tab.name}}</view>
-			</scroll-view>
-			<swiper class="grace-tab-swiper-full" :current="swiperCurrentIndex" @change="swiperChange" :style="{height:tabHeight+'px'}">
-				<swiper-item v-for="(news, newsIndex) in newsAll" :key="newsIndex">
-					<scroll-view scroll-y="true" :data-scindex="newsIndex" @scrolltolower="scrollend">
-						<view class="grace-news-list" style="">
-							<view v-for="(item, index) in news" :key="index" @tap="toDetail(item)">
-								<view class="grace-news-list-items">
-									<image src="../../static/images/bg/mu_1.png" class="grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
-									<view class="grace-news-list-title">
-										<view class="grace-news-list-title-main">单组份防水地胶</view>
-										<text class="grace-news-list-title-desc grace-text-overflow">透气 净味</text>
-										<view class="grace-news-list-text">
-											<text class="grace-news-list-price">￥32.00</text>
-											<text class="grace-news-list-icon">
-												<yg-icon type="xin" color="#08C7B5"></yg-icon>
-											</text>
-										</view>
+			</block>
+			<view class="input-view">
+				<uni-icon className="product-search" type="search" size="22" color="#666666"></uni-icon>
+				<input confirm-type="search" @confirm="confirm" class="input" type="text" placeholder="单组份跑道面胶" />
+			</view>
+			<block slot="right">
+				<view class="grace-iconfont icon-time" style="font-size: 26px;color: #e6e6e6;"></view>
+			</block>
+		</uni-nav-bar>
+		<scroll-view class="grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
+			<view v-for="(tab, index) in tabs" :key="index" :class="[tabCurrentIndex == index ? 'grace-tab-current' : '']" :id="'tabTag-'+index" @tap="tabChange">{{tab.name}}</view>
+		</scroll-view>
+		<swiper class="grace-tab-swiper-full" :current="swiperCurrentIndex" @change="swiperChange" :style="{height:tabHeight+'px'}">
+			<swiper-item v-for="(news, newsIndex) in newsAll" :key="newsIndex">
+				<scroll-view scroll-y="true" :data-scindex="newsIndex" @scrolltolower="scrollend">
+					<view class="grace-news-list" style="">
+						<view v-for="(item, index) in news" :key="index" @tap="toDetail(item)">
+							<view class="grace-news-list-items">
+								<image src="../../static/images/bg/mu_1.png" class="grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
+								<view class="grace-news-list-title">
+									<view class="grace-news-list-title-main">单组份防水地胶</view>
+									<text class="grace-news-list-title-desc grace-text-overflow">透气 净味</text>
+									<view class="grace-news-list-text">
+										<text class="grace-news-list-price">￥32.00</text>
+										<text class="grace-news-list-icon">
+											<yg-icon type="xin" color="#000000"></yg-icon>
+										</text>
 									</view>
 								</view>
 							</view>
 						</view>
-						<graceLoading :loadingType="tabs[newsIndex].loadingType"></graceLoading>
-					</scroll-view>
-				</swiper-item>
-			</swiper>
-		</block>
-	</yg-page>
+					</view>
+					<graceLoading :loadingType="tabs[newsIndex].loadingType"></graceLoading>
+				</scroll-view>
+			</swiper-item>
+		</swiper>
+		<!-- 底部 -->
+		<uni-popup :show="tabBarAddState" type="bottom" msg="订单设计" v-on:hidePopup="hidePopup">
+			<popup-item></popup-item>
+		</uni-popup>
+	</view>
 </template>
 
 <script>
@@ -64,16 +66,18 @@
 	];
 	//对应下面3个标签的新闻内容数据
 	var newsAll = [news, news, news,news];
-	import ygPage from '@/components/page/index.vue';
 	import uniNavBar from '@/components/uni/uni-nav-bar.vue';
 	import uniIcon from '@/components/uni/uni-icon.vue';
 	import graceLoading from "@/components/grace/graceLoading.vue";
+	import uniPopup from '@/components/uni/uni-popup.vue';
+	import popupItem from '@/components/default/popupBottom.vue';
 	export default {
 		components:{
-			ygPage,uniNavBar,uniIcon,graceLoading
+			uniPopup,popupItem,uniNavBar,uniIcon,graceLoading
 		},
 		data() {
 			return {
+				showPopupBottom: false,
 				tabCurrentIndex: 0,
 				swiperCurrentIndex: 0,
 				tabHeight : 300,
@@ -85,6 +89,11 @@
 					{ name: '更多产品', id: '4', loadingType: 0, page: 1}
 				],
 				newsAll: newsAll
+			}
+		},
+		computed:{
+			tabBarAddState(){
+				return this.$store.state.tabBarAddState;
 			}
 		},
 		onLoad:function(){
@@ -99,10 +108,13 @@
 				if(!res2){return ;}
 				//计算得出滚动区域的高度
 				this.tabHeight = windowHeight - res2.height - 44;
-				console.log(this.tabHeight)
 			}).exec();
 		},
 		methods:{
+			//统一的关闭popup方法
+			hidePopup: function() {
+				this.$store.commit("setState",{id:"tabBarAddState",value:false});
+			},
 			tabChange: function (e) {
 				var index = e.target.id.replace('tabTag-', '');
 				this.swiperCurrentIndex = index;
@@ -145,6 +157,11 @@
 				this.$openWin("proDetail");
 			}
 		},
+		watch: {
+			tabBarAddState(val) {
+				this.showPopupBottom = val;
+			}
+		}
 	}
 </script>
 

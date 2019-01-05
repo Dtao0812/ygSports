@@ -3,7 +3,7 @@
     <view class="_view data-v-53ac0860 grace-h4 grace-blod" style="color:#000000;">设置昵称</view>
     <view class="_view data-v-53ac0860 grace-text-small" style="margin-top:5rpx"> 建议填写你的真实姓名，货物以及订单流程更清晰。此昵称以后可以随时更改 </view>
     <view class="_view data-v-53ac0860 grace-form" style="margin-top:10px;">
-      <form bindsubmit="handleProxy" data-eventid="{{'EwR-0'}}" data-comkey="{{$k}}" class="_form data-v-53ac0860">
+      <form bindsubmit="handleProxy" data-eventid="{{'liO-0'}}" data-comkey="{{$k}}" class="_form data-v-53ac0860">
         <view class="_view data-v-53ac0860 grace-items grace-items-wbg yg-bottom-link-blue">
           <input type="number" name="mobile" class="_input data-v-53ac0860 input" placeholder="请输入昵称" />
         </view>

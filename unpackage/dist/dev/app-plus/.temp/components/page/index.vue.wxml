@@ -1,7 +1,9 @@
 <import src="/components/slots" />
+<import src="/components/uni/uni-popup.vue.wxml" />
 <template name="1bf0a167">
   <view style="height: 100%;" class="_view data-v-1927fe16">
     <template name="content"></template>
     <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotcontent || 'content'}}"></template>
+    <template type="bottom" bindhidePopup="handleProxy" data-eventid="{{'JCR-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'mdu-1'],$root, $slotdefault:'data-v-1927fe16-default-mdu-1'}}" is="cf32231e"></template>
   </view>
 </template>

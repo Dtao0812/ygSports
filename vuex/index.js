@@ -12,6 +12,9 @@ const state = {
 	version: Config.C_Version,//当前版本
 	windowHeight:"",//屏幕高度
 	windowWidth:"",//屏幕宽度
+	
+	/*tabbar 加号点击状态*/
+	tabBarAddState:false,
 }
 
 // 同步加载
@@ -24,7 +27,7 @@ const mutations = {
 		state.hasLogin = false
 		state.openid = null
 	},
-	setSate(state,info){
+	setState(state,info){
 		state[info.id] = info.value;
 	}
 }

@@ -1,4 +1,76 @@
-<import src="/components/page/index.vue.wxml" />
+<import src="/components/uni/uni-popup.vue.wxml" />
+<import src="/components/default/popupBottom.vue.wxml" />
 <template name="47028641">
-  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'oO0-0'],$root, $slotdefault:'data-v-3a5bd749-default-oO0-0',$slotcontent:'data-v-3a5bd749-content-oO0-0'}}" is="1bf0a167"></template>
+  <view class="_view data-v-3a5bd749 content">
+    <view class="_view data-v-3a5bd749 grace-scroll-do">
+      <scroll-view class="_scroll-view data-v-3a5bd749 grace-scroll-x" scroll-x scroll-left="{{scrollIndex == index ? 180 : 0}}" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-id="{{index}}" scroll-with-animation="true" wx:key="index" key="{{index}}"
+        data-eventid="{{'O3v-2-'+index}}" data-comkey="{{$k}}" wx:for="{{msg}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-3a5bd749 grace-items">
+          <image src="{{item.img}}" mode="widthFix" class="_image data-v-3a5bd749"></image>
+          <view class="_view data-v-3a5bd749 contents">
+            <view class="_view data-v-3a5bd749 grace-h5 grace-blod">{{item.title}}
+              <text class="_text data-v-3a5bd749 grace-time">{{item.time}}</text>
+            </view>
+            <view class="_view data-v-3a5bd749 grace-text-small ellipsis-1">{{item.desc}}</view>
+          </view>
+        </view>
+        <view class="_view data-v-3a5bd749 grace-items btn btn-first" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'GFb-0-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? '0px' : btn1Width + 'px') +  ';' +  'background:' +  (item.status == '已读' ? '#CCCCCC' : '#5959D3') +  ';' +  'color:' +  (item.status == '已读' ? '#999' : '#FFF') +  ';')}}">{{item.status}}</view>
+        <view class="_view data-v-3a5bd749 grace-items btn" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'qEP-1-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}">删除</view>
+      </scroll-view>
+    </view>
+    <view class="_view data-v-3a5bd749 msg-list">
+      <view class="_view data-v-3a5bd749 uni-card">
+        <view class="_view data-v-3a5bd749 uni-card-header uni-card-media">
+          <view class="_view data-v-3a5bd749 uni-card-media-body">
+            <text class="_text data-v-3a5bd749 uni-card-media-text-top grace-h5 grace-blod">优冠客服</text>
+            <text class="_text data-v-3a5bd749 uni-card-media-text-bottom grace-text-small">2019-01-04 15:30</text>
+          </view>
+        </view>
+        <view class="_view data-v-3a5bd749 uni-card-content">
+          <view class="_view data-v-3a5bd749 uni-card-content-inner"> 优冠体育提醒您：配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。 </view>
+        </view>
+      </view>
+      <view class="_view data-v-3a5bd749 uni-card">
+        <view class="_view data-v-3a5bd749 uni-card-header uni-card-media">
+          <view class="_view data-v-3a5bd749 uni-card-media-body">
+            <text class="_text data-v-3a5bd749 uni-card-media-text-top grace-h5 grace-blod">到货确认提醒</text>
+            <text class="_text data-v-3a5bd749 uni-card-media-text-bottom grace-text-small">2019-01-04 15:30</text>
+          </view>
+        </view>
+        <view class="_view data-v-3a5bd749 uni-card-content">
+          <view class="_view data-v-3a5bd749 uni-card-content-inner">
+            <view class="_view data-v-3a5bd749">货车司机（XXX 188-8888-8888）您好！</view>
+            <view class="_view data-v-3a5bd749">订单编号：1231512421312312312312</view>
+            <view class="_view data-v-3a5bd749">生成时间：2018-10-28</view>
+            <view class="_view data-v-3a5bd749">目的地：XXX省XXX市XXX号</view>
+            <view class="_view data-v-3a5bd749">预计到货时间：2018-11-05</view>
+          </view>
+        </view>
+        <view class="_view data-v-3a5bd749 uni-card-footer">
+          <view class="_view data-v-3a5bd749 uni-card-footer-btn uni-card-footer-confirm">已送达，确认收货</view>
+        </view>
+      </view>
+      <view class="_view data-v-3a5bd749 uni-card">
+        <view class="_view data-v-3a5bd749 uni-card-header uni-card-media">
+          <view class="_view data-v-3a5bd749 uni-card-media-body">
+            <text class="_text data-v-3a5bd749 uni-card-media-text-top grace-h5 grace-blod">到货确认提醒</text>
+            <text class="_text data-v-3a5bd749 uni-card-media-text-bottom grace-text-small">2019-01-04 15:30</text>
+          </view>
+        </view>
+        <view class="_view data-v-3a5bd749 uni-card-content">
+          <view class="_view data-v-3a5bd749 uni-card-content-inner">
+            <view class="_view data-v-3a5bd749">货车司机（XXX 188-8888-8888）您好！</view>
+            <view class="_view data-v-3a5bd749">订单编号：1231512421312312312312</view>
+            <view class="_view data-v-3a5bd749">生成时间：2018-10-28</view>
+            <view class="_view data-v-3a5bd749">目的地：XXX省XXX市XXX号</view>
+            <view class="_view data-v-3a5bd749">预计到货时间：2018-11-05</view>
+          </view>
+        </view>
+        <view class="_view data-v-3a5bd749 uni-card-footer">
+          <view class="_view data-v-3a5bd749 uni-card-footer-btn uni-card-footer-default">已确认</view>
+        </view>
+      </view>
+    </view>
+    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'7pN-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'iSO-1'],$root, $slotdefault:'data-v-3a5bd749-default-iSO-1'}}" is="cf32231e"></template>
+  </view>
 </template>

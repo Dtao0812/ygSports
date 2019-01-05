@@ -6,11 +6,11 @@
     <template name="left"></template>
     <template name="default"></template>
     <template name="right"></template>
-    <template wx:if="{{insertStatusBar}}" data="{{...$root['0'], ...$root[$kk+'WYQ-0'],$root}}" is="0e8b4143"></template>
+    <template wx:if="{{insertStatusBar}}" data="{{...$root['0'], ...$root[$kk+'EWT-0'],$root}}" is="0e8b4143"></template>
     <view class="_view data-v-19fae6da uni-navbar-header" style=" {{('color:' + color + ';')}}">
-      <view class="_view data-v-19fae6da uni-navbar-header-btns" bindtap="handleProxy" data-eventid="{{'wax-0'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-19fae6da uni-navbar-header-btns" bindtap="handleProxy" data-eventid="{{'h1L-0'}}" data-comkey="{{$k}}">
         <view wx:if="{{leftIcon.length}}" class="_view data-v-19fae6da">
-          <template size="24" data="{{...$root['0'], ...$root[$kk+'VYk-1'],$root}}" is="09d4a078"></template>
+          <template size="24" data="{{...$root['0'], ...$root[$kk+'naK-1'],$root}}" is="09d4a078"></template>
         </view>
         <view wx:if="{{leftText.length}}" class="_view data-v-19fae6da uni-navbar-btn-text {{[!leftIcon.length ? 'uni-navbar-btn-icon-left' : '']}}">{{leftText}}</view>
         <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotleft || 'left'}}"></template>
@@ -19,9 +19,9 @@
         <view wx:if="{{title.length}}" class="_view data-v-19fae6da uni-navbar-container-title">{{title}}</view>
         <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
       </view>
-      <view class="_view data-v-19fae6da uni-navbar-header-btns" bindtap="handleProxy" data-eventid="{{'VmI-1'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-19fae6da uni-navbar-header-btns" bindtap="handleProxy" data-eventid="{{'f6N-1'}}" data-comkey="{{$k}}">
         <view wx:if="{{rightIcon.length}}" class="_view data-v-19fae6da">
-          <template size="24" data="{{...$root['0'], ...$root[$kk+'pvh-4'],$root}}" is="09d4a078"></template>
+          <template size="24" data="{{...$root['0'], ...$root[$kk+'htu-4'],$root}}" is="09d4a078"></template>
         </view>
         <view wx:if="{{rightText.length&&!rightIcon.length}}" class="_view data-v-19fae6da uni-navbar-btn-text">{{rightText}}</view>
         <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotright || 'right'}}"></template>

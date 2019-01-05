@@ -5,7 +5,7 @@
   height: auto;
 }
 .grace-swiper.data-v-3707f49a {
-  border-radius: 5px!important;
+  border-radius: 5px !important;
   overflow: hidden;
 }
 .grace-swiper swiper-item navigator image.data-v-3707f49a {
@@ -42,7 +42,7 @@
   position: absolute;
   top: 10px;
   left: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .home-product-items-title.data-v-3707f49a {
   font-size: 15px;
@@ -64,7 +64,7 @@
   font-size: 42rpx;
 }
 .dynamic-icon.data-v-3707f49a {
-  color: #6AA328;
+  color: #6aa328;
   font-size: 32px;
 }
 .dynamic-item.data-v-3707f49a {

@@ -3,15 +3,15 @@
     <view class="_view data-v-843efc2a login-box">
       <view class="_view data-v-843efc2a login-box-title">优冠体育</view>
       <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入手机号" data-eventid="{{'MNP-0'}}" data-comkey="{{$k}}" />
+        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入手机号" data-eventid="{{'Nad-0'}}" data-comkey="{{$k}}" />
       </view>
       <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入密码" data-eventid="{{'2oX-1'}}" data-comkey="{{$k}}" />
+        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入密码" data-eventid="{{'VMd-1'}}" data-comkey="{{$k}}" />
       </view>
       <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input authcode" type="text" placeholder="请输入验证码" data-eventid="{{'w13-2'}}" data-comkey="{{$k}}" />
+        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input authcode" type="text" placeholder="请输入验证码" data-eventid="{{'4Tt-2'}}" data-comkey="{{$k}}" />
         <view class="_view data-v-843efc2a login-box-getauthcode">
-          <button type="primary" class="_button data-v-843efc2a thisBtn" bindtap="handleProxy" style="width: 200rpx; font-size: 25rpx;margin-top: 5rpx; background:#6aa328;" data-eventid="{{'VvE-3'}}" data-comkey="{{$k}}">点击获取</button>
+          <button type="primary" class="_button data-v-843efc2a thisBtn" bindtap="handleProxy" style="width: 200rpx; font-size: 25rpx;margin-top: 5rpx; background:#6aa328;" data-eventid="{{'cIB-3'}}" data-comkey="{{$k}}">点击获取</button>
         </view>
       </view>
       <view class="_view data-v-843efc2a login-box-button">

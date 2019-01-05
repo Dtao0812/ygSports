@@ -1,0 +1,52 @@
+@import "../../common/vendor.wxss";
+
+.uni-scroll-view.data-v-27eae9a0 {
+  height: 100%;
+  position: relative;
+}
+.list-content.data-v-27eae9a0 {
+  background-color: #efeff4;
+}
+.uni-mask.data-v-27eae9a0 {
+  height: 1000px;
+  width: 100%;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.3);
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+}
+.grace-news-list.data-v-27eae9a0 {
+  padding: 0;
+  background: #FFFFFF;
+}
+.grace-news-list-items.data-v-27eae9a0 {
+  border-bottom: 1px dashed #DDD;
+  padding: 12px;
+}
+.grace-news-list-img.data-v-27eae9a0 {
+  height: 80px !important;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #d8d8d8;
+  border-radius: 10rpx;
+}
+.grace-news-list-title-desc.data-v-27eae9a0 {
+  padding: 5px 0;
+}
+.grace-news-list-text.data-v-27eae9a0 {
+  position: relative;
+}
+.grace-news-list-price.data-v-27eae9a0 {
+  color: #F00;
+}
+.grace-news-list-icon.data-v-27eae9a0 {
+  position: absolute;
+  right: 30px;
+}

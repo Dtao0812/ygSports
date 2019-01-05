@@ -1,0 +1,119 @@
+<import src="/components/grace/graceSwiper.vue.wxml" />
+<import src="/components/icon/icon.vue.wxml" />
+<import src="/components/grace/graceNumberBox.vue.wxml" />
+<template name="2c84e38a">
+  <view class="_view data-v-b75498fc">
+    <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'2GT-0'],$root}}" is="9472350c"></template>
+    <view class="_view data-v-b75498fc garce-padding grace-nowrap product-header" style="background:#FFF; padding:30rpx 2%;">
+      <view class="_view data-v-b75498fc grace-product-title">
+        <view class="_view data-v-b75498fc grace-product-price garce-padding">
+          <text class="_text data-v-b75498fc grace-text-small">￥</text>{{product.price}}</view> {{product.name}} </view>
+      <view class="_view data-v-b75498fc grace-product-share" bindtap="handleProxy" data-eventid="{{'mys-0'}}" data-comkey="{{$k}}">
+        <template type="xin" color="#000000" data="{{...$root['0'], ...$root[$kk+'rgN-1'],$root}}" is="539de54a"></template>
+      </view>
+    </view>
+    <view class="_view data-v-b75498fc grace-product-item" bindtap="handleProxy" data-eventid="{{'ZzY-1'}}" data-comkey="{{$k}}">
+      <navigator class="_navigator data-v-b75498fc grace-list">
+        <text class="_text data-v-b75498fc grace-list-text product-list-text">已选</text>
+        <view class="_view data-v-b75498fc">
+          <text class="_text data-v-b75498fc grace-list-text grace-list-mr">181095588**</text>
+          <text class="_text data-v-b75498fc grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+        </view>
+      </navigator>
+    </view>
+    <view class="_view data-v-b75498fc grace-product-item">
+      <navigator class="_navigator data-v-b75498fc grace-list">
+        <text class="_text data-v-b75498fc grace-list-text product-list-text">送至</text>
+        <view class="_view data-v-b75498fc">
+          <text class="_text data-v-b75498fc grace-list-text grace-list-mr">181095588**</text>
+          <text class="_text data-v-b75498fc grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
+        </view>
+      </navigator>
+    </view>
+    <view class="_view data-v-b75498fc grace-product-menu">
+      <view bindtap="handleProxy" data-eventid="{{'a1u-2'}}" data-comkey="{{$k}}" class="_view data-v-b75498fc {{[active == 1 ? 'active' : '']}}">商品详情</view>
+      <view bindtap="handleProxy" data-eventid="{{'8xI-3'}}" data-comkey="{{$k}}" class="_view data-v-b75498fc {{[active == 2 ? 'active' : '']}}">商品评论</view>
+    </view>
+    <view class="_view data-v-b75498fc grace-product-info" hidden="{{!(active == 1)}}">
+      <view class="_view data-v-b75498fc product-info-item">
+        <view class="_view data-v-b75498fc product-info-title grace-blod">一、环保能力</view>
+        <view class="_view data-v-b75498fc product-info-desc"> 改性TPU运动场材料由公司自主研发，不含短链氯化石蜡苯、甲苯、二甲苯、游离甲苯二异氰酸酯(TDI)等毒性物质，无刺激性气味，不含铅、汞、铬、镉等重金属物质；能与对环境质量要求极高的娃娃鱼“共生”。因其绿色、环保，2015年12月董事长钟高明先生参与的《社情民意》刊发的《关于我省率先推广“改性TPU运动场材料”的建议》得到相关省领导，时任湖南省副省长李有志，湖南省体育局局长李舜等领导的重要批示。 </view>
+      </view>
+      <view class="_view data-v-b75498fc product-info-item">
+        <view class="_view data-v-b75498fc product-info-title grace-blod">一、环保能力</view>
+        <view class="_view data-v-b75498fc product-info-desc"> 改性TPU运动场材料由公司自主研发，不含短链氯化石蜡苯、甲苯、二甲苯、游离甲苯二异氰酸酯(TDI)等毒性物质，无刺激性气味，不含铅、汞、铬、镉等重金属物质；能与对环境质量要求极高的娃娃鱼“共生”。因其绿色、环保，2015年12月董事长钟高明先生参与的《社情民意》刊发的《关于我省率先推广“改性TPU运动场材料”的建议》得到相关省领导，时任湖南省副省长李有志，湖南省体育局局长李舜等领导的重要批示。 </view>
+      </view>
+    </view>
+    <view class="_view data-v-b75498fc grace-product-info" hidden="{{!(active == 2)}}">
+      <view class="_view data-v-b75498fc grace-comment">
+        <view class="_view data-v-b75498fc grace-comment-list">
+          <view class="_view data-v-b75498fc grace-comment-face">
+            <image src="../../static/logo.png" mode="widthFix" class="_image data-v-b75498fc"></image>
+          </view>
+          <view class="_view data-v-b75498fc grace-comment-body">
+            <view class="_view data-v-b75498fc grace-comment-top">
+              <text class="_text data-v-b75498fc">今生缘</text>
+            </view>
+            <view class="_view data-v-b75498fc grace-comment-content">非常好的，速度很快！</view>
+            <view class="_view data-v-b75498fc grace-comment-date">
+              <text class="_text data-v-b75498fc">08/10 07:55</text>
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-b75498fc grace-comment-list">
+          <view class="_view data-v-b75498fc grace-comment-face">
+            <image src="../../static/logo.png" mode="widthFix" class="_image data-v-b75498fc"></image>
+          </view>
+          <view class="_view data-v-b75498fc grace-comment-body">
+            <view class="_view data-v-b75498fc grace-comment-top">
+              <text class="_text data-v-b75498fc">客户002</text>
+            </view>
+            <view class="_view data-v-b75498fc grace-comment-content">物理很快，手机很喜欢！</view>
+            <view class="_view data-v-b75498fc grace-comment-date">
+              <text class="_text data-v-b75498fc">08/10 07:55</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style="height:60px;" class="_view data-v-b75498fc"></view>
+    <view class="_view data-v-b75498fc grace-footer">
+      <view class="_view data-v-b75498fc grace-product-btn" style="width: 50%;background: #d2d2d2;" bindtap="handleProxy" data-eventid="{{'S9m-4'}}" data-comkey="{{$k}}">立即购买</view>
+      <view class="_view data-v-b75498fc grace-product-btn" style="background:#6aa328;width: 50%;">加入清单</view>
+    </view>
+    <view class="_view data-v-b75498fc grace-mask" style="z-index:5;" wx:if="{{attrIsShow}}">
+      <view class="_view data-v-b75498fc grace-product-attr" wx:if="{{attrIsShow}}">
+        <form bindsubmit="handleProxy" class="_form data-v-b75498fc grace-form" data-eventid="{{'pWW-8'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-b75498fc grace-product-attr-close" bindtap="handleProxy" data-eventid="{{'ar3-5'}}" data-comkey="{{$k}}">
+            <text class="_text data-v-b75498fc grace-iconfont icon-close2"></text>
+          </view>
+          <view class="_view data-v-b75498fc grace-product-attr-info">
+            <image src="{{product.logo}}" mode="widthFix" class="_image data-v-b75498fc"></image>
+            <view class="_view data-v-b75498fc title"> {{product.name}}
+              <text class="_text data-v-b75498fc">\n库存 : 1999件</text>
+            </view>
+          </view>
+          <view style="height:calc(100% - 155px); overflow-y:auto;" class="_view data-v-b75498fc">
+            <view class="_view data-v-b75498fc grace-product-attr-list">
+              <view class="_view data-v-b75498fc title">订单类型</view>
+              <view class="_view data-v-b75498fc grace-select-tips">
+                <radio-group bindchange="handleProxy" name="type" data-eventid="{{'ahC-6'}}" data-comkey="{{$k}}" class="_radio-group data-v-b75498fc">
+                  <label wx:key="index" key="{{index}}" wx:for="{{typeTips}}" wx:for-index="index" wx:for-item="item" class="_label data-v-b75498fc {{[item.checked ? 'grace-checked' : '']}}">
+                    <radio value="{{item.value}}" checked="{{item.checked}}" class="_radio data-v-b75498fc" /> {{item.name}} </label>
+                </radio-group>
+              </view>
+            </view>
+            <view class="_view data-v-b75498fc grace-items" style="margin-top:8px;">
+              <view class="_view data-v-b75498fc grace-label">购买数量</view>
+              <input type="number" name="buynum" value="{{buyNum}}" style="display:none;" class="_input data-v-b75498fc" />
+              <template bindchange="handleProxy" data-eventid="{{'Awx-7'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'7f4-3'],$root}}" is="2af736a0"></template>
+            </view>
+          </view>
+          <view class="_view data-v-b75498fc grace-product-attr-btn">
+            <button type="warn" formType="submit" class="_button data-v-b75498fc">确定</button>
+          </view>
+        </form>
+      </view>
+    </view>
+  </view>
+</template>

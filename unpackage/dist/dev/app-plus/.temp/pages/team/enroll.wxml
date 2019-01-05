@@ -1,0 +1,1 @@
+<import src="/pages/team/enroll.vue.wxml" /><template is="d2cdd8ee" data="{{ ...$root['0'], $root }}"/>

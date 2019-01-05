@@ -32,10 +32,60 @@
 			}
 		},
 		{
+			"path": "pages/message/msgList",
+			"style": {
+				"navigationBarTitleText": "系统消息"
+			}
+		},
+		{
+			"path": "pages/message/msgOrder",
+			"style": {
+				"navigationBarTitleText": "订单消息"
+			}
+		},
+		{
 			"path": "pages/my/index",
 			"style": {
 				"navigationBarTitleText": "我的",
 				"titleNView":false
+			}
+		},
+		{
+			"path": "pages/my/collection",
+			"style": {
+				"navigationBarTitleText": "我的搜藏",
+				"enablePullDownRefresh" : true
+			}
+		},
+		{
+			"path": "pages/my/customer",
+			"style": {
+				"navigationBarTitleText": "我的客户",
+				"enablePullDownRefresh" : true
+			}
+		},
+		{
+			"path": "pages/my/capital",
+			"style": {
+				"navigationBarTitleText": "我的资金"
+			}
+		},
+		{
+			"path": "pages/my/applyCapital",
+			"style": {
+				"navigationBarTitleText": "申请提现"
+			}
+		},
+		{
+			"path": "pages/my/statistics",
+			"style": {
+				"navigationBarTitleText": "统计信息"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单管理"
 			}
 		},
 		{
@@ -85,6 +135,12 @@
 			"path": "pages/team/enroll",
 			"style": {
 				"navigationBarTitleText": "施工团队报名"
+			}
+		},
+		{
+			"path": "pages/detailed/index",
+			"style": {
+				"navigationBarTitleText": "清单信息"
 			}
 		}
 	],

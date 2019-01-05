@@ -14,7 +14,17 @@ const _routers = [
 	{ title: '产品详情',name: 'proDetail',path: '/pages/product/detail' },
 	
 	{ title: '消息',name: 'message',path: '/pages/message/index' },
+	{ title: '系统消息',name: 'msgList',path: '/pages/message/msgList' },
+	{ title: '订单消息',name: 'orderList',path: '/pages/message/msgOrder' },
+	
 	{ title: '我的',name: 'my',path: '/pages/my/index' },
+	{ title: '我的收藏',name: 'myCollection',path: '/pages/my/collection' },
+	{ title: '我的客户',name: 'myCustomer',path: '/pages/my/customer' },
+	{ title: '我的资金',name: 'myCapital',path: '/pages/my/capital' },
+	{ title: '申请提现',name: 'applyCapital',path: '/pages/my/applyCapital' },
+	{ title: '我的统计',name: 'statistics',path: '/pages/my/statistics' },
+	
+	{ title: '订单管理',name: 'order',path: '/pages/order/index' },
 	
 	{ title: '个人信息',name: 'setUser',path: '/pages/my/set' },
 	
@@ -27,6 +37,8 @@ const _routers = [
 	
 	{ title: '施工团队',name: 'team',path: '/pages/team/index' },
 	{ title: '报名团队',name: 'enrollTeam',path: '/pages/team/enroll' },
+	
+	{ title: '清单管理',name: 'detailed',path: '/pages/detailed/index' },
 	
 ];
 
