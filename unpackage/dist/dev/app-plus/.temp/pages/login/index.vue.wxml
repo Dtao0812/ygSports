@@ -3,10 +3,10 @@
     <view class="_view data-v-843efc2a login-box">
       <view class="_view data-v-843efc2a login-box-title">优冠体育</view>
       <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入手机号" data-eventid="{{'Foc-0'}}" data-comkey="{{$k}}" />
+        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入手机号" data-eventid="{{'txj-0'}}" data-comkey="{{$k}}" />
       </view>
       <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入密码" data-eventid="{{'nVO-1'}}" data-comkey="{{$k}}" />
+        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入密码" data-eventid="{{'2Qg-1'}}" data-comkey="{{$k}}" />
       </view>
       <view class="_view data-v-843efc2a login-box-button">
         <button class="_button data-v-843efc2a yg-button-default" type="primary">登录</button>

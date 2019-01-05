@@ -13,10 +13,16 @@ const _routers = [
 	{ title: '消息',name: 'message',path: '/pages/message/index' },
 	{ title: '我的',name: 'my',path: '/pages/my/index' },
 	
+	{ title: '个人信息',name: 'setUser',path: '/pages/my/set' },
+	
 	{ title: '登录',name: 'login',path: '/pages/login/index' },
 	{ title: '注册-手机',name: 'registerOne',path: '/pages/register/registerOne' },
 	{ title: '注册-验证',name: 'registerTwo',path: '/pages/register/registerTwo' },
 	{ title: '注册-设置',name: 'registerThree',path: '/pages/register/registerThree' },
+	
+	{ title: '货运物流',name: 'logistics',path: '/pages/logistics/index' },
+	
+	{ title: '施工团队',name: 'team',path: '/pages/team/index' },
 	
 ];
 

@@ -1,0 +1,29 @@
+<import src="/components/grace/graceLoading.vue.wxml" />
+<import src="/threeComponents/mpvueCityPicker.vue.wxml" />
+<template name="ebc40c82">
+  <view class="_view data-v-74950db1 content">
+    <view class="_view data-v-74950db1 yg-title grace-center" id="grace-tab-title">
+      <view class="_view data-v-74950db1 grace-items">
+        <view class="_view data-v-74950db1">施工团队报名</view>
+      </view>
+    </view>
+    <view class="_view data-v-74950db1 yg-title grace-center" id="grace-tab-title2">
+      <view class="_view data-v-74950db1 grace-items">
+        <view class="_view data-v-74950db1 grace-label grace-blod picker-label">施工团队推荐</view>
+        <view bindtap="handleProxy" class="_view data-v-74950db1 picker-item" data-eventid="{{'aSy-0'}}" data-comkey="{{$k}}"> {{cityText}}
+          <text class="_text data-v-74950db1 grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" bindscrolltolower="handleProxy" data-eventid="{{'uEo-1'}}" data-comkey="{{$k}}" class="_scroll-view data-v-74950db1" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
+      <view class="_view data-v-74950db1 grace-imgitems">
+        <view class="_view data-v-74950db1 grace-items" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+          <image src="../../static/images/bg/my_head.png" mode="widthFix" class="_image data-v-74950db1"></image>
+          <view class="_view data-v-74950db1 grace-imgitems-text grace-h4">雨花区XXX物流公司</view>
+        </view>
+      </view>
+      <template data="{{...$root['0'], ...$root[$kk+'pgR-0'],$root}}" is="c4c046ac"></template>
+    </scroll-view>
+    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'vW2-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'B5b-1'],$root}}" is="02eb48d0"></template>
+  </view>
+</template>

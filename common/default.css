@@ -1,6 +1,13 @@
 /* 全局样式 */
 uni-page-body, uni-page-refresh{height: 100%;}
-.content{padding: 10px;background-color: #FFFFFF;height: 100%;}
+.content{background-color: #FFFFFF;height: 100%;padding: 10px;}
+.yg-title{height: 45px;line-height: 45px;background-color: #FFFFFF;}
+
+/* 基础样式 */
+.pl-0{padding-left: 0;}.pl-5{padding-left: 5px;}.pl-10{padding-left: 10px !important;}.pl-20{padding-left: 20px;}
+.pr-0{padding-left: 0;}.pr-5{padding-right: 5px;}.pr-10{padding-right: 10px !important;}.pr-20{padding-right: 20px;}
+
+.text-r{text-align: right;}
 
 /* 多行省略 */
 .ellipsis-1{ white-space: nowrap;text-overflow: ellipsis;overflow: hidden;word-break: break-all;}
@@ -11,7 +18,7 @@ uni-page-body, uni-page-refresh{height: 100%;}
 .yg-text-color-green{color:#6aa328;}
 
 /* 按钮样式 */
-.yg-button-default{ background-color: #6aa328 !important; height: 30px;line-height: 30px;}
+.yg-button-default{ background-color: #6aa328 !important; height: 30px;line-height: 30px; color: #FFFFFF;}
 
 /* 线条样式 */
 .yg-bottom-link-blue{border-bottom: 1upx solid #7ecef4 !important;}

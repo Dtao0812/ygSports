@@ -4,41 +4,41 @@
     <view class="_view data-v-2c55e08e grace-text-small" style="margin-top:5rpx"> 我们已给手机号码
       <text class="_text data-v-2c55e08e yg-text-color-green">+86 13645180745</text>发送了一个6位数验证码 </view>
     <view class="_view data-v-2c55e08e grace-form" style="margin-top:10px;">
-      <form bindsubmit="handleProxy" data-eventid="{{'uYS-7'}}" data-comkey="{{$k}}" class="_form data-v-2c55e08e">
+      <form bindsubmit="handleProxy" data-eventid="{{'B8j-7'}}" data-comkey="{{$k}}" class="_form data-v-2c55e08e">
         <view class="_view data-v-2c55e08e grace-items grace-items-wbg">
           <view class="_view data-v-2c55e08e verification-input">
             <view class="_view data-v-2c55e08e">
-              <input type="number" value="{{code_1}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'BNe-0'}}" data-comkey="{{$k}}" />
+              <input type="number" value="{{code_1}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'GNi-0'}}" data-comkey="{{$k}}" />
             </view>
           </view>
           <view class="_view data-v-2c55e08e verification-input">
             <view class="_view data-v-2c55e08e">
-              <input type="number" value="{{code_2}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'AV0-1'}}" data-comkey="{{$k}}" />
+              <input type="number" value="{{code_2}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'ki9-1'}}" data-comkey="{{$k}}" />
             </view>
           </view>
           <view class="_view data-v-2c55e08e verification-input">
             <view class="_view data-v-2c55e08e">
-              <input type="number" value="{{code_3}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'b4N-2'}}" data-comkey="{{$k}}" />
+              <input type="number" value="{{code_3}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'zcZ-2'}}" data-comkey="{{$k}}" />
             </view>
           </view>
           <view class="_view data-v-2c55e08e verification-input">
             <view class="_view data-v-2c55e08e">
-              <input type="number" value="{{code_4}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'egn-3'}}" data-comkey="{{$k}}" />
+              <input type="number" value="{{code_4}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'dnv-3'}}" data-comkey="{{$k}}" />
             </view>
           </view>
           <view class="_view data-v-2c55e08e verification-input">
             <view class="_view data-v-2c55e08e">
-              <input type="number" value="{{code_5}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'DKW-4'}}" data-comkey="{{$k}}" />
+              <input type="number" value="{{code_5}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'mQz-4'}}" data-comkey="{{$k}}" />
             </view>
           </view>
           <view class="_view data-v-2c55e08e verification-input">
             <view class="_view data-v-2c55e08e">
-              <input type="number" value="{{code_6}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'Fsp-5'}}" data-comkey="{{$k}}" />
+              <input type="number" value="{{code_6}}" bindinput="handleProxy" class="_input data-v-2c55e08e input" placeholder data-eventid="{{'lMI-5'}}" data-comkey="{{$k}}" />
             </view>
           </view>
         </view>
         <view class="_view data-v-2c55e08e again-btn yg-text-color-green">重新发送</view>
-        <view class="_view data-v-2c55e08e again-btn yg-text-color-green" bindtap="handleProxy" data-eventid="{{'dxQ-6'}}" data-comkey="{{$k}}">测试下一步</view>
+        <view class="_view data-v-2c55e08e again-btn yg-text-color-green" bindtap="handleProxy" data-eventid="{{'l9e-6'}}" data-comkey="{{$k}}">测试下一步</view>
       </form>
     </view>
   </view>

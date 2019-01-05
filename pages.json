@@ -28,6 +28,12 @@
 			}
 		},
 		{
+			"path": "pages/my/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
 			"path": "pages/login/index",
 			"style": {
 				"navigationBarTitleText": "登录",
@@ -50,6 +56,18 @@
 			"path": "pages/register/registerThree",
 			"style": {
 				"navigationBarTitleText": "新用户注册"
+			}
+		},
+		{
+			"path": "pages/logistics/index",
+			"style": {
+				"navigationBarTitleText": "货运物流"
+			}
+		},
+		{
+			"path": "pages/team/index",
+			"style": {
+				"navigationBarTitleText": "施工团队"
 			}
 		}
 	],

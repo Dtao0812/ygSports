@@ -55,8 +55,7 @@
 		methods: {
 			//设置用户
 			setInfo(){
-				console.log('xxxx')
-				this.$openWin("login");
+				this.$openWin("setUser");
 			}
 		}
 	}

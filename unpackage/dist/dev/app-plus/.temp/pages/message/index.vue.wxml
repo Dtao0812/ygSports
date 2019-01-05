@@ -1,4 +1,4 @@
 <import src="/components/page/index.vue.wxml" />
 <template name="47028641">
-  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'lCy-0'],$root, $slotdefault:'data-v-3a5bd749-default-lCy-0',$slotcontent:'data-v-3a5bd749-content-lCy-0'}}" is="1bf0a167"></template>
+  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'oO0-0'],$root, $slotdefault:'data-v-3a5bd749-default-oO0-0',$slotcontent:'data-v-3a5bd749-content-oO0-0'}}" is="1bf0a167"></template>
 </template>

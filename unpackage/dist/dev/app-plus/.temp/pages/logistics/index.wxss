@@ -1,0 +1,37 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-2c2816d6 {
+  background-color: #EEEEEE;
+  padding: 0;
+}
+.grace-items.data-v-2c2816d6 {
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 5px 0;
+  text-align: center;
+}
+.picker-label.data-v-2c2816d6 {
+  width: 100px;
+  float: left;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 45px;
+}
+.picker-item.data-v-2c2816d6 {
+  border: 1px solid #6aa328;
+  width: calc(100% - 130px);
+  float: right;
+  text-align: center;
+  margin: 0;
+  margin-right: 20px !important;
+  border-radius: 5px;
+  color: #888888;
+  padding: 0;
+  line-height: 25px;
+  margin-top: 8px;
+  font-size: 26rpx;
+}
+.picker-icon.data-v-2c2816d6 {
+  float: right;
+}

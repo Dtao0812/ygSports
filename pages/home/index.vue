@@ -7,7 +7,7 @@
 				
 				<!-- nav按钮 -->
 				<view class="grace-wrap">
-					<view class="grace-boxes" v-for="(v,i) in navItems" :key="i">
+					<view class="grace-boxes" v-for="(v,i) in navItems" :key="i" @tap="onNavBtn(v.path)">
 						<view class="grace-boxes-img">
 							<image class="grace-boxes-image" :src="v.imgUrl" mode="widthFix"></image>
 						</view>
@@ -85,8 +85,8 @@
 					{ imgUrl: '../../static/images/icon/nav_1.png',path: '',title:'订单管理' },
 					{ imgUrl: '../../static/images/icon/nav_2.png',path: '',title:'业务查询' },
 					{ imgUrl: '../../static/images/icon/nav_3.png',path: '',title:'清单管理' },
-					{ imgUrl: '../../static/images/icon/nav_4.png',path: '',title:'货运物流' },
-					{ imgUrl: '../../static/images/icon/nav_5.png',path: '',title:'施工团队' },
+					{ imgUrl: '../../static/images/icon/nav_4.png',path: 'logistics',title:'货运物流' },
+					{ imgUrl: '../../static/images/icon/nav_5.png',path: 'team',title:'施工团队' },
 				]
 			}
 		},
@@ -120,7 +120,10 @@
 			//#endif
 		},
 		methods: {
-	
+			// nav点击
+			onNavBtn(path){
+				this.$openWin(path);
+			}
 		}
 	}
 </script>
