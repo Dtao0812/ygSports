@@ -4,6 +4,12 @@
 			<view class="login-box-title">优冠体育</view>
 			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入手机号" /></view>
 			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入密码" /></view>
+			<view class="login-box-input">
+				<input @confirm="confirm" class="input authcode" type="text" placeholder="请输入验证码" />
+				  <view class="login-box-getauthcode">
+				    <button type="primary" class="thisBtn" @tap="getAuthcode" style="width: 200upx; font-size: 25upx;margin-top: 5upx; background:#6aa328;">点击获取</button>
+				</view>
+			</view>
 			<view class="login-box-button">
 				<button class="yg-button-default" type="primary">登录</button>
 			</view>
@@ -28,7 +34,9 @@
 		}
 	}
 </script>
-
+<style>
+	page{width:750upx; min-height:100%; background:url('http://47.105.198.16/appresources/logobg.png') no-repeat top center; background-size:100% ; }	
+</style>
 <style scoped>
 	.content{
 		padding: 0;
@@ -99,5 +107,12 @@
 		display: inline;
 		font-size: 12px;
 		border: 0 !important;
+	}
+	.login-box-getauthcode{
+		width:32%;
+		right: 120upx;
+		margin-top: -70upx;
+		float:right;
+		margin-right:48upx
 	}
 </style>
