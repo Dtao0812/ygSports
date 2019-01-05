@@ -1,14 +1,50 @@
+@import "../../common/vendor.wxss";
 
-.content {
+.content.data-v-3a5bd749 {
+  background-color: #eeeeee;
+  height: 100%;
+  padding: 0 !important;
+}
+.grace-scroll-do.data-v-3a5bd749 {
+  background-color: #FFFFFF;
+}
+.grace-time.data-v-3a5bd749 {
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  right: 10px;
+}
+.msg-list.data-v-3a5bd749 {
+  margin: 10px;
+}
+.msg-list .uni-card-header.data-v-3a5bd749:after,
+.msg-list .uni-card-footer.data-v-3a5bd749:before {
+  height: 0;
+}
+.msg-list .uni-card-content-inner.data-v-3a5bd749 {
+  font-size: 12px;
+  padding: 10px 15px;
+}
+.uni-card-footer.data-v-3a5bd749 {
+  position: relative;
+}
+.uni-card-footer-btn.data-v-3a5bd749 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
-  height: 400rpx;
+  color: #FFFFFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
+.uni-card-footer-confirm.data-v-3a5bd749 {
+  background-color: #6aa328;
 }
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+.uni-card-footer-default.data-v-3a5bd749 {
+  background-color: #bfbfbf;
 }

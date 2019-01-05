@@ -1,8 +1,4 @@
-<template name="423089bd">
-  <view class="_view data-v-359bfa43 content">
-    <image class="_image data-v-359bfa43 logo" src="../../static/logo.png"></image>
-    <view class="_view data-v-359bfa43">
-      <text class="_text data-v-359bfa43 title">{{title}}</text>
-    </view>
-  </view>
+<import src="/components/page/index.vue.wxml" />
+<template name="47028641">
+  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'b4X-0'],$root, $slotdefault:'data-v-3a5bd749-default-b4X-0',$slotcontent:'data-v-3a5bd749-content-b4X-0'}}" is="1bf0a167"></template>
 </template>

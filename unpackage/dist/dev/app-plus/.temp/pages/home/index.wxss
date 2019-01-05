@@ -1,18 +1,81 @@
+@import "../../common/vendor.wxss";
 
-.grace-swiper {
+.grace-wrap.data-v-3707f49a {
+  margin-top: 10px;
+}
+.grace-boxes.data-v-3707f49a {
+  width: 18%;
+}
+.grace-boxes-image.data-v-3707f49a {
+  width: 30px;
+  height: 30px !important;
+}
+.home-product.data-v-3707f49a {
+  margin-top: 10px;
+}
+.home-product-items.data-v-3707f49a {
+  position: relative;
+}
+.home-product-items-content.data-v-3707f49a {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #FFFFFF;
+}
+.home-product-items-title.data-v-3707f49a {
+  font-size: 15px;
+  font-weight: bold;
+}
+.home-product-items-text.data-v-3707f49a {
+  font-size: 10px;
+  line-height: 10px;
+  padding-left: 18px;
+  padding-top: 5px;
+  color: #f4f4f4;
+}
+.home-product-image.data-v-3707f49a {
+  width: 170px;
+  height: 70px;
+}
+.dynamic-title.data-v-3707f49a {
+  color: #6aa328;
+}
+.dynamic-icon.data-v-3707f49a {
+  color: #6AA328;
+  font-size: 32px;
+}
+.dynamic-item.data-v-3707f49a {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #AAAAAA;
+  border-radius: 5px;
+  padding: 10px;
+}
+.dynamic-item-title.data-v-3707f49a {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.dynamic-item-text.data-v-3707f49a {
+  padding-top: 5px;
+  font-size: 12px;
+  color: #7d7d7d;
+}
+.grace-swiper.data-v-1fe5ef1c {
   width: 100%;
   height: 200rpx;
   position: relative;
 }
-.grace-swiper swiper-item {
+.grace-swiper swiper-item.data-v-1fe5ef1c {
   width: 100%;
   font-size: 0;
   line-height: 0;
 }
-.grace-swiper swiper-item image {
+.grace-swiper swiper-item image.data-v-1fe5ef1c {
   width: 100%;
 }
-.grace-swiper .title {
+.grace-swiper .title.data-v-1fe5ef1c {
   width: 100%;
   height: 68rpx;
   line-height: 68rpx;
@@ -25,9 +88,12 @@
   background: rgba(0, 0, 0, 0.2);
   color: #FFF;
 }
-.grace-swiper swiper-item navigator {
+.grace-swiper swiper-item navigator.data-v-1fe5ef1c {
   width: 100%;
 }
-.grace-swiper swiper-item navigator image {
+.grace-swiper swiper-item navigator image.data-v-1fe5ef1c {
   width: 100%;
+}
+.swiper-image.data-v-1fe5ef1c {
+  height: 170px !important;
 }

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Store from '../vuex/index'
 import Config from './config.js'
-// import Router from '../router/index.js'
+import Router from '../router/index.js'
 
 
 var wait = 60; //倒计时数值

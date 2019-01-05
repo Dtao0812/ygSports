@@ -14,6 +14,7 @@
 
 <style>
 	/*每个页面公共css */
+	@import './static/css/uni.css';
 	@import './common/graceUI.css';
 	@import './common/default.css';
 </style>

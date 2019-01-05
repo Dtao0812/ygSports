@@ -1,6 +1,6 @@
 <import src="/components/slots" />
-<template name="03abb5e3">
-  <view class="_view data-v-1f2f4d6f">
+<template name="1bf0a167">
+  <view style="height: 100%;" class="_view data-v-1927fe16">
     <template name="content"></template>
     <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotcontent || 'content'}}"></template>
   </view>

@@ -1,8 +1,7 @@
-<template name="420654a5">
-  <view class="_view data-v-3571c52b content">
-    <image class="_image data-v-3571c52b logo" src="../../static/logo.png"></image>
-    <view class="_view data-v-3571c52b">
-      <text class="_text data-v-3571c52b title">{{title}}</text>
-    </view>
-  </view>
+<import src="/components/page/index.vue.wxml" />
+<import src="/components/uni/uni-nav-bar.vue.wxml" />
+<import src="/components/uni/uni-icon.vue.wxml" />
+<import src="/components/grace/graceLoading.vue.wxml" />
+<template name="46d85129">
+  <template ref="ygPage" data="{{...$root['0'], ...$root[$kk+'Dmg-4'],$root, $slotdefault:'data-v-3a31a231-default-Dmg-4',$slotcontent:'data-v-3a31a231-content-Dmg-4'}}" is="1bf0a167"></template>
 </template>

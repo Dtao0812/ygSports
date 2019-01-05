@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="height: 100%;">
 	    <slot name="content"></slot>
 	</view>
 </template>

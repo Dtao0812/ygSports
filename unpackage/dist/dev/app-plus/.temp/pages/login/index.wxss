@@ -1,0 +1,75 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-843efc2a {
+  padding: 0;
+  position: relative;
+}
+.login-bg.data-v-843efc2a {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.login-box.data-v-843efc2a {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 220px;
+  height: 200px;
+  padding: 0 10px;
+}
+.login-box-title.data-v-843efc2a {
+  text-align: center;
+  color: #6aa328;
+  font-size: 18px;
+}
+.login-box-input.data-v-843efc2a {
+  line-height: 40px;
+  border-bottom: 1rpx solid #7ecef4;
+  margin-top: 10px;
+}
+.login-box-button.data-v-843efc2a {
+  margin-top: 20px;
+}
+.login-box-btn.data-v-843efc2a {
+  height: 30px;
+  line-height: 30px;
+  background-color: #6aa328;
+}
+.login-link.data-v-843efc2a {
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.login-link uni-button.data-v-843efc2a:after {
+  border: 0;
+}
+.login-link-nav.data-v-843efc2a:first-child {
+  text-align: left;
+  float: left;
+}
+.login-link-nav.data-v-843efc2a:last-child {
+  text-align: right;
+  float: right;
+}
+.login-link-register.data-v-843efc2a {
+  padding: 0 5px;
+  background-color: transparent;
+  color: #6aa328;
+  display: inline;
+  font-size: 12px;
+  border: 0;
+}
+.login-link-password.data-v-843efc2a {
+  padding: 0 5px;
+  background-color: transparent;
+  color: #6aa328;
+  display: inline;
+  font-size: 12px;
+  border: 0 !important;
+}

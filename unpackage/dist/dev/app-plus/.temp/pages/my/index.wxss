@@ -1,14 +1,49 @@
+@import "../../common/vendor.wxss";
 
-.content {
-  text-align: center;
-  height: 400rpx;
+.content.data-v-78850c80 {
+  padding: 0;
 }
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
+.my-header.data-v-78850c80 {
+  width: 100%;
 }
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+.my-header-top.data-v-78850c80 {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+.my-header-image.data-v-78850c80 {
+  width: 100%;
+  height: 128px;
+}
+.my-card.data-v-78850c80 {
+  margin: -50px 10px 10px 10px;
+  padding: 10px 0;
+}
+.my-card .uni-card-header.data-v-78850c80:after {
+  height: 0;
+}
+.my-card .uni-card-media-logo.data-v-78850c80 {
+  height: 60px;
+  width: 60px;
+}
+.my-grid.data-v-78850c80 {
+  margin: 10px;
+  background-color: #FFFFFF;
+  height: 400px;
+}
+.my-grid .uni-grid-9.data-v-78850c80 {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.my-grid .uni-grid-9-item.data-v-78850c80 {
+  width: 33.33%;
+  border: 0 !important;
+}
+.my-grid .uni-grid-9-image.data-v-78850c80 {
+  width: 25px;
+  height: 25px;
+}
+.my-grid .uni-grid-9-text.data-v-78850c80 {
+  line-height: 25px;
+  font-size: 12px;
 }
