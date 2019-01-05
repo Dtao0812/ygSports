@@ -14,7 +14,9 @@
 						<view class="grace-boxes-text">{{v.title}}</view>
 					</view>
 				</view>
-				
+			</view>	
+			<view class="interval"></view>
+			<view class="content">
 				<!-- product -->
 				<view class="grace-imgitems home-product">
 					<view class="grace-items">
@@ -55,7 +57,7 @@
 				<!-- 动态 -->
 				<view class="grace-title grace-nowrap grace-space-between" style="margin-top:60upx;">
 					<view class="grace-h5 grace-blod dynamic-title">优冠动态</view>
-					<text class="grace-iconfont dynamic-icon">+</text>
+					
 				</view>
 				<view class="grace-imgitems">
 					<view class="grace-items dynamic-item">
@@ -124,8 +126,20 @@
 		}
 	}
 </script>
-
+<style>
+	.content{background-color: #fff;}
+	.grace-swiper {border-radius: 5px!important; overflow: hidden;}
+	.grace-swiper swiper-item navigator image{border-radius: 5px;}
+	.grace-boxes-text{font-size: 26upx;}
+	.home-product-items-content view{line-height: 1.5;}
+</style>
 <style scoped>
+	/*间隔*/
+	.interval{
+		width: 100%;
+		height: 30upx;
+		background: #eee;
+	}
 	/* 按钮导航 */
 	.grace-wrap{
 		margin-top: 10px;
@@ -139,7 +153,10 @@
 	}
 	/* 产品 */
 	.home-product{
-		margin-top: 10px;
+		/*margin-top: 10px;*/
+	}
+	.home-product .grace-items{
+		border-radius: 5px;
 	}
 	.home-product-items{
 		position: relative;
@@ -168,6 +185,7 @@
 	/* 动态 */
 	.dynamic-title{
 		color: #6aa328;
+		font-size: 42upx;
 	}
 	.dynamic-icon{
 		color: #6AA328;
@@ -176,7 +194,7 @@
 	.dynamic-item{
 		width: 100%;
 		height: 100px;
-		border: 1px solid #AAAAAA;
+		box-shadow: 0 0 10px #d8d8d8; border-radius: 10upx;
 		border-radius: 5px;
 		padding: 10px;
 	}
