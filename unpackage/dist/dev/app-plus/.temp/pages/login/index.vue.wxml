@@ -2,21 +2,23 @@
   <view class="_view data-v-843efc2a content">
     <view class="_view data-v-843efc2a login-box">
       <view class="_view data-v-843efc2a login-box-title">优冠体育</view>
-      <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入手机号" data-eventid="{{'Nad-0'}}" data-comkey="{{$k}}" />
-      </view>
-      <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入密码" data-eventid="{{'VMd-1'}}" data-comkey="{{$k}}" />
-      </view>
-      <view class="_view data-v-843efc2a login-box-input">
-        <input bindconfirm="handleProxy" class="_input data-v-843efc2a input authcode" type="text" placeholder="请输入验证码" data-eventid="{{'4Tt-2'}}" data-comkey="{{$k}}" />
-        <view class="_view data-v-843efc2a login-box-getauthcode">
-          <button type="primary" class="_button data-v-843efc2a thisBtn" bindtap="handleProxy" style="width: 200rpx; font-size: 25rpx;margin-top: 5rpx; background:#6aa328;" data-eventid="{{'cIB-3'}}" data-comkey="{{$k}}">点击获取</button>
+      <form bindsubmit="handleProxy" data-eventid="{{'qkk-2'}}" data-comkey="{{$k}}" class="_form data-v-843efc2a">
+        <view class="_view data-v-843efc2a login-box-input">
+          <input name="mobilePhone" value="{{mobilePhone}}" bindinput="handleProxy" class="_input data-v-843efc2a input" type="text" placeholder="请输入手机号" data-eventid="{{'jIq-0'}}" data-comkey="{{$k}}" />
         </view>
-      </view>
-      <view class="_view data-v-843efc2a login-box-button">
-        <button class="_button data-v-843efc2a yg-button-default" type="primary">登录</button>
-      </view>
+        <view class="_view data-v-843efc2a login-box-input">
+          <input name="password" class="_input data-v-843efc2a input" password="true" type="text" placeholder="请输入密码" />
+        </view>
+        <view class="_view data-v-843efc2a login-box-input">
+          <input name="authcode" class="_input data-v-843efc2a input authcode" type="text" placeholder="请输入验证码" />
+          <view class="_view data-v-843efc2a login-box-getauthcode" bindtap="handleProxy" data-eventid="{{'WQp-1'}}" data-comkey="{{$k}}">
+            <button type="primary" class="_button data-v-843efc2a thisBtn" style="width: 200rpx; font-size: 25rpx;margin-top: 5rpx; background:#6aa328;">点击获取</button>
+          </view>
+        </view>
+        <view class="_view data-v-843efc2a login-box-button">
+          <button form-type="submit" type="primary" class="_button data-v-843efc2a yg-button-default">登录</button>
+        </view>
+      </form>
       <view class="_view data-v-843efc2a login-link">
         <navigator class="_navigator data-v-843efc2a login-link-nav" url="../setting/setPassword?pageName=login" hover-class="navigator-hover">
           <view class="_view data-v-843efc2a login-link-register">忘记密码？</view>

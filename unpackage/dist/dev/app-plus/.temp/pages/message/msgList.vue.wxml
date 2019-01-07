@@ -1,0 +1,20 @@
+<template name="c55eae24">
+  <view class="_view data-v-1f99d7f6 content">
+    <view class="_view data-v-1f99d7f6 grace-scroll-do">
+      <scroll-view class="_scroll-view data-v-1f99d7f6 grace-scroll-x" scroll-x scroll-left="{{scrollIndex == index ? 180 : 0}}" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-id="{{index}}" scroll-with-animation="true" wx:key="index" key="{{index}}"
+        data-eventid="{{'z2K-2-'+index}}" data-comkey="{{$k}}" wx:for="{{msg}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-1f99d7f6 grace-items">
+          <image src="{{item.img}}" mode="widthFix" class="_image data-v-1f99d7f6"></image>
+          <view class="_view data-v-1f99d7f6 contents">
+            <view class="_view data-v-1f99d7f6 grace-h5 grace-blod">{{item.title}}
+              <text class="_text data-v-1f99d7f6 grace-time">{{item.time}}</text>
+            </view>
+            <view class="_view data-v-1f99d7f6 grace-text-small ellipsis-1">{{item.desc}}</view>
+          </view>
+        </view>
+        <view class="_view data-v-1f99d7f6 grace-items btn btn-first" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'9jk-0-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? '0px' : btn1Width + 'px') +  ';' +  'background:' +  (item.status == '已读' ? '#CCCCCC' : '#5959D3') +  ';' +  'color:' +  (item.status == '已读' ? '#999' : '#FFF') +  ';')}}">{{item.status}}</view>
+        <view class="_view data-v-1f99d7f6 grace-items btn" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'g2d-1-'+index}}" data-comkey="{{$k}}" style=" {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}">删除</view>
+      </scroll-view>
+    </view>
+  </view>
+</template>

@@ -3,38 +3,38 @@
 <template name="d2cdd8ee">
   <view class="_view data-v-09f70452 content">
     <view class="_view data-v-09f70452 grace-form">
-      <form bindsubmit="handleProxy" data-eventid="{{'ksx-4'}}" data-comkey="{{$k}}" class="_form data-v-09f70452">
+      <form bindsubmit="handleProxy" data-eventid="{{'3Bm-5'}}" data-comkey="{{$k}}" class="_form data-v-09f70452">
         <view class="_view data-v-09f70452 form-box">
           <view class="_view data-v-09f70452 form-content">
             <view class="_view data-v-09f70452 uni-common-mt">
               <view class="_view data-v-09f70452 uni-form-item uni-column">
                 <view class="_view data-v-09f70452 with-fun">
-                  <template type="renshu1" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'6aR-0'],$root}}" is="539de54a"></template>
-                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="团队名称" name="nickname" placeholder-style="color:#aaaaaa" />
+                  <template type="renshu1" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'zQd-0'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="团队名称" name="teamName" placeholder-style="color:#aaaaaa" />
                 </view>
               </view>
             </view>
             <view class="_view data-v-09f70452 uni-common-mt">
               <view class="_view data-v-09f70452 uni-form-item uni-column">
                 <view class="_view data-v-09f70452 with-fun">
-                  <template type="dianhua" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'ePc-1'],$root}}" is="539de54a"></template>
-                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="电话" name="nickname" placeholder-style="color:#aaaaaa" />
+                  <template type="dianhua" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'L6n-1'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="电话" name="tel" placeholder-style="color:#aaaaaa" />
                 </view>
               </view>
             </view>
             <view class="_view data-v-09f70452 uni-common-mt">
               <view class="_view data-v-09f70452 uni-form-item uni-column">
                 <view class="_view data-v-09f70452 with-fun">
-                  <template type="ren-copy" color="#999999" size="24" data="{{...$root['0'], ...$root[$kk+'WI4-2'],$root}}" is="539de54a"></template>
-                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="联系人" name="nickname" placeholder-style="color:#aaaaaa" />
+                  <template type="ren-copy" color="#999999" size="24" data="{{...$root['0'], ...$root[$kk+'nxL-2'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="联系人" name="attention" placeholder-style="color:#aaaaaa" />
                 </view>
               </view>
             </view>
             <view class="_view data-v-09f70452 uni-common-mt">
               <view class="_view data-v-09f70452 uni-form-item uni-column">
                 <view class="_view data-v-09f70452 with-fun">
-                  <template type="renshu" color="#999999" size="20" data="{{...$root['0'], ...$root[$kk+'1py-3'],$root}}" is="539de54a"></template>
-                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="团队人数" name="nickname" placeholder-style="color:#aaaaaa" />
+                  <template type="renshu" color="#999999" size="20" data="{{...$root['0'], ...$root[$kk+'FW8-3'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-09f70452 uni-input" type="text" placeholder="团队人数" name="bz2" placeholder-style="color:#aaaaaa" />
                 </view>
               </view>
             </view>
@@ -44,13 +44,13 @@
           <view class="_view data-v-09f70452 form-box-title">团队照片</view>
           <view style="width:750px;" class="_view data-v-09f70452">
             <view class="_view data-v-09f70452 grace-add-file">
-              <view class="_view data-v-09f70452 grace-add-btn" bindtap="handleProxy" wx:if="{{btnImg}}" data-eventid="{{'6ku-0'}}" data-comkey="{{$k}}">
+              <view class="_view data-v-09f70452 grace-add-btn" bindtap="handleProxy" wx:if="{{btnImg}}" data-eventid="{{'xBv-0'}}" data-comkey="{{$k}}">
                 <view class="_view data-v-09f70452">+</view>
                 <view class="_view data-v-09f70452">添加照片</view>
               </view>
               <view class="_view data-v-09f70452 garce-items" wx:key="index" key="{{index}}" wx:for="{{imgLists}}" wx:for-index="index" wx:for-item="item">
-                <image src="{{item.path}}" mode="widthFix" data-imgurl="{{item}}" bindtap="handleProxy" data-eventid="{{'CSc-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-09f70452"></image>
-                <view class="_view data-v-09f70452 grace-close" bindtap="handleProxy" id="{{'grace-items-img-'+index}}" data-eventid="{{'ax2-2-'+index}}" data-comkey="{{$k}}"></view>
+                <image src="{{item.path}}" mode="widthFix" data-imgurl="{{item}}" bindtap="handleProxy" data-eventid="{{'OVH-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-09f70452"></image>
+                <view class="_view data-v-09f70452 grace-close" bindtap="handleProxy" id="{{'grace-items-img-'+index}}" data-eventid="{{'Y2A-2-'+index}}" data-comkey="{{$k}}"></view>
               </view>
             </view>
           </view>
@@ -58,8 +58,9 @@
         <view class="_view data-v-09f70452 form-box">
           <view class="_view data-v-09f70452 form-box-title">地区选择</view>
           <view class="_view data-v-09f70452 form-content">
-            <view bindtap="handleProxy" class="_view data-v-09f70452 picker-item" data-eventid="{{'qyN-3'}}" data-comkey="{{$k}}"> {{cityText}}
+            <view bindtap="handleProxy" class="_view data-v-09f70452 picker-item" data-eventid="{{'FSU-4'}}" data-comkey="{{$k}}"> {{cityText}}
               <text class="_text data-v-09f70452 grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+              <input style="display: none;" class="_input data-v-09f70452 uni-input" name="cityText" value="{{cityText}}" bindinput="handleProxy" type="text" data-eventid="{{'MHJ-3'}}" data-comkey="{{$k}}" />
             </view>
           </view>
         </view>
@@ -67,7 +68,7 @@
           <view class="_view data-v-09f70452 form-box-title">团队介绍</view>
           <view class="_view data-v-09f70452 form-content">
             <view class="_view data-v-09f70452 uni-textarea">
-              <textarea placeholder-style="color:#b4b4b4;" placeholder="请尽可能介绍团队施工经验和施工案例.限制400字" auto-height class="_textarea data-v-09f70452" />
+              <textarea placeholder-style="color:#b4b4b4;" name="introduce" placeholder="请尽可能介绍团队施工经验和施工案例.限制400字" auto-height class="_textarea data-v-09f70452" />
             </view>
             <view class="_view data-v-09f70452 form-agreement">
               <radio-group name="danxuan" class="_radio-group data-v-09f70452">
@@ -82,6 +83,6 @@
         </view>
       </form>
     </view>
-    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'m2O-5'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'zAR-5'],$root}}" is="02eb48d0"></template>
+    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'mJP-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'ESF-5'],$root}}" is="02eb48d0"></template>
   </view>
 </template>

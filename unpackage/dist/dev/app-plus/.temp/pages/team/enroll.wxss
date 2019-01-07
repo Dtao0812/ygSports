@@ -15,6 +15,9 @@
 .form-content.data-v-09f70452 {
   padding: 10px 20px;
 }
+.uni-common-mt.data-v-09f70452 {
+  margin-top: 0;
+}
 .form-box-title.data-v-09f70452 {
   color: #6aa328;
   border-bottom: 1px solid #EEEEEE;
@@ -29,6 +32,9 @@
   border: 0.5px solid #6aa328;
   border-radius: 5px;
   height: 150px;
+}
+.uni-textarea ._textarea.data-v-09f70452 {
+  min-height: 100px;
 }
 .form-agreement.data-v-09f70452 {
   margin-top: 10px;

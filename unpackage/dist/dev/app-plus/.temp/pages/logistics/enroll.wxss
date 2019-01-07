@@ -1,0 +1,52 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-308a7373 {
+  padding: 0;
+  background-color: #EEEEEE;
+}
+.uni-input.data-v-308a7373 {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+}
+.form-box.data-v-308a7373 {
+  background-color: #FFFFFF;
+  margin-top: 10px;
+}
+.form-content.data-v-308a7373 {
+  padding: 10px 20px;
+}
+.uni-common-mt.data-v-308a7373 {
+  margin-top: 0;
+}
+.form-box-title.data-v-308a7373 {
+  color: #6aa328;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 10px 20px;
+}
+.grace-add-btn.data-v-308a7373 {
+  padding: 5px 0;
+  width: 80px;
+  border-radius: 5px;
+}
+.uni-textarea.data-v-308a7373 {
+  border: 0.5px solid #6aa328;
+  border-radius: 5px;
+  height: 150px;
+}
+.form-agreement.data-v-308a7373 {
+  margin-top: 10px;
+}
+.picker-item.data-v-308a7373 {
+  border: 1px solid #6aa328;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  color: #888888;
+  padding: 0;
+  line-height: 30px;
+  margin-top: 8px;
+  font-size: 26rpx;
+}
+.picker-icon.data-v-308a7373 {
+  float: right;
+}

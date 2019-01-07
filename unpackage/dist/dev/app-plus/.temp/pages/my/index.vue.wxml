@@ -3,10 +3,10 @@
 <import src="/components/default/popupBottom.vue.wxml" />
 <template name="63acb964">
   <view class="_view data-v-78850c80 content">
-    <view class="_view data-v-78850c80 my-header" bindtap="handleProxy" data-eventid="{{'jUQ-0'}}" data-comkey="{{$k}}">
+    <view class="_view data-v-78850c80 my-header" bindtap="handleProxy" data-eventid="{{'uSJ-0'}}" data-comkey="{{$k}}">
       <image class="_image data-v-78850c80 my-header-image" src="../../static/images/bg/my_head.png" mode></image>
       <view class="_view data-v-78850c80 my-header-top">
-        <template type="gear" size="24" color="#ffffff" data="{{...$root['0'], ...$root[$kk+'Vcw-0'],$root}}" is="09d4a078"></template>
+        <template type="gear" size="24" color="#ffffff" data="{{...$root['0'], ...$root[$kk+'Mke-0'],$root}}" is="09d4a078"></template>
       </view>
       <view class="_view data-v-78850c80 uni-card my-card">
         <view class="_view data-v-78850c80 uni-card-header uni-card-media">
@@ -20,13 +20,13 @@
     </view>
     <view class="_view data-v-78850c80 uni-card my-grid">
       <view class="_view data-v-78850c80 uni-grid-9 uni-common-mt">
-        <view class="_view data-v-78850c80 uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'uOh-1-'+index}}" data-comkey="{{$k}}" wx:for="{{grids}}"
+        <view class="_view data-v-78850c80 uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'ply-1-'+index}}" data-comkey="{{$k}}" wx:for="{{grids}}"
           wx:for-index="index" wx:for-item="item">
           <image class="_image data-v-78850c80 uni-grid-9-image" src="{{item.imgUrl}}"></image>
           <text class="_text data-v-78850c80 uni-grid-9-text">{{item.title}}</text>
         </view>
       </view>
     </view>
-    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'XRV-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'UFu-2'],$root, $slotdefault:'data-v-78850c80-default-UFu-2'}}" is="cf32231e"></template>
+    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'l7b-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'q5h-2'],$root, $slotdefault:'data-v-78850c80-default-q5h-2'}}" is="cf32231e"></template>
   </view>
 </template>

@@ -28,19 +28,6 @@
 </template>
 
 <script>
-	var _self;
-	var news = [
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' }
-	];
 	import graceLoading from "@/components/grace/graceLoading.vue";
 	import mpvuePicker from '@/threeComponents/mpvuePicker.vue';
 	import mpvueCityPicker from '@/threeComponents/mpvueCityPicker.vue';
@@ -50,21 +37,23 @@
 		},
 		data() {
 			return {
-				list:news,
 				tabCurrentIndex: 0,
 				swiperCurrentIndex: 0,
 				tabHeight : 300,
+				
+				list:[],
 				loadingType: 0,
-				page:0,
+				limit:1,
+				provinces:'',
+				city:'',
+				area:'',
 				
 				themeColor: '#007AFF', //颜色
 				cityText : "点击选择", //文本
-				city : null,
 				cityPickerValueDefault : [0,0,1], //默认选项
 			};
 		},
 		onLoad:function(){
-			_self = this;
 		},
 		onReady: function () {
 			//获取屏幕高度及比例
@@ -75,19 +64,32 @@
 				if(!res2){return ;}
 				//计算得出滚动区域的高度
 				this.tabHeight = windowHeight - res2.height;
+				this.getList();
 			}).exec();
 		},
 		methods:{
+			// 报名
+			toEnroll(){
+				this.$openWin("enrollLogistics");
+			},
+			//城市选择
 			cityPicker : function(){
 				this.$refs.mpvueCityPicker.show();
 			},
+			//城市确定按钮
 			onConfirm(e) {
 				var cityText  = e.label;
 				var cityValue = e.value;
 				var cityCode  = e.cityCode;
 				this.cityText = cityText;
 				this.cityPickerValueDefault = cityValue;
-				this.city = e;
+				//赋值
+				let list = cityText.split("-");
+				this.provinces = list[0];
+				this.city = list[1];
+				this.area = list[2];
+				this.limit = 1;
+				this.getList();
 			},
 			//滚动到底部
 			scrollend:function(e){
@@ -97,20 +99,28 @@
 					return false;
 				}
 				//判断是否是最后一页
-				console.log(this.page)
-				if (this.page > 3){
-					this.loadingType = 2;//全部
+				if (this.loadingType === 2){
 					return ;
 				}
 				this.loadingType = 1;//加载中
-				//模拟延迟
-				setTimeout(function(){
-					_self.list = _self.list.concat(news);
-					//分页
-					_self.page++;
-					_self.loadingType = 0;//恢复加载状态
-					//
-				}, 1000);
+				this.limit++;
+				this.getList();
+			},
+			//获得列表
+			getList(){
+				let reqInfo = {};
+				reqInfo.limit = this.limit;
+				reqInfo.provinces = this.provinces;
+				reqInfo.city = this.city;
+				reqInfo.area = this.area;
+				this.$api.Home.getFreightLogisticsList(reqInfo,(res)=>{
+					if(res.data.length == 0){
+						this.loadingType = 2;
+					}else{
+						this.loadingType = 0;
+					}
+					this.list = this.list.concat(res.data);
+				})
 			}
 		},
 	}

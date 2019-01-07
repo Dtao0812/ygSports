@@ -6,8 +6,8 @@
 					<view class="uni-card-media">
 						<image class="uni-card-media-logo" src="../../static/logo.png"></image>
 						<view class="uni-card-media-body">
-							<text class="uni-card-media-text-top grace-blod">点击设置头像U</text>
-							<text class="uni-card-media-text-bottom">13888888888</text>
+							<text class="uni-card-media-text-top grace-blod">{{item.clientName}}U</text>
+							<text class="uni-card-media-text-bottom">{{item.clientTel}}</text>
 						</view>
 					</view>
 					<text class="grace-list-imgs-arrow grace-iconfont icon-arrow-right"></text>
@@ -24,14 +24,9 @@
         },
         data() {
             return {
-				list:[1,2,3],//列表
-				selectType: "",//询价类型
-				pageNum: 1,//页码
-				keyword: "",//搜索关键字
-				where: {},//搜索条件
-				keywordHtml: '',//搜索关键字html
+				list:[],//列表
+				page: 1,//页码
 				loadingType:0,//是否显示加载更多
-				isNull:false,
             }
         },
         onLoad: function() {
@@ -44,53 +39,31 @@
 			pullDown(){
 				let reqInfo = {};
 				reqInfo.loading = 1;
-				reqInfo.pageNum = this.pageNum = 1;
-				reqInfo.selectState = 10;
-				reqInfo.selectType = this.selectType;
-// 				this.$api.Select.getPublishList(reqInfo, (res) => {
-// 					this.$refs.pull.loaddingClose();
-// 					this.isLoading = false;
-// 					if (res.cpSelectList.length == 0) {
-// 						this.loadingType = 3;
-// 						this.isNull = true;
-// 					}else{
-// 						this.isNull = false;
-// 					}
-// 					res.cpSelectList.forEach((v,i)=>{
-// 						res.cpSelectList[i].playScenicTime = this.$tool.dateFun.getDateFromNowBy13(v.playScenicTime)
-// 					})
-// 					
-// 					this.lists = res.cpSelectList;
-// 					uni.stopPullDownRefresh();
-// 				},(err)=>{
-// 					this.isLoading = false;
-// 					uni.stopPullDownRefresh();
-// 				});
+				reqInfo.page = this.page = 1;
+				this.$api.User.getMyClientList(reqInfo, (res) => {
+					if (res.data.length == 0) {
+						this.loadingType = 3;
+					}
+					this.list = res.data;
+					uni.stopPullDownRefresh();
+				},(err)=>{
+					uni.stopPullDownRefresh();
+				});
 			},
 			// 加载更多
             loadMore(e) {
 				if (this.loadingType !== 0) return;
 				this.loadingType = 1;
-				
 				let reqInfo = {};
-				reqInfo.loading = 1;
-				reqInfo.pageNum = this.pageNum = ++this.pageNum;
-				reqInfo.selectState = 10;
-				reqInfo.selectType = this.selectType;		
-				reqInfo.where = this.where;
-				reqInfo.keywordHtml = this.keywordHtml;
-// 				this.$api.Select.getPublishList(reqInfo, (res) => {
-// 					if (res.cpSelectList.length == 0) {
-// 						this.loadingType = 2;
-// 						return;
-// 					}else{
-// 						res.cpSelectList.forEach((v,i)=>{
-// 							res.cpSelectList[i].playScenicTime = this.$tool.dateFun.getDateFromNowBy13(v.playScenicTime)
-// 						})
-// 					}
-// 					this.lists = this.lists.concat(res.cpSelectList);
-// 					this.loadingType = 0;
-// 				},(err)=>{this.loadingType = 0;});
+				reqInfo.page = this.page = ++this.page;
+				this.$api.User.getMyClientList(reqInfo, (res) => {
+					this.loadingType = 0;
+					if (res.data.length == 0) {
+						this.loadingType = 2;
+						return;
+					}
+					this.list = this.list.concat(res.data);
+				},(err)=>{this.loadingType = 0;});
             },
         },
 		// 下拉加载

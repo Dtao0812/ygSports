@@ -2,10 +2,10 @@
   <view class="_view data-v-1fe5ef1c">
     <swiper class="_swiper data-v-1fe5ef1c grace-swiper" autoplay="true" indicator-dots="{{indicatorDots}}" indicator-color="rgba(255, 255, 255, 1)" indicator-active-color="#00B26A" interval="{{interval}}" style=" {{('height:' + (swiperHeight + 'px') + ';')}}">
       <swiper-item wx:key="index" key="{{index}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-1fe5ef1c">
-        <navigator url="{{item.path}}" class="_navigator data-v-1fe5ef1c">
-          <image src="{{item.imgUrl}}" class="_image data-v-1fe5ef1c swiper-image" bindload="handleProxy" id="{{swiperId + '-item-1'}}" mode="widthFix" data-eventid="{{'gOQ-0-'+index}}" data-comkey="{{$k}}"></image>
+        <view class="_view data-v-1fe5ef1c">
+          <image src="{{item.url}}" class="_image data-v-1fe5ef1c swiper-image" bindload="handleProxy" id="{{swiperId + '-item-1'}}" mode="widthFix" data-eventid="{{'5Dn-0-'+index}}" data-comkey="{{$k}}"></image>
           <view class="_view data-v-1fe5ef1c title" wx:if="{{!indicatorDots}}">{{item.title}}</view>
-        </navigator>
+        </view>
       </swiper-item>
     </swiper>
   </view>

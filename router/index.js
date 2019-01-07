@@ -12,6 +12,7 @@ const _routers = [
 	
 	{ title: '产品',name: 'product',path: '/pages/product/index' },
 	{ title: '产品详情',name: 'proDetail',path: '/pages/product/detail' },
+	{ title: '购物车',name: 'shoppingcart',path: '/pages/product/shoppingcart' },
 	
 	{ title: '消息',name: 'message',path: '/pages/message/index' },
 	{ title: '系统消息',name: 'msgList',path: '/pages/message/msgList' },
@@ -25,6 +26,8 @@ const _routers = [
 	{ title: '我的统计',name: 'statistics',path: '/pages/my/statistics' },
 	
 	{ title: '订单管理',name: 'order',path: '/pages/order/index' },
+	{ title: '设计订单',name: 'publishOrder',path: '/pages/order/publish' },
+	{ title: '设计详情',name: 'publishDetailed',path: '/pages/order/publishDetailed' },
 	
 	{ title: '个人信息',name: 'setUser',path: '/pages/my/set' },
 	
@@ -34,6 +37,7 @@ const _routers = [
 	{ title: '注册-设置',name: 'registerThree',path: '/pages/register/registerThree' },
 	
 	{ title: '货运物流',name: 'logistics',path: '/pages/logistics/index' },
+	{ title: '货运物流报名',name: 'enrollLogistics',path: '/pages/logistics/enroll' },
 	
 	{ title: '施工团队',name: 'team',path: '/pages/team/index' },
 	{ title: '报名团队',name: 'enrollTeam',path: '/pages/team/enroll' },
@@ -44,21 +48,21 @@ const _routers = [
 
 //游客可以页面
 const userNotAuth = [
+	"team","logistics","registerOne","registerTwo","registerThree"
 ];
 
 //跳转方法
 let beforeEach = function(pageName){
-	return _findUrlByName(pageName);
-// 	if(!Tool.defFun.isInAarry(userNotAuth, pageName)){
-// 		// 判断是否登录
-// 		if(!store.state.hasLogin){
-// 			return _findUrlByName('login');
-// 		}else{
-// 			return _findUrlByName(pageName);
-// 		}
-// 	}else{
-// 		return _findUrlByName(pageName);
-// 	}
+	if(!Tool.defFun.isInAarry(userNotAuth, pageName)){
+		// 判断是否登录
+		if(!store.state.hasLogin){
+			return _findUrlByName('login');
+		}else{
+			return _findUrlByName(pageName);
+		}
+	}else{
+		return _findUrlByName(pageName);
+	}
 };
 
 // 根据name查找页面url

@@ -1,0 +1,88 @@
+<import src="/components/icon/icon.vue.wxml" />
+<import src="/threeComponents/mpvueCityPicker.vue.wxml" />
+<template name="ae4dee8a">
+  <view class="_view data-v-308a7373 content">
+    <view class="_view data-v-308a7373 grace-form">
+      <form bindsubmit="handleProxy" data-eventid="{{'mte-5'}}" data-comkey="{{$k}}" class="_form data-v-308a7373">
+        <view class="_view data-v-308a7373 form-box">
+          <view class="_view data-v-308a7373 form-content">
+            <view class="_view data-v-308a7373 uni-common-mt">
+              <view class="_view data-v-308a7373 uni-form-item uni-column">
+                <view class="_view data-v-308a7373 with-fun">
+                  <template type="renshu1" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'wXK-0'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-308a7373 uni-input" type="text" placeholder="物流公司名称" name="logisticsName" placeholder-style="color:#aaaaaa" />
+                </view>
+              </view>
+            </view>
+            <view class="_view data-v-308a7373 uni-common-mt">
+              <view class="_view data-v-308a7373 uni-form-item uni-column">
+                <view class="_view data-v-308a7373 with-fun">
+                  <template type="dianhua" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'NYO-1'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-308a7373 uni-input" type="text" placeholder="电话" name="tel" placeholder-style="color:#aaaaaa" />
+                </view>
+              </view>
+            </view>
+            <view class="_view data-v-308a7373 uni-common-mt">
+              <view class="_view data-v-308a7373 uni-form-item uni-column">
+                <view class="_view data-v-308a7373 with-fun">
+                  <template type="ren-copy" color="#999999" size="24" data="{{...$root['0'], ...$root[$kk+'TFO-2'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-308a7373 uni-input" type="text" placeholder="联系人" name="attention" placeholder-style="color:#aaaaaa" />
+                </view>
+              </view>
+            </view>
+            <view class="_view data-v-308a7373 uni-common-mt">
+              <view class="_view data-v-308a7373 uni-form-item uni-column">
+                <view class="_view data-v-308a7373 with-fun">
+                  <template type="renshu" color="#999999" size="20" data="{{...$root['0'], ...$root[$kk+'MXH-3'],$root}}" is="539de54a"></template>
+                  <input class="_input data-v-308a7373 uni-input" type="text" placeholder="物流公司人数" name="bz2" placeholder-style="color:#aaaaaa" />
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-308a7373 form-box">
+          <view class="_view data-v-308a7373 form-box-title">物流公司照片</view>
+          <view style="width:750px;" class="_view data-v-308a7373">
+            <view class="_view data-v-308a7373 grace-add-file">
+              <view class="_view data-v-308a7373 grace-add-btn" bindtap="handleProxy" wx:if="{{btnImg}}" data-eventid="{{'Xjz-0'}}" data-comkey="{{$k}}">
+                <view class="_view data-v-308a7373">+</view>
+                <view class="_view data-v-308a7373">添加照片</view>
+              </view>
+              <view class="_view data-v-308a7373 garce-items" wx:key="index" key="{{index}}" wx:for="{{imgLists}}" wx:for-index="index" wx:for-item="item">
+                <image src="{{item.path}}" mode="widthFix" data-imgurl="{{item}}" bindtap="handleProxy" data-eventid="{{'cSL-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-308a7373"></image>
+                <view class="_view data-v-308a7373 grace-close" bindtap="handleProxy" id="{{'grace-items-img-'+index}}" data-eventid="{{'omU-2-'+index}}" data-comkey="{{$k}}"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-308a7373 form-box">
+          <view class="_view data-v-308a7373 form-box-title">地区选择</view>
+          <view class="_view data-v-308a7373 form-content">
+            <view bindtap="handleProxy" class="_view data-v-308a7373 picker-item" data-eventid="{{'W6O-4'}}" data-comkey="{{$k}}"> {{cityText}}
+              <text class="_text data-v-308a7373 grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+              <input style="display: none;" class="_input data-v-308a7373 uni-input" name="cityText" value="{{cityText}}" bindinput="handleProxy" type="text" data-eventid="{{'LOO-3'}}" data-comkey="{{$k}}" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-308a7373 form-box">
+          <view class="_view data-v-308a7373 form-box-title">物流公司介绍</view>
+          <view class="_view data-v-308a7373 form-content">
+            <view class="_view data-v-308a7373 uni-textarea">
+              <textarea placeholder-style="color:#b4b4b4;" name="introduce" placeholder="请尽可能介绍物流公司货运经验和货运案例.限制400字" auto-height class="_textarea data-v-308a7373" />
+            </view>
+            <view class="_view data-v-308a7373 form-agreement">
+              <radio-group name="danxuan" class="_radio-group data-v-308a7373">
+                <label class="_label data-v-308a7373">
+                  <radio value="1" class="_radio data-v-308a7373" />我已阅读报名条款，并同意报名</label>
+              </radio-group>
+            </view>
+          </view>
+        </view>
+        <view style="padding:22rpx 0;" class="_view data-v-308a7373">
+          <button formType="submit" class="_button data-v-308a7373 yg-button-default" type="primary" style="width:100%;">提交</button>
+        </view>
+      </form>
+    </view>
+    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'kHP-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'ec2-5'],$root}}" is="02eb48d0"></template>
+  </view>
+</template>

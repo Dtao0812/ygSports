@@ -48,6 +48,7 @@
 					{ imgUrl: '../../static/images/icon/nav_7.png',path: 'myCapital',title:'资金管理' },
 					{ imgUrl: '../../static/images/icon/nav_6.png',path: 'myCollection',title:'我的收藏' },
 					{ imgUrl: '../../static/images/icon/nav_10.png',path: 'myCustomer',title:'客户名录' },
+					{ imgUrl: '../../static/images/icon/nav_10.png',path: 'shoppingcart',title:'购物车' },
 				]
 			}
 		},

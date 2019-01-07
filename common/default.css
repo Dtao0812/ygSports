@@ -3,6 +3,7 @@ uni-page-body, uni-page-refresh{height: 100%;}
 .content{background-color: #FFFFFF;height: 100%;padding: 10px;}
 .yg-title{height: 45px;line-height: 45px;background-color: #FFFFFF;}
 .capital .uni-checkbox-input,.capital .uni-radio-input {border-radius: 50%;width: 15px;height: 15px;}
+.product .uni-navbar-header .uni-navbar-header-btns{width: 45px !important;padding: 0 !important;}
 
 /* 基础样式 */
 .pl-0{padding-left: 0;}.pl-5{padding-left: 5px;}.pl-10{padding-left: 10px !important;}.pl-20{padding-left: 20px;}
@@ -24,3 +25,4 @@ uni-page-body, uni-page-refresh{height: 100%;}
 
 /* 线条样式 */
 .yg-bottom-link-blue{border-bottom: 1upx solid #7ecef4 !important;}
+.yg-bottom-link-green{border-bottom: 2px solid #6aa328 !important;}

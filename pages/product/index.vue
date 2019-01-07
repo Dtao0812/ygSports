@@ -1,5 +1,5 @@
 <template>
-	<view class="content">
+	<view class="content product">
 		<uni-nav-bar color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" @click-left="showCity"  @click-right="scan">
 			<block slot="left">
 				<view class="manage">
@@ -18,26 +18,26 @@
 			<view v-for="(tab, index) in tabs" :key="index" :class="[tabCurrentIndex == index ? 'grace-tab-current' : '']" :id="'tabTag-'+index" @tap="tabChange">{{tab.name}}</view>
 		</scroll-view>
 		<swiper class="grace-tab-swiper-full" :current="swiperCurrentIndex" @change="swiperChange" :style="{height:tabHeight+'px'}">
-			<swiper-item v-for="(news, newsIndex) in newsAll" :key="newsIndex">
-				<scroll-view scroll-y="true" :data-scindex="newsIndex" @scrolltolower="scrollend">
+			<swiper-item v-for="(pro, proIndex) in tabs" :key="proIndex">
+				<scroll-view scroll-y="true" :data-scindex="proIndex" @scrolltolower="scrollend">
 					<view class="grace-news-list" style="">
-						<view v-for="(item, index) in news" :key="index" @tap="toDetail(item)">
+						<view v-for="(item, index) in pro.list" :key="index" @tap="toDetail(item)">
 							<view class="grace-news-list-items">
-								<image src="../../static/images/bg/mu_1.png" class="grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
+								<image :src="item.productImg" class="grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
 								<view class="grace-news-list-title">
-									<view class="grace-news-list-title-main">单组份防水地胶</view>
-									<text class="grace-news-list-title-desc grace-text-overflow">透气 净味</text>
+									<view class="grace-news-list-title-main">{{item.productName}}</view>
+									<!-- <text class="grace-news-list-title-desc grace-text-overflow">透气 净味</text> -->
 									<view class="grace-news-list-text">
-										<text class="grace-news-list-price">￥32.00</text>
-										<text class="grace-news-list-icon">
+										<text class="grace-news-list-price">￥{{item.productPrice}}</text>
+										<!-- <text class="grace-news-list-icon" @tap="proCollection(item,index)">
 											<yg-icon type="xin" color="#000000"></yg-icon>
-										</text>
+										</text> -->
 									</view>
 								</view>
 							</view>
 						</view>
 					</view>
-					<graceLoading :loadingType="tabs[newsIndex].loadingType"></graceLoading>
+					<graceLoading :loadingType="pro.list.length == 0 ? 2:pro.loadingType"></graceLoading>
 				</scroll-view>
 			</swiper-item>
 		</swiper>
@@ -49,23 +49,6 @@
 </template>
 
 <script>
-	var _self;
-	//默认新闻数据（来自api请求）
-	//每个选项下面的新闻列表
-	var news = [
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' },
-	  { title: '新闻标题', desc: '新闻描述...' }
-	];
-	//对应下面3个标签的新闻内容数据
-	var newsAll = [news, news, news,news];
 	import uniNavBar from '@/components/uni/uni-nav-bar.vue';
 	import uniIcon from '@/components/uni/uni-icon.vue';
 	import graceLoading from "@/components/grace/graceLoading.vue";
@@ -79,38 +62,42 @@
 			return {
 				showPopupBottom: false,
 				tabCurrentIndex: 0,
-				swiperCurrentIndex: 0,
+				swiperCurrentIndex: 0,//当前tab选中
 				tabHeight : 300,
-				tabs: [
-					//标签名称 , 分类 id , 加载更多, 加载的页码
-					{ name: '塑胶跑道', id: '1' , loadingType : 0, page : 1},
-					{ name: '塑胶球场', id: '2', loadingType: 0, page: 1},
-					{ name: '人造草坪', id: '3', loadingType: 0, page: 1},
-					{ name: '更多产品', id: '4', loadingType: 0, page: 1}
-				],
-				newsAll: newsAll
+				tabs: [],//标签名称 , 分类 id , 加载更多, 加载的页码，列表
+				
+				productName:"",//产品名称
+				limit:10,
+				
 			}
 		},
 		computed:{
+			//登录状态
+			hasLogin(){
+				return this.$store.state.hasLogin;
+			},
 			tabBarAddState(){
 				return this.$store.state.tabBarAddState;
 			}
 		},
 		onLoad:function(){
-			_self = this;
 		},
 		onReady: function () {
-			//获取屏幕高度及比例
-			var windowHeight = this.$store.state.windowHeight
-			//获取头部标题高度
-			var dom = uni.createSelectorQuery().select('#grace-tab-title')
-			dom.fields({size: true}, res2 => {
-				if(!res2){return ;}
-				//计算得出滚动区域的高度
-				this.tabHeight = windowHeight - res2.height - 44;
-			}).exec();
+			this.getProdCategoryList();
 		},
 		methods:{
+			//计算高度
+			setTabsHeight: function(){
+				//获取屏幕高度及比例
+				var windowHeight = this.$store.state.windowHeight
+				//获取头部标题高度
+				var dom = uni.createSelectorQuery().select('#grace-tab-title')
+				dom.fields({size: true}, res2 => {
+					if(!res2){return ;}
+					//计算得出滚动区域的高度
+					this.tabHeight = windowHeight - res2.height - 94;
+				}).exec();
+			},
 			//统一的关闭popup方法
 			hidePopup: function() {
 				this.$store.commit("setState",{id:"tabBarAddState",value:false});
@@ -119,42 +106,89 @@
 				var index = e.target.id.replace('tabTag-', '');
 				this.swiperCurrentIndex = index;
 				this.tabCurrentIndex    = index;
+				if(this.tabs[index].list.length == 0){
+					this.getProdInfoList();
+				}
 			},
 			swiperChange: function(e){
 				var index = e.detail.current;
 				this.tabCurrentIndex = index;
+				this.swiperCurrentIndex = index;
+				if(this.tabs[index].list.length == 0){
+					this.getProdInfoList();
+				}
+			},
+			//搜索
+			confirm:function(e){
+				this.productName = e.detail.value;
+				this.getProdInfoList();
+			},
+			//获得产品大类
+			getProdCategoryList: function(){
+				this.$api.Product.getProdCategoryList((res)=>{
+					let newTbas = [];
+					res.data.forEach((v,i)=>{
+						let info = { 
+							name: v.categoryName,
+							id: v.categoryId , 
+							prodCategoryId:v.categoryId,
+							prodCategoryChildId:"",
+							loadingType : 0, 
+							page : 1,
+							list:[],
+						};
+						newTbas.push(info);
+					});
+					this.tabs = newTbas;
+					this.getProdInfoList();
+				})
 			},
 			//每个选项滚动到底部
 			scrollend:function(e){
 				//获取是哪个选项滚动到底？
 				var index = e.currentTarget.dataset.scindex;
-				console.log(index);
 				//可以利用 tabs 携带的分类id 与服务器交互请求对应分类的数据
-				console.log(this.tabs[index].id);
-				//加载更多的演示
 				//判断当前是否正在加载
 				if (this.tabs[index].loadingType === 1){
 					return false;
 				}
-				//判断是否是最后一页
-				console.log(this.tabs[index].page)
-				if (this.tabs[index].page > 3){
-					this.tabs[index].loadingType = 2;//全部
-					return ;
-				}
 				this.tabs[index].loadingType = 1;//加载中
-				//模拟延迟
-				setTimeout(function(){
-					_self.newsAll[index] = _self.newsAll[index].concat(news);
-					//分页
-					_self.tabs[index].page++;
-					_self.tabs[index].loadingType = 0;//恢复加载状态
-					//
-				}, 1000);
+				this.tabs[index].page++;
+				this.getProdInfoList();
+			},
+			//获取列表
+			getProdInfoList:function(){
+				let reqInfo = {};
+				if(this.productName)reqInfo.productName = this.productName;
+				reqInfo.prodCategoryId = this.tabs[this.swiperCurrentIndex].prodCategoryId;
+				if(this.tabs[this.swiperCurrentIndex].prodCategoryChildId)reqInfo.prodCategoryChildId = this.tabs[this.swiperCurrentIndex].prodCategoryChildId;
+				reqInfo.page = this.tabs[this.swiperCurrentIndex].page;
+				reqInfo.limit = this.limit;
+				this.$api.Product.getProdInfoList(reqInfo,(res)=>{
+					if(res.data.length == 0 || res.data.length < this.limit){
+						this.tabs[this.swiperCurrentIndex].loadingType = 2;//没有更多
+					}else{
+						this.tabs[this.swiperCurrentIndex].loadingType = 0;//恢复加载状态
+					}
+					let list = this.tabs[this.swiperCurrentIndex].list.concat(res.data)
+					this.$set(this.tabs[this.swiperCurrentIndex],"list",list);
+					this.setTabsHeight();
+				});
+			},
+			//收藏产品
+			proCollection(item,index){
+				let reqInfo = {};
+				reqInfo.productId = item.id;
+				reqInfo.productName = item.productName;
+				reqInfo.productImg = item.productImg;
+				this.$api.User.saveMyCollection(reqInfo,(res)=>{
+					this.$toast("收藏成功");
+					// this.tabs[this.swiperCurrentIndex].list[index].collectionState = 1;
+				})
 			},
 			//打开详情
 			toDetail(item){
-				this.$openWin("proDetail");
+				this.$openWin("proDetail",{id:item.id});
 			}
 		},
 		watch: {
@@ -220,7 +254,7 @@
 		padding: 5px 0;
 	}
 	.grace-news-list-text{
-		position: relative;
+		position: relative !important;
 	}
 	.grace-news-list-price{
 		color: #F00;

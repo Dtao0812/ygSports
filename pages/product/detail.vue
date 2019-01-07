@@ -1,12 +1,12 @@
 <template>
-	<view>
-		<graceSwiper swiperId="garce-swiper-1" :interval="3000" :items="product.imgs"></graceSwiper>
+	<view v-if="product" class="content">
+		<graceSwiper swiperId="garce-swiper-1" :interval="3000" :items="product.productImg"></graceSwiper>
 		<view class="garce-padding grace-nowrap product-header" style="background:#FFF; padding:30upx 2%;">
 			<view class="grace-product-title">
-				<view class="grace-product-price garce-padding"><text class="grace-text-small">￥</text>{{product.price}}</view>
-				{{product.name}}
+				<view class="grace-product-price garce-padding"><text class="grace-text-small">￥</text>{{product.productPrice}}</view>
+				{{product.productName}}
 			</view>
-			<view class="grace-product-share" @tap="share"><yg-icon type="xin" color="#000000"></yg-icon></view>
+			<view class="grace-product-share" @tap="proCollection"><yg-icon type="xin" color="#000000"></yg-icon></view>
 		</view>
 		<view class="grace-product-item" @tap="buyNow">
 			<navigator class="grace-list">
@@ -33,42 +33,23 @@
 		<!-- 详情 -->
 		<view class="grace-product-info" v-show="active == 1">
 			<view class="product-info-item">
-				<view class="product-info-title grace-blod">一、环保能力</view>
-				<view class="product-info-desc">
-					改性TPU运动场材料由公司自主研发，不含短链氯化石蜡苯、甲苯、二甲苯、游离甲苯二异氰酸酯(TDI)等毒性物质，无刺激性气味，不含铅、汞、铬、镉等重金属物质；能与对环境质量要求极高的娃娃鱼“共生”。因其绿色、环保，2015年12月董事长钟高明先生参与的《社情民意》刊发的《关于我省率先推广“改性TPU运动场材料”的建议》得到相关省领导，时任湖南省副省长李有志，湖南省体育局局长李舜等领导的重要批示。
-				</view>
-			</view>
-			<view class="product-info-item">
-				<view class="product-info-title grace-blod">一、环保能力</view>
-				<view class="product-info-desc">
-					改性TPU运动场材料由公司自主研发，不含短链氯化石蜡苯、甲苯、二甲苯、游离甲苯二异氰酸酯(TDI)等毒性物质，无刺激性气味，不含铅、汞、铬、镉等重金属物质；能与对环境质量要求极高的娃娃鱼“共生”。因其绿色、环保，2015年12月董事长钟高明先生参与的《社情民意》刊发的《关于我省率先推广“改性TPU运动场材料”的建议》得到相关省领导，时任湖南省副省长李有志，湖南省体育局局长李舜等领导的重要批示。
+				<view class="product-info-title grace-blod"></view>
+				<view class="product-info-desc" v-html="product.info">
 				</view>
 			</view>
 		</view>
 		<!-- 评论 -->
 		<view class="grace-product-info" v-show="active == 2">
 			<view class="grace-comment">
-				<view class="grace-comment-list">
+				<view class="grace-comment-list" v-for="(comment,index) in product.busProdCommentsList" :key="index">
 					<view class="grace-comment-face"><image src="../../static/logo.png" mode="widthFix"></image></view>
 					<view class="grace-comment-body">
 						<view class="grace-comment-top">
-							<text>今生缘</text>
+							<text>{{comment.createUser}}</text>
 						</view>
-						<view class="grace-comment-content">非常好的，速度很快！</view>
+						<view class="grace-comment-content">{{comment.prodComments}}</view>
 						<view class="grace-comment-date">
-							<text>08/10 07:55</text>
-						</view>
-					</view>
-				</view>
-				<view class="grace-comment-list">
-					<view class="grace-comment-face"><image src="../../static/logo.png" mode="widthFix"></image></view>
-					<view class="grace-comment-body">
-						<view class="grace-comment-top">
-							<text>客户002</text>
-						</view>
-						<view class="grace-comment-content">物理很快，手机很喜欢！</view>
-						<view class="grace-comment-date">
-							<text>08/10 07:55</text>
+							<text>{{comment.createDate}}</text>
 						</view>
 					</view>
 				</view>
@@ -78,7 +59,7 @@
 		<!-- 底部 -->
 		<view class="grace-footer">
 			<view class="grace-product-btn" style="width: 50%;background: #d2d2d2;" @click="buyNow">立即购买</view>
-			<view class="grace-product-btn" style="background:#6aa328;width: 50%;">加入清单</view>
+			<view class="grace-product-btn" style="background:#6aa328;width: 50%;" @tap="addShopping">加入购物车</view>
 		</view>
 		
 		<!-- 商品属性  start -->
@@ -91,9 +72,9 @@
 					</view>
 					<!-- 头部商品信息 -->
 					<view class="grace-product-attr-info">
-						<image :src="product.logo" mode="widthFix"></image>
+						<image :src="product.productImg" mode="widthFix"></image>
 						<view class="title">
-							{{product.name}}
+							{{product.productName}}
 							<text>\n库存 : 1999件</text>
 						</view>
 					</view>
@@ -131,17 +112,8 @@ import graceSwiper from "@/components/grace/graceSwiper.vue"
 export default {
 	data() {
 		return {
-			product : {
-				name: "小米 MIX3",
-				logo : "https://img.alicdn.com/bao/uploaded/i3/TB1wmWchbsrBKNjSZFppHAXhFXa_052922.jpg",
-				imgs : [
-					{imgUrl : 'https://i1.mifile.cn/f/i/2018/mix3/gallery_header.jpg'},
-					{imgUrl : 'https://i1.mifile.cn/f/i/2018/mix3/gallery_img1.jpg'},
-					{imgUrl : 'https://i1.mifile.cn/f/i/2018/mix3/gallery_img7.jpg'}
-				],
-				price : "8.09",
-				priceMarket : 3200
-			},
+			id:'',
+			product : {},
 			active:1,
 			//属性
 			attrIsShow : false, //属性界面是否隐藏
@@ -154,23 +126,46 @@ export default {
 			buyNum : 1
 		};
 	},
+	onLoad(e) {
+		this.id = e.id;
+		this.$nextTick(()=>{
+			this.getProdInfo();
+		})
+	},
 	methods:{
-		share: function () {
-			uni.showToast({
-				title: '请自行完善分享代码',
-				icon: "none"
+		//收藏产品
+		proCollection:function(){
+			let reqInfo = {};
+			reqInfo.productId = this.product.id;
+			reqInfo.productName = this.product.productName;
+			reqInfo.productImg = this.product.productImg;
+			this.$api.User.saveMyCollection(reqInfo,(res)=>{
+				this.$toast("收藏成功");
 			})
 		},
+		//获得产品详情
+		getProdInfo:function(){
+			let reqInfo = {};
+			reqInfo.id = this.id;
+			this.$api.Product.getProdInfo(reqInfo,(res)=>{
+				this.product = res.data;
+			});
+		},
+		//添加商品到购物车
+		addShopping:function(){
+			let reqInfo = {};
+			reqInfo.productId = this.id;
+			this.$api.saveBusShopCar(reqInfo,(res)=>{
+				this.$toast("已添加到购物车");
+			})
+		},
+		//点击tabs评论
 		showComments : function(){
 			this.active = 2;
 		},
+		//点击tabs产品详情
 		showInfo: function () {
 			this.active = 1;
-		},
-		home : function(){
-			uni.switchTab({
-				url:'../index/index'
-			})
 		},
 		buyNow : function(){
 			//打开属性视图
@@ -215,6 +210,7 @@ export default {
 </script>
 <style scoped>
 page{background:#F2F3F4;}
+.content{background: #EEEEEE;padding: 0;}
 .product-header{position: relative;}
 .grace-product-price{color: #de3e24;margin: 0;padding: 0;font-size: 36upx;}
 .grace-product-price text{color:#de3e24;margin: 0;font-size: 30upx;}

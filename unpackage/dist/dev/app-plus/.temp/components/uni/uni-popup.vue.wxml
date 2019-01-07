@@ -2,7 +2,7 @@
 <template name="cf32231e">
   <view class="_view data-v-a0f12046">
     <template name="default"></template>
-    <view class="_view data-v-a0f12046 uni-mask" hidden="{{!(show)}}" bindtap="handleProxy" data-eventid="{{'YgL-0'}}" data-comkey="{{$k}}" style=" {{('top:' + (offsetTop + 'px') + ';')}}"></view>
+    <view class="_view data-v-a0f12046 uni-mask" hidden="{{!(show)}}" bindtap="handleProxy" data-eventid="{{'PoT-0'}}" data-comkey="{{$k}}" style=" {{('top:' + (offsetTop + 'px') + ';')}}"></view>
     <view hidden="{{!(show)}}" class="_view data-v-a0f12046 {{['uni-popup', 'uni-popup-' + type]}}"> {{msg}}
       <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
     </view>

@@ -63,7 +63,7 @@
   padding: 5px 0;
 }
 .grace-news-list-text.data-v-3a31a231 {
-  position: relative;
+  position: relative !important;
 }
 .grace-news-list-price.data-v-3a31a231 {
   color: #F00;

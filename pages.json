@@ -15,12 +15,18 @@
 		{
 			"path": "pages/product/detail",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "产品详情",
 				"app-plus" : {
 				    "titleNView" : {
 				        "type" : "transparent"
 				    }
 				}
+			}
+		},
+		{
+			"path": "pages/product/shoppingcart",
+			"style": {
+				"navigationBarTitleText": "购物车"
 			}
 		},
 		{
@@ -53,7 +59,7 @@
 		{
 			"path": "pages/my/collection",
 			"style": {
-				"navigationBarTitleText": "我的搜藏",
+				"navigationBarTitleText": "我的收藏",
 				"enablePullDownRefresh" : true
 			}
 		},
@@ -86,6 +92,18 @@
 			"path": "pages/order/index",
 			"style": {
 				"navigationBarTitleText": "订单管理"
+			}
+		},
+		{
+			"path": "pages/order/publish",
+			"style": {
+				"navigationBarTitleText": "订单设计"
+			}
+		},
+		{
+			"path": "pages/order/publishDetailed",
+			"style": {
+				"navigationBarTitleText": "项目设计清单"
 			}
 		},
 		{
@@ -123,6 +141,12 @@
 			"path": "pages/logistics/index",
 			"style": {
 				"navigationBarTitleText": "货运物流"
+			}
+		},
+		{
+			"path": "pages/logistics/enroll",
+			"style": {
+				"navigationBarTitleText": "货运物流报名"
 			}
 		},
 		{

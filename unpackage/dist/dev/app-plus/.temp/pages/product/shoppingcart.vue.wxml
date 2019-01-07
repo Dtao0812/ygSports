@@ -1,0 +1,30 @@
+<import src="/components/grace/graceNumberBox.vue.wxml" />
+<template name="8a8798fe">
+  <view class="_view data-v-7f7f2979 grace-padding">
+    <view class="_view data-v-7f7f2979 grace-shoppingcard" wx:key="index" key="{{index}}" wx:for="{{shoppingCard}}" wx:for-index="index" wx:for-item="item">
+      <view class="_view data-v-7f7f2979 shop-name grace-blod">{{item.shopName}}</view>
+      <view class="_view data-v-7f7f2979 goods">
+        <image src="{{item.productImg}}" mode="widthFix" class="_image data-v-7f7f2979"></image>
+        <view class="_view data-v-7f7f2979 desc">
+          <view class="_view data-v-7f7f2979 goods-title">{{item.productName}}</view>
+          <view class="_view data-v-7f7f2979 goods-price"> ￥{{item.price}}
+            <view class="_view data-v-7f7f2979 goods-number">
+              <template bindchange="handleProxy" data-eventid="{{'JVx-0-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4pc-0-'+index],$root}}" is="2af736a0"></template>
+            </view>
+          </view>
+          <view class="_view data-v-7f7f2979 goods-remove grace-iconfont icon-remove" bindtap="handleProxy" id="{{'removeIndex_' + index}}" data-eventid="{{'COJ-1-'+index}}" data-comkey="{{$k}}">
+            <text class="_text data-v-7f7f2979">删除</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-7f7f2979 grace-footer">
+      <view style="width:60%; line-height:90rpx; text-indent:1em;" class="_view data-v-7f7f2979"> 总计
+        <text style="font-size:36rpx; color:#F00;" class="_text data-v-7f7f2979">￥{{totalprice}}</text>
+      </view>
+      <view style="width:40%;" class="_view data-v-7f7f2979">
+        <button type="warn" bindtap="handleProxy" data-eventid="{{'ADL-2'}}" data-comkey="{{$k}}" class="_button data-v-7f7f2979">立即结算</button>
+      </view>
+    </view>
+  </view>
+</template>

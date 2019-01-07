@@ -1,0 +1,1 @@
+<import src="/pages/my/applyCapital.vue.wxml" /><template is="04f56b64" data="{{ ...$root['0'], $root }}"/>

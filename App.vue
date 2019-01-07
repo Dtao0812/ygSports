@@ -37,6 +37,8 @@
 			drawNativeIcon.addEventListener("click",(e)=>{
 				this.$store.commit("setState",{id:"tabBarAddState",value:!this.$store.state.tabBarAddState});
 			});
+			
+			this.getProdCategoryList();
 			//#endif
 		},
 		onShow: function () {
@@ -48,19 +50,23 @@
 		onLoad() {
 		},
 		methods:{
-			showAdd(){
-				this.msg = '订单设计';
-				this.showPopupBottom = !this.showPopupBottom;
-			},
-			//统一的关闭popup方法
-			hidePopup: function() {
-				this.showPopupBottom = false;
-			},
-			//展示底部 popup
-			showBottomPopup: function() {
-				this.hidePopup();
-				this.msg = '订单设计';
-				this.showPopupBottom = true;
+			//获得产品大类
+			getProdCategoryList: function(){
+				this.$api.Product.getProdCategoryList((res)=>{
+					let newList = [];
+					res.data.forEach((v,i)=>{
+						if(v.isAutotrophy == 0){
+							let info = { 
+								imgUrl:v.bz1,
+								name: v.categoryName,
+								id: v.categoryId
+							};
+							newList.push(info);
+						}
+					});
+					//存储到vux中
+					this.$store.commit("setState",{id:"addList",value:newList})
+				})
 			}
 		},
 	}
@@ -71,4 +77,5 @@
 	@import './static/css/uni.css';
 	@import './common/graceUI.css';
 	@import './common/default.css';
+	
 </style>

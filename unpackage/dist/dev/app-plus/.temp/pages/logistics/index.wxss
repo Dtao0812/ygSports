@@ -4,6 +4,19 @@
   background-color: #EEEEEE;
   padding: 0;
 }
+.yg-enroll-team.data-v-2c2816d6 {
+  text-align: left;
+}
+.yg-enroll-team-laber.data-v-2c2816d6 {
+  background-color: #6aa328;
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
 .grace-items.data-v-2c2816d6 {
   width: 100%;
   background-color: #FFFFFF;

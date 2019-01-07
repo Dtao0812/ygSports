@@ -7,9 +7,9 @@
     <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotscreen || 'screen'}}"></template>
     <swiper class="_swiper data-v-1d265a72 swiper-box" duration="300">
       <swiper-item class="_swiper-item data-v-1d265a72">
-        <scroll-view class="_scroll-view data-v-1d265a72 list" scroll-y bindscrolltolower="handleProxy" bindscroll="handleProxy" scroll-top="{{scrollTop}}" data-eventid="{{'9lD-0'}}" data-comkey="{{$k}}">
+        <scroll-view class="_scroll-view data-v-1d265a72 list" scroll-y bindscrolltolower="handleProxy" bindscroll="handleProxy" scroll-top="{{scrollTop}}" data-eventid="{{'9wH-0'}}" data-comkey="{{$k}}">
           <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotlist || 'list'}}"></template>
-          <template data="{{...$root['0'], ...$root[$kk+'9U7-2'],$root}}" is="c4c046ac"></template>
+          <template data="{{...$root['0'], ...$root[$kk+'S1B-2'],$root}}" is="c4c046ac"></template>
         </scroll-view>
       </swiper-item>
     </swiper>

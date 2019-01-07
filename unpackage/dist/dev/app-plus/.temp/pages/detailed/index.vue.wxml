@@ -1,30 +1,27 @@
 <import src="/components/grace/graceLoading.vue.wxml" />
-<import src="/components/uni/uni-popup.vue.wxml" />
-<import src="/components/default/popupBottom.vue.wxml" />
 <template name="0f4f5652">
   <view class="_view data-v-7b2aa078 content">
     <scroll-view class="_scroll-view data-v-7b2aa078 grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
-      <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'iJ1-0-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-7b2aa078 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
+      <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'jBG-0-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-7b2aa078 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
     </scroll-view>
-    <swiper class="_swiper data-v-7b2aa078 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'NFG-6'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
+    <swiper class="_swiper data-v-7b2aa078 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'H9k-6'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
       <swiper-item wx:key="newsIndex" key="{{newsIndex}}" wx:for="{{newsAll}}" wx:for-index="newsIndex" wx:for-item="news" class="_swiper-item data-v-7b2aa078">
-        <scroll-view scroll-y="true" data-scindex="{{newsIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'GV5-5-'+newsIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-7b2aa078">
+        <scroll-view scroll-y="true" data-scindex="{{newsIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'PfO-5-'+newsIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-7b2aa078">
           <view class="_view data-v-7b2aa078 grace-scroll-do">
             <scroll-view class="_scroll-view data-v-7b2aa078 grace-scroll-x" scroll-x scroll-left="{{scrollIndex == index ? 180 : 0}}" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-id="{{index}}" scroll-with-animation="true" wx:key="index"
-              key="{{index}}" data-eventid="{{'zTZ-4-'+newsIndex+'-'+index}}" data-comkey="{{$k}}" wx:for="{{news}}" wx:for-index="index" wx:for-item="item">
+              key="{{index}}" data-eventid="{{'Prr-4-'+newsIndex+'-'+index}}" data-comkey="{{$k}}" wx:for="{{news}}" wx:for-index="index" wx:for-item="item">
               <view class="_view data-v-7b2aa078 grace-items"> {{item.desc}} </view>
-              <view class="_view data-v-7b2aa078 grace-items btn" style="background:#47cb65 {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'Ith-1-'+newsIndex+'-'+index}}"
+              <view class="_view data-v-7b2aa078 grace-items btn" style="background:#47cb65 {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'9C8-1-'+newsIndex+'-'+index}}"
                 data-comkey="{{$k}}">编辑</view>
-              <view class="_view data-v-7b2aa078 grace-items btn" style="background:#f19c4c {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'YLm-2-'+newsIndex+'-'+index}}"
+              <view class="_view data-v-7b2aa078 grace-items btn" style="background:#f19c4c {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}" data-id="{{index}}" bindtap="handleProxy" data-eventid="{{'8jk-2-'+newsIndex+'-'+index}}"
                 data-comkey="{{$k}}">提交</view>
-              <view class="_view data-v-7b2aa078 grace-items btn" data-id="{{index}}" style="margin-right: 20px; {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}" bindtap="handleProxy" data-eventid="{{'ZZj-3-'+newsIndex+'-'+index}}"
+              <view class="_view data-v-7b2aa078 grace-items btn" data-id="{{index}}" style="margin-right: 20px; {{(  'width:' +  (index == deleteIndex ? deleteBtnWidth + 'px' : btn2Width + 'px') +  ';')}}" bindtap="handleProxy" data-eventid="{{'iDo-3-'+newsIndex+'-'+index}}"
                 data-comkey="{{$k}}">删除</view>
             </scroll-view>
           </view>
-          <template data="{{...$root['0'], ...$root[$kk+'md2-0-'+newsIndex],$root}}" is="c4c046ac"></template>
+          <template data="{{...$root['0'], ...$root[$kk+'UzF-0-'+newsIndex],$root}}" is="c4c046ac"></template>
         </scroll-view>
       </swiper-item>
     </swiper>
-    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'74q-7'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'S7E-3'],$root, $slotdefault:'data-v-7b2aa078-default-S7E-3'}}" is="cf32231e"></template>
   </view>
 </template>

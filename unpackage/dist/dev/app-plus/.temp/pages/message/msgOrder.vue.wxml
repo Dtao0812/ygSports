@@ -1,0 +1,57 @@
+<template name="4103b52e">
+  <view class="_view data-v-07e06726 content">
+    <view class="_view data-v-07e06726 msg-list">
+      <view class="_view data-v-07e06726 uni-card">
+        <view class="_view data-v-07e06726 uni-card-header uni-card-media">
+          <view class="_view data-v-07e06726 uni-card-media-body">
+            <text class="_text data-v-07e06726 uni-card-media-text-top grace-h5 grace-blod">优冠客服</text>
+            <text class="_text data-v-07e06726 uni-card-media-text-bottom grace-text-small">2019-01-04 15:30</text>
+          </view>
+        </view>
+        <view class="_view data-v-07e06726 uni-card-content">
+          <view class="_view data-v-07e06726 uni-card-content-inner"> 优冠体育提醒您：配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。配置系统推送消息内容填充。 </view>
+        </view>
+      </view>
+      <view class="_view data-v-07e06726 uni-card">
+        <view class="_view data-v-07e06726 uni-card-header uni-card-media">
+          <view class="_view data-v-07e06726 uni-card-media-body">
+            <text class="_text data-v-07e06726 uni-card-media-text-top grace-h5 grace-blod">到货确认提醒</text>
+            <text class="_text data-v-07e06726 uni-card-media-text-bottom grace-text-small">2019-01-04 15:30</text>
+          </view>
+        </view>
+        <view class="_view data-v-07e06726 uni-card-content">
+          <view class="_view data-v-07e06726 uni-card-content-inner">
+            <view class="_view data-v-07e06726">货车司机（XXX 188-8888-8888）您好！</view>
+            <view class="_view data-v-07e06726">订单编号：1231512421312312312312</view>
+            <view class="_view data-v-07e06726">生成时间：2018-10-28</view>
+            <view class="_view data-v-07e06726">目的地：XXX省XXX市XXX号</view>
+            <view class="_view data-v-07e06726">预计到货时间：2018-11-05</view>
+          </view>
+        </view>
+        <view class="_view data-v-07e06726 uni-card-footer">
+          <view class="_view data-v-07e06726 uni-card-footer-btn uni-card-footer-confirm">已送达，确认收货</view>
+        </view>
+      </view>
+      <view class="_view data-v-07e06726 uni-card">
+        <view class="_view data-v-07e06726 uni-card-header uni-card-media">
+          <view class="_view data-v-07e06726 uni-card-media-body">
+            <text class="_text data-v-07e06726 uni-card-media-text-top grace-h5 grace-blod">到货确认提醒</text>
+            <text class="_text data-v-07e06726 uni-card-media-text-bottom grace-text-small">2019-01-04 15:30</text>
+          </view>
+        </view>
+        <view class="_view data-v-07e06726 uni-card-content">
+          <view class="_view data-v-07e06726 uni-card-content-inner">
+            <view class="_view data-v-07e06726">货车司机（XXX 188-8888-8888）您好！</view>
+            <view class="_view data-v-07e06726">订单编号：1231512421312312312312</view>
+            <view class="_view data-v-07e06726">生成时间：2018-10-28</view>
+            <view class="_view data-v-07e06726">目的地：XXX省XXX市XXX号</view>
+            <view class="_view data-v-07e06726">预计到货时间：2018-11-05</view>
+          </view>
+        </view>
+        <view class="_view data-v-07e06726 uni-card-footer">
+          <view class="_view data-v-07e06726 uni-card-footer-btn uni-card-footer-default">已确认</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -706,15 +706,14 @@ let tipsFun = {
 			uni.showToast({
 				title: title,
 				icon: 'none',
-				image: "/_www/static/images/ico/ico_error_white.png",
+				// image: "/_www/static/images/icon/ico_error_white.png",
 			});
 			//#endif
 			//#ifdef H5
-			image: "../images/ico/ico_error_white.png",
 			uni.showToast({
 				title: title,
 				icon: 'none',
-				image: "../../../static/images/ico/ico_error_white.png",
+				// image: "../../static/images/icon/ico_error_white.png",
 			});
 			//#endif
 		},
@@ -909,26 +908,28 @@ let apiFun = {
 	 * 通用请求服务器接口
 	 * apiName 接口地址
 	 * data 请求数据
+	 * method 请求方式
 	 * successCallback 请求成功回调方法
 	 * errorCallback 请求失败回调方法
 	 */
-	getDataFromServer(apiName, data, successCallback, errorCallback) {
+	getDataFromServer(apiName, data, method, successCallback, errorCallback) {
+		method = method||'POST';
 		if (data.loading != 1) tipsFun.toast.loading();
-		data.Platform = Store.state.Platform;
-		data.deviceId = Store.state.deviceId;
-		data.version = Store.state.version;
-		data.user_token = Store.state.user_token;
+		data.token = Store.state.token;
+		console.log(Config.WY_ServerUrl + apiName)
+		console.log(JSON.stringify(data))
 		uni.request({
-			url: Config.WY_AbyUrl + 'aby/' + apiName,
-			method: 'POST',
+			url: Config.WY_ServerUrl + apiName,
+			method: method,
 			header: {
-				'Content-Type': 'application/x-www-form-urlencoded'
+				'Cache-Control': 'no-cache',
+				'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
 			},
-			data: 'data=' + encodeURIComponent(JSON.stringify(data)),
+			data: data,
 			success: (res) => {
 				// 请求接口成功
 				tipsFun.toast.close();
-				if (res.data.errorcode == 0) {
+				if (res.data.code == Config.WY_SuccessCode) {
 					successCallback && successCallback(res.data);
 				} else {
 					errorCallback && errorCallback(res.data);
@@ -952,36 +953,36 @@ let apiFun = {
 	 * apiName 接口地址
 	 * files 需要上传的文件，arrr类型
 	 * data 请求数据
+	 * method 请求方式
 	 * successCallback 请求成功回调方法
 	 * errorCallback 请求失败回调方法
 	 */
 	UploadFileFromServer(apiName, files, data, successCallback, errorCallback) {
 		if (data.loading != 1) tipsFun.toast.loading('正在上传...');
-		data.Platform = Store.state.Platform;
-		data.deviceId = Store.state.deviceId;
-		data.version = Store.state.version;
-		data.user_token = Store.state.user_token;
+		data.token = Store.state.token;
 		uni.uploadFile({
-			url: Config.WY_AbyUrl + 'aby/' + apiName,
-			files: files,
-			header: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			},
-			formData: 'data=' + encodeURIComponent(JSON.stringify(data)),
+			url: Config.WY_ServerUrl + apiName,
+			filePath: files.url,
+			name: files.name,
+			formData: data,
 			success: (res) => {
+				if(typeof(res.data) == "string"){
+					res.data = JSON.parse(res.data);
+				}
 				// 上传成功
 				tipsFun.toast.close();
-				if (res.data.errorcode == 0) {
-					sucesscallback && sucesscallback(res.data);
+				if (res.data.code == Config.WY_SuccessCode) {
+					successCallback && successCallback(res.data);
 				} else {
-					if (data.loading != 1) tipsFun.toast.error(res.data.msg)
-					errorcallback && errorcallback(res.data);
+					errorCallback && errorCallback(res.data);
+					if (data.loading != 1) tipsFun.toast.error(res.data.msg);
 				}
 			},
 			fail: (err) => {
 				// 上传失败
+				console.log('失败：'+JSON.stringify(err))
 				tipsFun.toast.close();
-				errorcallback && errorcallback(err);
+				errorCallback && errorCallback(err);
 				if (data.loading != 1) tipsFun.toast.error('上载文件失败')
 			},
 			complete: () => {
@@ -993,7 +994,7 @@ let apiFun = {
 	//下载文件
 	downLoadFile(webUrl, localFilename, sucesscallback, errorcallback) {
 		let dtask = plus.downloader.createDownload(webUrl, {
-			filename: '_doc/download/abyty/' + localFilename
+			filename: '_doc/download/yg/' + localFilename
 		}, function(d, status) {
 			//下载完成
 			if (status == 200) {
@@ -1007,17 +1008,17 @@ let apiFun = {
 	// 压缩图片
 	compressImage(src, dst, overwrite, quality, sucessCallback, errorCallBack) {
 		plus.zip.compressImage({
-				src: src,
-				dst: dst,
-				overwrite: overwrite,
-				quality: quality
-			},
-			function(e) {
-				sucessCallback && sucessCallback(e);
-			},
-			function(error) {
-				errorCallBack && errorCallBack(false);
-			});
+			src: src,
+			dst: dst,
+			overwrite: overwrite,
+			quality: quality
+		},
+		function(e) {
+			sucessCallback && sucessCallback(e);
+		},
+		function(error) {
+			errorCallBack && errorCallBack(false);
+		});
 	}
 };
 

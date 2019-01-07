@@ -1,7 +1,6 @@
 @import "../../common/vendor.wxss";
 
 .content.data-v-3a5bd749 {
-  background-color: #eeeeee;
   height: 100%;
   padding: 0 !important;
 }

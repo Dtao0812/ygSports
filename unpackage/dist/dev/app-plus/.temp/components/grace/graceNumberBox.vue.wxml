@@ -1,7 +1,7 @@
 <template name="2af736a0">
   <view class="_view data-v-2c20aaf8 grace-number-box">
-    <view class="_view data-v-2c20aaf8 doBtn" bindtap="handleProxy" data-eventid="{{'KWX-0'}}" data-comkey="{{$k}}">-</view>
-    <input type="number" value="{{inputNumber}}" disabled="{{disabled}}" bindblur="handleProxy" data-eventid="{{'OPF-1'}}" data-comkey="{{$k}}" class="_input data-v-2c20aaf8" />
-    <view class="_view data-v-2c20aaf8 doBtn" bindtap="handleProxy" data-eventid="{{'ypB-2'}}" data-comkey="{{$k}}">+</view>
+    <view class="_view data-v-2c20aaf8 doBtn" bindtap="handleProxy" data-eventid="{{'9xM-0'}}" data-comkey="{{$k}}">-</view>
+    <input type="number" value="{{inputNumber}}" disabled="{{disabled}}" bindblur="handleProxy" data-eventid="{{'KIb-1'}}" data-comkey="{{$k}}" class="_input data-v-2c20aaf8" />
+    <view class="_view data-v-2c20aaf8 doBtn" bindtap="handleProxy" data-eventid="{{'8wg-2'}}" data-comkey="{{$k}}">+</view>
   </view>
 </template>

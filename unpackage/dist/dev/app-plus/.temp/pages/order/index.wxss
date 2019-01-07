@@ -14,3 +14,27 @@
   font-size: 13px;
   width: 25%;
 }
+.order-list.data-v-4b6180e0 {
+  margin-top: 20px;
+}
+.uni-card-media.data-v-4b6180e0 {
+  position: relative;
+  padding: 10px 0;
+}
+.uni-card-media-btn.data-v-4b6180e0 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  width: 60px;
+  height: 20px;
+  font-size: 24rpx;
+  line-height: 20px;
+  padding: 2px;
+  border-radius: 3px;
+  background: #6aa328;
+  border: 1px solid #dcdcdc;
+  color: #FFFFFF;
+  text-align: center;
+}

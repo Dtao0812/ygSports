@@ -12,6 +12,9 @@ page {
   background: url(http://114.215.202.155/images/appBg/login.png);
   background-size: 100%;
 }
+.authcode.data-v-843efc2a {
+  width: 100px;
+}
 .login-bg.data-v-843efc2a {
   height: 100vh;
   width: 100%;

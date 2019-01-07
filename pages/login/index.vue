@@ -2,17 +2,20 @@
 	<view class="content">
 		<view class="login-box">
 			<view class="login-box-title">优冠体育</view>
-			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入手机号" /></view>
-			<view class="login-box-input"><input @confirm="confirm" class="input" type="text" placeholder="请输入密码" /></view>
-			<view class="login-box-input">
-				<input @confirm="confirm" class="input authcode" type="text" placeholder="请输入验证码" />
-				  <view class="login-box-getauthcode">
-				    <button type="primary" class="thisBtn" @tap="getAuthcode" style="width: 200upx; font-size: 25upx;margin-top: 5upx; background:#6aa328;">点击获取</button>
+			<form @submit="login">
+				<view class="login-box-input"><input name="mobilePhone" v-model="mobilePhone" class="input" type="text" placeholder="请输入手机号" /></view>
+				<view class="login-box-input"><input name="password" class="input" password="true" type="text" placeholder="请输入密码" /></view>
+				<view class="login-box-input">
+					<input name="authcode" class="input authcode" type="text" placeholder="请输入验证码" />
+					<view class="login-box-getauthcode" @tap="getAuthCode">
+					    <button type="primary" class="thisBtn" style="width: 200upx; font-size: 25upx;margin-top: 5upx; background:#6aa328;">点击获取</button>
+					</view>
 				</view>
-			</view>
-			<view class="login-box-button">
-				<button class="yg-button-default" type="primary">登录</button>
-			</view>
+				<view class="login-box-button">
+					<button form-type='submit' type='primary' class="yg-button-default">登录</button>
+				</view>
+			</form>
+			
 			<view class="login-link">
 				<navigator class="login-link-nav" url="../setting/setPassword?pageName=login" hover-class="navigator-hover">
 					<view class="login-link-register">忘记密码？</view>
@@ -29,8 +32,33 @@
 	export default {
 		data() {
 			return {
-				
+				mobilePhone:"",
+				password:"",
+				authcode:""
 			};
+		},
+		methods:{
+			//获取验证码
+			getAuthCode(){
+				if(this.mobilePhone == '')return this.$toast("请输入手机号");
+				this.$api.User.getLoginAuthCode(this.mobilePhone,(res)=>{
+					this.$toast("已发送");
+				});
+			},
+			//登录
+			login(e){
+				if(e.detail.value.mobilePhone == '')return this.$toast("请输入手机号");
+				if(e.detail.value.password == '')return this.$toast("请输入密码");
+				if(e.detail.value.authcode == '')return this.$toast("请输入验码字");
+				let reqInfo = {};
+				reqInfo.type = 1;
+				reqInfo.mobilePhone = e.detail.value.mobilePhone;
+				reqInfo.password = e.detail.value.password;
+				reqInfo.authcode = e.detail.value.authcode;
+				this.$api.User.loginByPwd(reqInfo,(res)=>{
+					this.$tool.webViewFun.switchTab("../home/index");
+				})
+			}
 		}
 	}
 </script>
@@ -44,6 +72,7 @@
 		background: url(http://114.215.202.155/images/appBg/login.png);
 		background-size: 100%;
 	}
+	.authcode{width: 100px;}
 	.login-bg{
 		height: 100vh;
 		width: 100%;

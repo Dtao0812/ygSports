@@ -1,22 +1,10 @@
 <template name="25e764aa">
-  <view style="padding:60rpx 0;" class="_view data-v-6a5a58d4 grace-wrap">
-    <view class="_view data-v-6a5a58d4 grace-boxes">
+  <view style="padding:60rpx 0;" class="_view data-v-6a5a58d4 grace-wrap" wx:if="{{list}}">
+    <view class="_view data-v-6a5a58d4 grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'IJ5-0-'+i}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="i" wx:for-item="v">
       <view class="_view data-v-6a5a58d4 grace-boxes-img">
-        <image class="_image data-v-6a5a58d4 grace-boxes-image" src="../../static/images/btn/btn_ball.png" mode="widthFix"></image>
+        <image class="_image data-v-6a5a58d4 grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
       </view>
-      <view class="_view data-v-6a5a58d4 grace-boxes-text">塑胶球场</view>
-    </view>
-    <view class="_view data-v-6a5a58d4 grace-boxes">
-      <view class="_view data-v-6a5a58d4 grace-boxes-img">
-        <image class="_image data-v-6a5a58d4 grace-boxes-image" src="../../static/images/btn/btn_runway.png" mode="widthFix"></image>
-      </view>
-      <view class="_view data-v-6a5a58d4 grace-boxes-text">塑胶跑道</view>
-    </view>
-    <view class="_view data-v-6a5a58d4 grace-boxes">
-      <view class="_view data-v-6a5a58d4 grace-boxes-img">
-        <image class="_image data-v-6a5a58d4 grace-boxes-image" src="../../static/images/btn/btn_lawn.png" mode="widthFix"></image>
-      </view>
-      <view class="_view data-v-6a5a58d4 grace-boxes-text">人造草坪</view>
+      <view class="_view data-v-6a5a58d4 grace-boxes-text">{{v.name}}</view>
     </view>
   </view>
 </template>

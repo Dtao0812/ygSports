@@ -3745,6 +3745,16 @@ uni-page-refresh {
   line-height: 45px;
   background-color: #FFFFFF;
 }
+.capital .uni-checkbox-input,
+.capital .uni-radio-input {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.product .uni-navbar-header .uni-navbar-header-btns {
+  width: 45px !important;
+  padding: 0 !important;
+}
 .pl-0 {
   padding-left: 0;
 }
@@ -3784,6 +3794,9 @@ uni-page-refresh {
 .text-r {
   text-align: right;
 }
+.text-c {
+  text-align: center;
+}
 .ellipsis-1 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -3809,7 +3822,7 @@ uni-page-refresh {
   -webkit-box-orient: vertical;
 }
 .yg-text-color-green {
-  color: #6aa328;
+  color: #6aa328 !important;
 }
 .yg-button-default {
   background-color: #6aa328 !important;
@@ -3818,6 +3831,9 @@ uni-page-refresh {
 }
 .yg-bottom-link-blue {
   border-bottom: 1rpx solid #7ecef4 !important;
+}
+.yg-bottom-link-green {
+  border-bottom: 2px solid #6aa328 !important;
 }
 @font-face {
   font-family: uniicons;

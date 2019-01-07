@@ -15,17 +15,25 @@ const state = {
 	
 	/*tabbar 加号点击状态*/
 	tabBarAddState:false,
+	addList:[],
+	
+	/*用户相关*/
+	hasLogin: Tool.localStorage.get('token')?true:false,//登录状态
+	token: Tool.localStorage.get('token')?Tool.localStorage.get('token'):'',//用户token
+	
 }
 
 // 同步加载
 const mutations = {
-	login(state, provider) {
+	login(state, token) {
 		state.hasLogin = true;
-		state.loginProvider = provider;
+		state.token = token;
+		Tool.localStorage.set('token',token);
 	},
 	logout(state) {
 		state.hasLogin = false
-		state.openid = null
+		state.token = "";
+		Tool.localStorage.clear();
 	},
 	setState(state,info){
 		state[info.id] = info.value;

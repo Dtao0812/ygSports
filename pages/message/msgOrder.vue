@@ -85,7 +85,6 @@
 	.content{
 		background-color: #eeeeee;
 		height: 100%;
-		padding: 0 !important;
 	}
 	/* 滑动消息列表 */
 	.grace-scroll-do{

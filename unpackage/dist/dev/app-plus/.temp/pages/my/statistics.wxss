@@ -1,0 +1,102 @@
+@import "../../common/vendor.wxss";
+
+.uni-padding-wrap.data-v-5c55e436 {
+  width: auto;
+  padding: 0;
+}
+.segmented-control.data-v-5c55e436 {
+  width: 100%;
+  border-radius: 0;
+}
+.segmented-picket-time.data-v-5c55e436 {
+  width: 100%;
+  margin-top: 20px;
+}
+.segmented-picket-time-input.data-v-5c55e436 {
+  border: 1px solid #6eaa29;
+  padding: 2px 15px;
+  border-radius: 5px;
+  color: #8f8f8f;
+}
+.segmented-card.data-v-5c55e436 {
+  border: 1px solid #6eaa29;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.segmented-card-title.data-v-5c55e436 {
+  font-size: 30rpx;
+}
+.segmented-card-price.data-v-5c55e436 {
+  font-size: 30rpx;
+  color: #ed0909;
+}
+.segmented-card-price text.data-v-5c55e436 {
+  font-size: 40rpx;
+}
+.segmented-list.data-v-5c55e436 {
+  margin-top: 20px;
+}
+.uni-card-media.data-v-5c55e436 {
+  position: relative;
+  padding: 10px 0;
+}
+.uni-card-media-btn.data-v-5c55e436 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  padding: 2px;
+  border-radius: 3px;
+  background: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  color: #666666;
+  text-align: center;
+}
+.segmented-control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 75%;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.segmented-control.button {
+  border: 2rpx solid;
+}
+.segmented-control.text {
+  border: 0;
+  border-radius: 0rpx;
+}
+.segmented-control-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
+  line-height: 60rpx;
+  box-sizing: border-box;
+}
+.segmented-control-item.button {
+  border-left: 1rpx solid;
+}
+.segmented-control-item.text {
+  border-left: 0;
+}
+.segmented-control-item:first-child {
+  border-left-width: 0;
+}

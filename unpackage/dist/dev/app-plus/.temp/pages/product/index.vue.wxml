@@ -1,40 +1,35 @@
 <import src="/components/uni/uni-nav-bar.vue.wxml" />
 <import src="/components/uni/uni-icon.vue.wxml" />
-<import src="/components/icon/icon.vue.wxml" />
 <import src="/components/grace/graceLoading.vue.wxml" />
 <import src="/components/uni/uni-popup.vue.wxml" />
 <import src="/components/default/popupBottom.vue.wxml" />
 <template name="46d85129">
-  <view class="_view data-v-3a31a231 content">
-    <template color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" bindclick-left="handleProxy" bindclick-right="handleProxy" data-eventid="{{'PIY-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'L3p-1'],$root, $slotdefault:'data-v-3a31a231-default-L3p-1',$slotleft:'data-v-3a31a231-left-L3p-1',$slotright:'data-v-3a31a231-right-L3p-1'}}"
+  <view class="_view data-v-3a31a231 content product">
+    <template color="#333333" statusBar="false" shadow="false" background-color="#FFFFFF" fixed="true" bindclick-left="handleProxy" bindclick-right="handleProxy" data-eventid="{{'HzT-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'KVq-1'],$root, $slotdefault:'data-v-3a31a231-default-KVq-1',$slotleft:'data-v-3a31a231-left-KVq-1',$slotright:'data-v-3a31a231-right-KVq-1'}}"
       is="48f5106e"></template>
     <scroll-view class="_scroll-view data-v-3a31a231 grace-tab-title grace-center" scroll-x="true" id="grace-tab-title">
-      <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'bLE-2-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-3a31a231 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
+      <view wx:key="index" key="{{index}}" id="{{'tabTag-'+index}}" bindtap="handleProxy" data-eventid="{{'UhA-2-'+index}}" data-comkey="{{$k}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab" class="_view data-v-3a31a231 {{[tabCurrentIndex == index ? 'grace-tab-current' : '']}}">{{tab.name}}</view>
     </scroll-view>
-    <swiper class="_swiper data-v-3a31a231 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'0mA-5'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
-      <swiper-item wx:key="newsIndex" key="{{newsIndex}}" wx:for="{{newsAll}}" wx:for-index="newsIndex" wx:for-item="news" class="_swiper-item data-v-3a31a231">
-        <scroll-view scroll-y="true" data-scindex="{{newsIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'bWM-4-'+newsIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-3a31a231">
+    <swiper class="_swiper data-v-3a31a231 grace-tab-swiper-full" current="{{swiperCurrentIndex}}" bindchange="handleProxy" data-eventid="{{'sss-5'}}" data-comkey="{{$k}}" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
+      <swiper-item wx:key="proIndex" key="{{proIndex}}" wx:for="{{tabs}}" wx:for-index="proIndex" wx:for-item="pro" class="_swiper-item data-v-3a31a231">
+        <scroll-view scroll-y="true" data-scindex="{{proIndex}}" bindscrolltolower="handleProxy" data-eventid="{{'kTl-4-'+proIndex}}" data-comkey="{{$k}}" class="_scroll-view data-v-3a31a231">
           <view class="_view data-v-3a31a231 grace-news-list" style>
-            <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'6fZ-3-'+newsIndex+'-'+index}}" data-comkey="{{$k}}" wx:for="{{news}}" wx:for-index="index" wx:for-item="item" class="_view data-v-3a31a231">
+            <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'TLu-3-'+proIndex+'-'+index}}" data-comkey="{{$k}}" wx:for="{{pro.list}}" wx:for-index="index" wx:for-item="item" class="_view data-v-3a31a231">
               <view class="_view data-v-3a31a231 grace-news-list-items">
-                <image src="../../static/images/bg/mu_1.png" class="_image data-v-3a31a231 grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
+                <image src="{{item.productImg}}" class="_image data-v-3a31a231 grace-news-list-img grace-list-imgs-l" mode="widthFix"></image>
                 <view class="_view data-v-3a31a231 grace-news-list-title">
-                  <view class="_view data-v-3a31a231 grace-news-list-title-main">单组份防水地胶</view>
-                  <text class="_text data-v-3a31a231 grace-news-list-title-desc grace-text-overflow">透气 净味</text>
+                  <view class="_view data-v-3a31a231 grace-news-list-title-main">{{item.productName}}</view>
                   <view class="_view data-v-3a31a231 grace-news-list-text">
-                    <text class="_text data-v-3a31a231 grace-news-list-price">￥32.00</text>
-                    <text class="_text data-v-3a31a231 grace-news-list-icon">
-                      <template type="xin" color="#000000" data="{{...$root['0'], ...$root[$kk+'YAU-2-'+newsIndex+'-'+index],$root}}" is="539de54a"></template>
-                    </text>
+                    <text class="_text data-v-3a31a231 grace-news-list-price">￥{{item.productPrice}}</text>
                   </view>
                 </view>
               </view>
             </view>
           </view>
-          <template data="{{...$root['0'], ...$root[$kk+'7RS-3-'+newsIndex],$root}}" is="c4c046ac"></template>
+          <template data="{{...$root['0'], ...$root[$kk+'UzB-2-'+proIndex],$root}}" is="c4c046ac"></template>
         </scroll-view>
       </swiper-item>
     </swiper>
-    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'Yu1-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Tnn-6'],$root, $slotdefault:'data-v-3a31a231-default-Tnn-6'}}" is="cf32231e"></template>
+    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'yZV-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'p0N-5'],$root, $slotdefault:'data-v-3a31a231-default-p0N-5'}}" is="cf32231e"></template>
   </view>
 </template>

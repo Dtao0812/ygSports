@@ -1,0 +1,38 @@
+<template name="1ab257e4">
+  <view class="_view data-v-c84f86d4 content capital">
+    <view class="_view data-v-c84f86d4 uni-padding-wrap">
+      <view class="_view data-v-c84f86d4 uni-title uni-common-mt text-c"> 您可提现订单{{orderNum}}笔
+        <view class="_view data-v-c84f86d4">您的欠款：
+          <text class="_text data-v-c84f86d4 yg-text-color-green">【查看】</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-c84f86d4 uni-list">
+      <checkbox-group bindchange="handleProxy" data-eventid="{{'ZFU-1'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-c84f86d4">
+        <label class="_label data-v-c84f86d4 uni-list-cell uni-list-cell-pd" wx:key="item.value" key="{{item.value}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-c84f86d4">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}" class="_checkbox data-v-c84f86d4"></checkbox>
+          </view>
+          <view class="_view data-v-c84f86d4 uni-card-media">
+            <view class="_view data-v-c84f86d4 uni-card-media-body">
+              <text class="_text data-v-c84f86d4 uni-card-media-text-top">{{item.name}}</text>
+              <text class="_text data-v-c84f86d4 uni-card-media-text-bottom grace-text-small">订单编号:{{item.orderId}}</text>
+            </view>
+          </view>
+          <view class="_view data-v-c84f86d4 capital-btn" bindtap="handleProxy" data-eventid="{{'CQ6-0-'+index}}" data-comkey="{{$k}}">提现申请</view>
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="_view data-v-c84f86d4 grace-footer">
+      <view style="width:60%;" class="_view data-v-c84f86d4 grace-nowrap capital-all-radio">
+        <view class="_view data-v-c84f86d4">
+          <checkbox value="all" checked class="_checkbox data-v-c84f86d4"></checkbox>
+        </view>
+        <view class="_view data-v-c84f86d4"> 全选 </view>
+      </view>
+      <view style="width:40%;" class="_view data-v-c84f86d4">
+        <button type="warn" class="_button data-v-c84f86d4">全部提现</button>
+      </view>
+    </view>
+  </view>
+</template>

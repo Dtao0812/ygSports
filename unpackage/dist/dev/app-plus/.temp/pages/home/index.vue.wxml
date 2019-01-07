@@ -4,9 +4,9 @@
 <template name="0bf61c7e">
   <view class="_view data-v-3707f49a">
     <view class="_view data-v-3707f49a content">
-      <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'P0G-0'],$root}}" is="fe072eac"></template>
+      <template swiperId="garce-swiper-1" data="{{...$root['0'], ...$root[$kk+'CLc-0'],$root}}" is="fe072eac"></template>
       <view class="_view data-v-3707f49a grace-wrap">
-        <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'468-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
+        <view class="_view data-v-3707f49a grace-boxes" wx:key="i" key="{{i}}" bindtap="handleProxy" data-eventid="{{'EUw-0-'+i}}" data-comkey="{{$k}}" wx:for="{{navItems}}" wx:for-index="i" wx:for-item="v">
           <view class="_view data-v-3707f49a grace-boxes-img">
             <image class="_image data-v-3707f49a grace-boxes-image" src="{{v.imgUrl}}" mode="widthFix"></image>
           </view>
@@ -54,12 +54,12 @@
         <view class="_view data-v-3707f49a grace-h5 grace-blod dynamic-title">优冠动态</view>
       </view>
       <view class="_view data-v-3707f49a grace-imgitems">
-        <view class="_view data-v-3707f49a grace-items dynamic-item">
-          <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
-          <view class="_view data-v-3707f49a dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+        <view class="_view data-v-3707f49a grace-items dynamic-item" wx:if="{{dynamic}}">
+          <view class="_view data-v-3707f49a dynamic-item-title ellipsis-2">{{dynamic.dynamicTitile}}</view>
+          <rich-text class="_view data-v-3707f49a dynamic-item-text ellipsis-3" nodes="{{dynamic.info}}"></rich-text>
         </view>
       </view>
     </view>
-    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'rOZ-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'JvE-2'],$root, $slotdefault:'data-v-3707f49a-default-JvE-2'}}" is="cf32231e"></template>
+    <template type="bottom" msg="订单设计" bindhidePopup="handleProxy" data-eventid="{{'11r-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'lVq-2'],$root, $slotdefault:'data-v-3707f49a-default-lVq-2'}}" is="cf32231e"></template>
   </view>
 </template>

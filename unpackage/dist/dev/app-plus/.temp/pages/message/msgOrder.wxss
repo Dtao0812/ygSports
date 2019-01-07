@@ -1,0 +1,49 @@
+@import "../../common/vendor.wxss";
+
+.content.data-v-07e06726 {
+  background-color: #eeeeee;
+  height: 100%;
+}
+.grace-scroll-do.data-v-07e06726 {
+  background-color: #FFFFFF;
+}
+.grace-time.data-v-07e06726 {
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  right: 10px;
+}
+.msg-list.data-v-07e06726 {
+  margin: 10px;
+}
+.msg-list .uni-card-header.data-v-07e06726:after,
+.msg-list .uni-card-footer.data-v-07e06726:before {
+  height: 0;
+}
+.msg-list .uni-card-content-inner.data-v-07e06726 {
+  font-size: 12px;
+  padding: 10px 15px;
+}
+.uni-card-footer.data-v-07e06726 {
+  position: relative;
+}
+.uni-card-footer-btn.data-v-07e06726 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.uni-card-footer-confirm.data-v-07e06726 {
+  background-color: #6aa328;
+}
+.uni-card-footer-default.data-v-07e06726 {
+  background-color: #bfbfbf;
+}

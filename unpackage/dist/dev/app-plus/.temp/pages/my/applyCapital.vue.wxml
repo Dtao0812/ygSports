@@ -1,0 +1,53 @@
+<import src="/components/icon/icon.vue.wxml" />
+<template name="04f56b64">
+  <view class="_view data-v-a7a6f648 content">
+    <view class="_view data-v-a7a6f648 uni-padding-wrap">
+      <form bindsubmit="handleProxy" bindreset="handleProxy" data-eventid="{{'ntN-0'}}" data-comkey="{{$k}}" class="_form data-v-a7a6f648">
+        <view class="_view data-v-a7a6f648 uni-common-mt">
+          <view class="_view data-v-a7a6f648 uni-form-item uni-column">
+            <view class="_view data-v-a7a6f648 with-fun">
+              <template type="renshu1" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'LBK-0'],$root}}" is="539de54a"></template>
+              <input class="_input data-v-a7a6f648 uni-input" type="text" placeholder="团队名称" name="nickname" placeholder-style="color:#aaaaaa" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-a7a6f648 uni-common-mt">
+          <view class="_view data-v-a7a6f648 uni-form-item uni-column">
+            <view class="_view data-v-a7a6f648 with-fun">
+              <template type="dianhua" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'UQY-1'],$root}}" is="539de54a"></template>
+              <input class="_input data-v-a7a6f648 uni-input" type="text" placeholder="电话" name="nickname" placeholder-style="color:#aaaaaa" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-a7a6f648 uni-common-mt">
+          <view class="_view data-v-a7a6f648 uni-form-item uni-column">
+            <view class="_view data-v-a7a6f648 with-fun">
+              <template type="zhanghu1" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'aSH-2'],$root}}" is="539de54a"></template>
+              <input class="_input data-v-a7a6f648 uni-input" type="text" placeholder="银行卡号" name="nickname" placeholder-style="color:#aaaaaa" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-a7a6f648 uni-common-mt">
+          <view class="_view data-v-a7a6f648 uni-form-item uni-column">
+            <view class="_view data-v-a7a6f648 with-fun">
+              <template type="dizhi" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'wr9-3'],$root}}" is="539de54a"></template>
+              <input class="_input data-v-a7a6f648 uni-input" type="text" placeholder="开户行" name="nickname" placeholder-style="color:#aaaaaa" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-a7a6f648 uni-common-mt">
+          <view class="_view data-v-a7a6f648 uni-form-item uni-column">
+            <view class="_view data-v-a7a6f648 with-fun">
+              <template type="zhanghu" color="#999999" size="28" data="{{...$root['0'], ...$root[$kk+'fqy-4'],$root}}" is="539de54a"></template>
+              <input class="_input data-v-a7a6f648 uni-input" type="text" placeholder="身份证号" name="nickname" placeholder-style="color:#aaaaaa" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-a7a6f648 apply-btn-box">
+          <button class="_button data-v-a7a6f648 btn-submit apply-btn" formType="submit" type="primary">提交</button>
+          <button type="default" class="_button data-v-a7a6f648 apply-btn-reset" formType="reset">重新输入</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</template>

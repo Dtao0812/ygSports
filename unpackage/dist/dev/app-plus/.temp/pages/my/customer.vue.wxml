@@ -1,4 +1,4 @@
 <import src="/components/page/pull.vue.wxml" />
 <template name="f7578fdc">
-  <template ref="pull" bindloadMore="handleProxy" data-eventid="{{'jIH-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'ZEz-0'],$root, $slotdefault:'data-v-27eae9a0-default-ZEz-0',$slotlist:'data-v-27eae9a0-list-ZEz-0'}}" is="1632e3c0"></template>
+  <template ref="pull" bindloadMore="handleProxy" data-eventid="{{'A8a-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'BHE-0'],$root, $slotdefault:'data-v-27eae9a0-default-BHE-0',$slotlist:'data-v-27eae9a0-list-BHE-0'}}" is="1632e3c0"></template>
 </template>

@@ -2,10 +2,10 @@
 	<view>
 		<swiper class="grace-swiper" autoplay="true" :indicator-dots="indicatorDots" indicator-color="rgba(255, 255, 255, 1)" indicator-active-color="#00B26A" :style="{height : swiperHeight + 'px'}" :interval="interval">
 			<swiper-item v-for="(item, index) in items" :key="index">
-				<navigator :url='item.path'>
-					<image :src='item.imgUrl' class="swiper-image" @load='imgLoad' :id="swiperId + '-item-1'" mode='widthFix'></image>
+				<view>
+					<image :src='item.url' class="swiper-image" @load='imgLoad' :id="swiperId + '-item-1'" mode='widthFix'></image>
 					<view class="title" v-if="!indicatorDots">{{item.title}}</view>
-				</navigator>
+				</view>
 			</swiper-item>
 		</swiper>
 	</view>

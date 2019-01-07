@@ -1,22 +1,10 @@
 <template>
-	<view style="padding:60upx 0;" class="grace-wrap">
-		<view class="grace-boxes">
+	<view style="padding:60upx 0;" class="grace-wrap" v-if="list">
+		<view class="grace-boxes" v-for="(v,i) in list" :key="i" @tap="toPublish(v)">
 			<view class="grace-boxes-img">
-				<image class="grace-boxes-image" src="../../static/images/btn/btn_ball.png" mode="widthFix"></image>
+				<image class="grace-boxes-image" :src="v.imgUrl" mode="widthFix"></image>
 			</view>
-			<view class="grace-boxes-text">塑胶球场</view>
-		</view>
-		<view class="grace-boxes">
-			<view class="grace-boxes-img">
-				<image class="grace-boxes-image" src="../../static/images/btn/btn_runway.png" mode="widthFix"></image>
-			</view>
-			<view class="grace-boxes-text">塑胶跑道</view>
-		</view>
-		<view class="grace-boxes">
-			<view class="grace-boxes-img">
-				<image class="grace-boxes-image" src="../../static/images/btn/btn_lawn.png" mode="widthFix"></image>
-			</view>
-			<view class="grace-boxes-text">人造草坪</view>
+			<view class="grace-boxes-text">{{v.name}}</view>
 		</view>
 	</view>
 </template>
@@ -25,8 +13,15 @@
 	export default {
 		data() {
 			return {
-				
+				list:this.$store.state.addList
 			};
+		},
+		onLoad() {
+		},
+		methods:{
+			toPublish(item){
+				this.$openWin("publishOrder",{id:item.id,name: item.name});
+			},
 		}
 	}
 </script>

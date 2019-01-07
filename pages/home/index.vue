@@ -56,12 +56,11 @@
 			<!-- 动态 -->
 			<view class="grace-title grace-nowrap grace-space-between" style="margin-top:60upx;">
 				<view class="grace-h5 grace-blod dynamic-title">优冠动态</view>
-				
 			</view>
 			<view class="grace-imgitems">
-				<view class="grace-items dynamic-item">
-					<view class="dynamic-item-title ellipsis-2">优冠体育设备制造产业园二期项目环境影响评价公众参与信息公示</view>
-					<view class="dynamic-item-text ellipsis-3">根据中华人民共和国国家环境保护总局 2006 年 2 月 14 日发布的《环境影响评价公众参与暂行办法》(环发 2006[28 号])规定，现将优冠体育设备制造产业园二期项目环境影响评</view>
+				<view class="grace-items dynamic-item" v-if="dynamic">
+					<view class="dynamic-item-title ellipsis-2">{{dynamic.dynamicTitile}}</view>
+					<view class="dynamic-item-text ellipsis-3" v-html="dynamic.info"></view>
 				</view>
 			</view>
 		</view>
@@ -85,17 +84,15 @@ export default {
 	data() {
 		return {
 			showPopupBottom: false,
-			swiperItems: [
-				{ imgUrl: '../../static/v2_pitxu2.png', path: './badge', title: '标题1' },
-				{ imgUrl: '../../static/v2_pitxu2.png', path: './badge', title: '标题2' }
-			],
+			swiperItems: [],
 			navItems: [
 				{ imgUrl: '../../static/images/icon/nav_1.png', path: 'order', title: '订单管理' },
 				{ imgUrl: '../../static/images/icon/nav_2.png', path: 'statistics', title: '业务查询' },
 				{ imgUrl: '../../static/images/icon/nav_3.png', path: 'detailed', title: '清单管理' },
-				{imgUrl: '../../static/images/icon/nav_4.png',path: 'logistics',title: '货运物流'},
+				{ imgUrl: '../../static/images/icon/nav_4.png',path: 'logistics',title: '货运物流'},
 				{ imgUrl: '../../static/images/icon/nav_5.png', path: 'team', title: '施工团队' }
-			]
+			],
+			dynamic:"",//动态
 		};
 	},
 	computed: {
@@ -103,7 +100,10 @@ export default {
 			return this.$store.state.tabBarAddState;
 		}
 	},
-	onLoad() {},
+	onReady() {
+		this.getBannerList();
+		this.getCompanyDynamic();
+	},
 	methods: {
 		// nav点击
 		onNavBtn(path) {
@@ -112,9 +112,20 @@ export default {
 		//统一的关闭popup方法
 		hidePopup: function() {
 			this.$store.commit('setState', { id: 'tabBarAddState', value: false });
-		}
+		},
+		//获得banner
+		getBannerList(){
+			this.$api.Home.getBannerList((res)=>{
+				this.swiperItems = res.data;
+			})
+		},
+		//获得动态
+		getCompanyDynamic(){
+			this.$api.Home.getCompanyDynamic((res)=>{
+				this.dynamic = res.data;
+			})
+		},
 	},
-	onHide() {},
 	watch: {
 		tabBarAddStateHome(val) {
 			this.showPopupBottom = val;

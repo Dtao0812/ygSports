@@ -2,23 +2,28 @@
 <import src="/threeComponents/mpvueCityPicker.vue.wxml" />
 <template name="035cd366">
   <view class="_view data-v-2c2816d6 content">
-    <view class="_view data-v-2c2816d6 yg-title grace-center" id="grace-tab-title">
-      <view class="_view data-v-2c2816d6 grace-items">
-        <view class="_view data-v-2c2816d6 grace-label grace-blod picker-label">货运物流推荐</view>
-        <view bindtap="handleProxy" class="_view data-v-2c2816d6 picker-item" data-eventid="{{'Ske-0'}}" data-comkey="{{$k}}"> {{cityText}}
-          <text class="_text data-v-2c2816d6 grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+    <view id="grace-tab-title" class="_view data-v-2c2816d6">
+      <view class="_view data-v-2c2816d6 yg-title grace-center yg-enroll-team">
+        <text class="_text data-v-2c2816d6 yg-enroll-team-laber" bindtap="handleProxy" data-eventid="{{'FGy-0'}}" data-comkey="{{$k}}">货运物流报名</text>
+      </view>
+      <view class="_view data-v-2c2816d6 yg-title grace-center">
+        <view class="_view data-v-2c2816d6 grace-items">
+          <view class="_view data-v-2c2816d6 grace-label grace-blod picker-label">货运物流推荐</view>
+          <view bindtap="handleProxy" class="_view data-v-2c2816d6 picker-item" data-eventid="{{'fRf-1'}}" data-comkey="{{$k}}"> {{cityText}}
+            <text class="_text data-v-2c2816d6 grace-iconfont icon-arrow-down pr-10 picker-icon" style="color: #6aa328;"></text>
+          </view>
         </view>
       </view>
     </view>
-    <scroll-view scroll-y="true" bindscrolltolower="handleProxy" data-eventid="{{'t0Q-1'}}" data-comkey="{{$k}}" class="_scroll-view data-v-2c2816d6" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
+    <scroll-view scroll-y="true" bindscrolltolower="handleProxy" data-eventid="{{'kLN-2'}}" data-comkey="{{$k}}" class="_scroll-view data-v-2c2816d6" style=" {{('height:' + (tabHeight + 'px') + ';')}}">
       <view class="_view data-v-2c2816d6 grace-imgitems">
         <view class="_view data-v-2c2816d6 grace-items" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
           <image src="../../static/images/bg/my_head.png" mode="widthFix" class="_image data-v-2c2816d6"></image>
           <view class="_view data-v-2c2816d6 grace-imgitems-text grace-h4">雨花区XXX物流公司</view>
         </view>
       </view>
-      <template data="{{...$root['0'], ...$root[$kk+'COU-0'],$root}}" is="c4c046ac"></template>
+      <template data="{{...$root['0'], ...$root[$kk+'sEv-0'],$root}}" is="c4c046ac"></template>
     </scroll-view>
-    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'kEU-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'qPq-1'],$root}}" is="02eb48d0"></template>
+    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'zI6-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'5Y0-1'],$root}}" is="02eb48d0"></template>
   </view>
 </template>

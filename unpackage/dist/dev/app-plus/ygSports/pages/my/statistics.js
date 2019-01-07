@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead([[2,1],".",[1],"uni-padding-wrap.",[1],"data-v-5c55e436 { width: auto; padding: 0; }\n.",[1],"segmented-control.",[1],"data-v-5c55e436 { width: 100%; border-radius: 0; }\n.",[1],"segmented-picket-time.",[1],"data-v-5c55e436 { width: 100%; margin-top: 20px; }\n.",[1],"segmented-picket-time-input.",[1],"data-v-5c55e436 { border: 1px solid #6eaa29; padding: 2px 15px; border-radius: 5px; color: #8f8f8f; }\n.",[1],"segmented-card.",[1],"data-v-5c55e436 { border: 1px solid #6eaa29; border-radius: 5px; margin-top: 20px; padding: 10px; text-align: center; }\n.",[1],"segmented-card-title.",[1],"data-v-5c55e436 { font-size: ",[0,30],"; }\n.",[1],"segmented-card-price.",[1],"data-v-5c55e436 { font-size: ",[0,30],"; color: #ed0909; }\n.",[1],"segmented-card-price wx-text.",[1],"data-v-5c55e436 { font-size: ",[0,40],"; }\n.",[1],"segmented-list.",[1],"data-v-5c55e436 { margin-top: 20px; }\n.",[1],"uni-card-media.",[1],"data-v-5c55e436 { position: relative; padding: 10px 0; }\n.",[1],"uni-card-media-btn.",[1],"data-v-5c55e436 { position: absolute; top: 0; bottom: 0; right: 10px; margin: auto; width: 60px; height: 25px; line-height: 25px; padding: 2px; border-radius: 3px; background: #f7f7f7; border: 1px solid #dcdcdc; color: #666666; text-align: center; }\n.",[1],"segmented-control { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; width: 75%; font-size: ",[0,28],"; border-radius: ",[0,10],"; box-sizing: border-box; margin: 0 auto; overflow: hidden; }\n.",[1],"segmented-control.",[1],"button { border: ",[0,2]," solid; }\n.",[1],"segmented-control.",[1],"text { border: 0; border-radius: ",[0,0],"; }\n.",[1],"segmented-control-item { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; text-align: center; line-height: ",[0,60],"; box-sizing: border-box; }\n.",[1],"segmented-control-item.",[1],"button { border-left: ",[0,1]," solid; }\n.",[1],"segmented-control-item.",[1],"text { border-left: 0; }\n.",[1],"segmented-control-item:first-child { border-left-width: 0; }\n",],undefined,{path:"./pages/my/statistics.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/my/statistics.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      
